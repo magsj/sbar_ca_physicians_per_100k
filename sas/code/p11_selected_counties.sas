@@ -83,27 +83,27 @@ proc sql;
 
  create table sas.excluded_counties_smry as
  
- select distinct '1. Total Counties Before Exclusions' as info format=$55., 
-        count(distinct fips_st_cnty) as n_counties
+ select distinct '1. Total Counties Before Exclusions' as Step format=$55., 
+        count(distinct fips_st_cnty) as 'N Counties'n
  from counties
  
  union
- select distinct '2. Less: County has no MDs/DOs' as info format=$55., 
+ select distinct '2. Less: County has no MDs/DOs' as Step format=$55., 
         count(distinct fips_st_cnty) as n_counties
  from counties
  where mds_dos_y20=. or mds_dos_y20=0
 
  union
- select distinct '3. Less: County has mising attributes' as info format=$55., 
-        count(distinct fips_st_cnty) as n_counties
+ select distinct '3. Less: County has mising attributes' as Step format=$55., 
+        count(distinct fips_st_cnty) as 'N Counties'n
  from counties
  where mds_dos_y20>0 
  and popn +pct_cvln_lbr_frc_ovr15 +pct_ovr64 +pct_female 
      +pct_wht_non_hisp +prsnl_income +pct_in_pvrty +hsptl_beds_per_1k = .
  
  union
- select distinct '4. Remaining Counties After Exclusions' as info format=$55., 
-        count(distinct fips_st_cnty) as n_counties
+ select distinct '4. Remaining Counties After Exclusions' as Step format=$55., 
+        count(distinct fips_st_cnty) as 'N Counties'n
  from counties
  where mds_dos_y20>0
  and popn +pct_cvln_lbr_frc_ovr15 +pct_ovr64 +pct_female 
@@ -159,6 +159,7 @@ proc export
 run;
 
 *descriptive output on the included counties;
+ods noproctitle;
 ods html body='/home/maguirejonathan/physician_supply/output/p11_incl_desc.html' style=HTMLBlue;
 proc means data=sas.selected_counties n nmiss mean stddev min p1 p5 p10 p25 median p75 p90 p95 p99 max;
  var popn
