@@ -1,5 +1,5 @@
 *KEEP THIS STATEMENT FIRST TO REDIRECT LENGTHY LOG TO A FILE;
-/*proc printto log='/home/maguirejonathan/physician_supply/code/master.log'; run;*/
+/*proc printto log='/home/maguirejonathan/physician_supply/code/master.log'; run; resetline;*/
 
 * Program:    master.sas                                        ;
 * Programmer: Jon Maguire                                       ;
@@ -11,7 +11,8 @@
 ***NOTE: Search this file for %let statements to set parameters.;
 
 *Set any options here if needed.;  
-*options;
+ods noproctitle;
+options nolabel;
 
 *Wipe any temp datasets from last execution.;
 proc datasets library=work kill nolist; run;
@@ -24,7 +25,7 @@ libname ahrf '/home/maguirejonathan/physician_supply/ahrf'; *AHRF data folder;
 *Section 0: AHRF file processing;
 
 *Program 0.1: Load the AHRF raw data using SAS code supplied by AHRF.;
-*             Customize AHRF's code using the SAS-ODA file locations ;
+*             Customize AHRFs code using the SAS-ODA file locations  ;
 *             and set the &ahrf_out macro variable to the resulting  ;
 *             SAS dataset. Direct the out dataset using &ahrf_out.   ;
 *             Creates ahrf2022.sas7bdat                              ;
@@ -32,28 +33,28 @@ libname ahrf '/home/maguirejonathan/physician_supply/ahrf'; *AHRF data folder;
 *%include '/home/maguirejonathan/physician_supply/code/p01_AHRF2021-2022.sas';
 
 *Program 0.2: Create a file with selected county attributes. Review  ;
-*             AHRF's file to check for any adjustments that may need ;
+*             AHRFs file to check for any adjustments that may need  ;
 *             to be made in this code. Consider adding new variables.;
 *             Creates cnty_geog_hdr.sas7bdat                         ;
 %include '/home/maguirejonathan/physician_supply/code/p02_ahrf_cnty_geog_hdr.sas';
 
 *Program 0.3: Create a county level file with selected analytic      ;
 *             variables and classification attributes. Review        ;
-*             AHRF's file to check for any adjustments that may need ;
+*             AHRFs file to check for any adjustments that may need  ;
 *             to be made in this code. Consider adding new variables.;
 *             Creates ahrf_cnty_tbl.sas7bdat                         ;
 %include '/home/maguirejonathan/physician_supply/code/p03_ahrf_cnty_tbl.sas';
 
 *Program 0.4: Create a state level file with selected analytic       ;
 *             variables and classification attributes. Review        ;
-*             AHRF's file to check for any adjustments that may need ;
+*             AHRFs file to check for any adjustments that may need  ;
 *             to be made in this code. Consider adding new variables.;
 *             Creates ahrf_state_tbl.sas7bdat                        ;
 %include '/home/maguirejonathan/physician_supply/code/p04_ahrf_state_tbl.sas';
 
 *Program 0.5: Create a US level file with selected analytic          ;
 *             variables and classification attributes. Review        ;
-*             AHRF's file to check for any adjustments that may need ;
+*             AHRFs file to check for any adjustments that may need  ;
 *             to be made in this code. Consider adding new variables.;
 *             Creates ahrf_usa_tbl.sas7bdat                          ;
 %include '/home/maguirejonathan/physician_supply/code/p05_ahrf_usa_tbl.sas';
@@ -62,7 +63,7 @@ libname ahrf '/home/maguirejonathan/physician_supply/ahrf'; *AHRF data folder;
 *Section 1: Select variables and apply county inclusion-exclusion;
 
 *Program 1.1: Create a county level file keeping selected counties   ;
-*             after applyinf exclusions and the key variables to be  ;
+*             after applying exclusions and the key variables to be  ;
 *             used in the analysis                                   ;
 *             Creates excluded_counties_smry.sas7bdat                ;
 *                     excluded_counties_dtl.sas7bdat                 ;
