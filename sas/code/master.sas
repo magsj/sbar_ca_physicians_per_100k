@@ -75,6 +75,50 @@ libname ahrf '/home/maguirejonathan/physician_supply/ahrf'; *AHRF data folder;
 %include '/home/maguirejonathan/physician_supply/code/p11_selected_counties.sas';
 
 
+*Section 2: Create groups of counties that are similar to santa barbara;
+
+*Program 2.1: Check for correlations between variables to be used to ;
+*             identify counties that are similar to santa barbara.   ;
+*             Mannually review correlation matrix and remove highly  ;
+*             correlated variables. Use the macro variable &init_vars;
+*             to set the initial list of variables and use the macro ;
+*             variable &fnl_vars to set the final list after checking;
+*             for correlations.                                      ;
+*             Creates p21_init_corr.html                             ;
+%let init_vars =
+  popn 
+  cbsa_ind_cd_msa cbsa_status_central rur_urb_cntm_cd_02 urb_infl_cd_2 
+  pct_wht_non_hisp pct_ovr64 pct_female 
+  pct_cvln_lbr_frc_ovr15 prsnl_income pct_in_pvrty 
+  hsptl_beds_per_1k ;
+%include '/home/maguirejonathan/physician_supply/code/p21_check_init_corr.sas';
+
+*Program 2.2: After reviewing P21 we find that Cbsa_ind_cd_msa,      ; 
+*             cbsa_status_central, rur_urb_cntm_cd_02, and           ;
+*             urb_infl_cd_2 are highly correlated. Rur_urb_cntm_cd_02;
+*             indicates counties in metro areas of 250k-1M and       ;
+*             urb_infl_cd_2 indicates counties in a small metro area ;
+*             of less than 1M. These are very similar and            ;
+*             rur_urb_cntm_cd_02 is more specific so urb_infl_cd_2   ;
+*             was removed. Pct_cvln_lbr_frc_ovr15, prsnl_income, and ;
+*             pct_in_pvrty are highly correlated. Income and labor   ;
+*             force participation might account for more variability ;
+*             in demand for healthcare so pct_in_pvrty was removed.  ;
+*             In the resulting correlation matrix no two variables   ;
+*             had a correlation coefficient of .6 or more.           ;
+*             Creates p22_fnl_corr.html                              ;
+%let fnl_vars = 
+  popn 
+  cbsa_ind_cd_msa cbsa_status_central rur_urb_cntm_cd_02 
+  pct_wht_non_hisp pct_ovr64 pct_female 
+  pct_cvln_lbr_frc_ovr15 prsnl_income 
+  hsptl_beds_per_1k ;
+*stop exection of master.sas if fnl_vars is empty; 
+%if %symexist(fnl_vars)=0 %then %do;
+ %put NOTE: Ending SAS session since manual selection of county demographic variables base on correlations is not complete.;
+ endsas;
+%end;
+%include '/home/maguirejonathan/physician_supply/code/p22_check_fnl_corr.sas';
 
 *KEEP THIS STATEMENT LAST TO RESTORE NORMAL LOGGING;
 /*proc printto log=log; run;*/
