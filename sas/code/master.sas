@@ -132,5 +132,20 @@ libname ahrf '/home/maguirejonathan/physician_supply/ahrf'; *AHRF data folder;
 *                     p23_sb_similar_counties.html                   ;
 %include '/home/maguirejonathan/physician_supply/code/p23_create_like_cnty_grps.sas';
 
+
+*Section 3: Calculate summary statistics and prepare data for Tableau;
+
+*Program 3.1: Calculate means and percentiles and summarize to state ;
+*             and national levels for the latest year (2020).        ;
+*             Creates physicians_per_1k_smry.sas7bdat                ;
+*                     physicians_per_1k_sb.sas7bdat                  ;
+*                     p31_y20_stats.html                             ;
+%include '/home/maguirejonathan/physician_supply/code/p31_create_y20_stats.sas';
+
+*Program 3.2: Format data for tableau.                               ;
+*             Creates physicians_per_1k_tblo.sas7bdat                ;
+*                     physicians_per_1k_tblo.txt                     ;
+%include '/home/maguirejonathan/physician_supply/code/p32_data_for_tblo.sas';
+
 *KEEP THIS STATEMENT LAST TO RESTORE NORMAL LOGGING;
 /*proc printto log=log; run;*/
