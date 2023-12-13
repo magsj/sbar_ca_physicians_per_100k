@@ -120,5 +120,17 @@ libname ahrf '/home/maguirejonathan/physician_supply/ahrf'; *AHRF data folder;
 %end;
 %include '/home/maguirejonathan/physician_supply/code/p22_check_fnl_corr.sas';
 
+*Program 2.3: Find possible groupings of counties that have appealing;
+*             size in terms of number of counties and are similar to ;
+*             santa barbara according to the variables found in P22. ;
+*             Mannually review correlation matrix and remove highly  ;
+*             correlated variables. Use the macro variable &init_vars;
+*             to set the initial list of variables and use the macro ;
+*             variable &fnl_vars to set the final list after checking;
+*             for correlations.                                      ;
+*             Creates county_similarity.sas7bdat                     ;
+*                     p23_sb_similar_counties.html                   ;
+%include '/home/maguirejonathan/physician_supply/code/p23_create_like_cnty_grps.sas';
+
 *KEEP THIS STATEMENT LAST TO RESTORE NORMAL LOGGING;
 /*proc printto log=log; run;*/
