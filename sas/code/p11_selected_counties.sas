@@ -159,7 +159,6 @@ proc export
 run;
 
 *descriptive output on the included counties;
-ods noproctitle;
 ods html body='/home/maguirejonathan/physician_supply/output/p11_incl_desc.html' style=HTMLBlue;
 proc means data=sas.selected_counties n nmiss mean stddev min p1 p5 p10 p25 median p75 p90 p95 p99 max;
  var popn
