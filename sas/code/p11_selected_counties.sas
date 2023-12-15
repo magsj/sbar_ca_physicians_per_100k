@@ -51,8 +51,11 @@ proc sql;
   a.'F04603 MDs PtnCr Ofc Basd Non-Fd'n as mds_y20,
   a.'F14694 DOs PtnCr Ofc Basd Non-Fd'n as dos_y20,
   (a.'F04603 MDs PtnCr Ofc Basd Non-Fd'n+a.'F14694 DOs PtnCr Ofc Basd Non-Fd'n) as mds_dos_y20,
+  (a.'F04603 MDs PtnCr Ofc Basd Non-Fd'n+a.'F14694 DOs PtnCr Ofc Basd Non-Fd'n)/a.'F11984 Population Estimate'n*1000 as mds_dos_per_1k,
   a.'F08860 MDs PtnCrOfcBsd GP Non-Fd'n as mds_gp_y20,
+  a.'F08860 MDs PtnCrOfcBsd GP Non-Fd'n/a.'F11984 Population Estimate'n*1000 as mds_gp_per_1k,
   a.'F08861 MDs PtnCrOfcBsdMSpc Nn-Fd'n as mds_spec_y20,
+  a.'F08861 MDs PtnCrOfcBsdMSpc Nn-Fd'n/a.'F11984 Population Estimate'n*1000 as mds_spec_per_1k,
   
   /*selected county characteristics*/
   a.'F11984 Population Estimate'n                                      as popn,
@@ -76,6 +79,42 @@ proc sql;
  on a.fips_st_cnty=b.fips_st_cnty
 
 ;quit;run; 
+
+*after other exclusions, find upper and lower bounds to exclude extreme outliers according to Q1-3*IQR and Q3+3*IQR;
+proc means data=counties qrange q1 q3 noprint;
+ where mds_dos_y20>0
+ and popn +pct_cvln_lbr_frc_ovr15 +pct_ovr64 +pct_female 
+     +pct_wht_non_hisp +prsnl_income +pct_in_pvrty +hsptl_beds_per_1k ne .;
+ var mds_dos_per_1k mds_gp_per_1k mds_spec_per_1k;
+ output out=counties_iqr
+  qrange(mds_dos_per_1k)= qrange(mds_gp_per_1k)= qrange(mds_spec_per_1k)= 
+  q1(mds_dos_per_1k)= q1(mds_gp_per_1k)= q1(mds_spec_per_1k)= 
+  q3(mds_dos_per_1k)= q3(mds_gp_per_1k)= q3(mds_spec_per_1k)= 
+ / autoname;
+run;
+
+*put thresholds into macro variables;
+proc sql noprint;
+ select 
+  mds_dos_per_1k_q1 - (3*mds_dos_per_1k_qrange),
+  mds_dos_per_1k_q3 + (3*mds_dos_per_1k_qrange), 
+  mds_gp_per_1k_q1 - (3*mds_gp_per_1k_qrange),
+  mds_gp_per_1k_q3 + (3*mds_gp_per_1k_qrange), 
+  mds_spec_per_1k_q1 - (3*mds_spec_per_1k_qrange),
+  mds_spec_per_1k_q3 + (3*mds_spec_per_1k_qrange)
+ into 
+  :md_lowerb, :md_upperb, 
+  :gp_lowerb, :gp_upperb, 
+  :sp_lowerb, :sp_upperb
+ from counties_iqr
+;quit;run; 
+
+%put md_lowerb= &md_lowerb ;
+%put md_upperb= &md_upperb ;
+%put gp_lowerb= &gp_lowerb ;
+%put gp_upperb= &gp_upperb ;
+%put sp_lowerb= &sp_lowerb ;
+%put sp_upperb= &sp_upperb ;
 
 *create output summarizing county exclusions;
 ods html body='/home/maguirejonathan/physician_supply/output/p11_excl_smry.html' style=HTMLBlue;
@@ -102,13 +141,33 @@ proc sql;
      +pct_wht_non_hisp +prsnl_income +pct_in_pvrty +hsptl_beds_per_1k = .
  
  union
- select distinct '4. Remaining Counties After Exclusions' as Step format=$55., 
+ select distinct '4. Less: Extreme outliers (<Q1-3*IQR or >Q3+3*IQR)' as Step format=$55., 
         count(distinct fips_st_cnty) as 'N Counties'n
  from counties
  where mds_dos_y20>0
  and popn +pct_cvln_lbr_frc_ovr15 +pct_ovr64 +pct_female 
-     +pct_wht_non_hisp +prsnl_income +pct_in_pvrty +hsptl_beds_per_1k ne .;
+     +pct_wht_non_hisp +prsnl_income +pct_in_pvrty +hsptl_beds_per_1k ne .
+ and (   mds_dos_per_1k le &md_lowerb 
+      or mds_gp_per_1k le &gp_lowerb
+      or mds_spec_per_1k le &sp_lowerb
+      or mds_dos_per_1k ge &md_upperb 
+      or mds_gp_per_1k ge &md_upperb
+      or mds_spec_per_1k ge &md_upperb )
  
+ union
+ select distinct '5. Remaining Counties After Exclusions' as Step format=$55., 
+        count(distinct fips_st_cnty) as 'N Counties'n
+ from counties
+ where mds_dos_y20>0
+ and popn +pct_cvln_lbr_frc_ovr15 +pct_ovr64 +pct_female 
+     +pct_wht_non_hisp +prsnl_income +pct_in_pvrty +hsptl_beds_per_1k ne .
+ and mds_dos_per_1k gt &md_lowerb 
+ and mds_gp_per_1k gt &gp_lowerb
+ and mds_spec_per_1k gt &sp_lowerb
+ and mds_dos_per_1k lt &md_upperb 
+ and mds_gp_per_1k lt &md_upperb
+ and mds_spec_per_1k lt &md_upperb ;
+     
  select * from sas.excluded_counties_smry;
 
 ;quit;run;
@@ -128,8 +187,20 @@ proc sql;
  from counties b
  where mds_dos_y20>0 
  and popn +pct_cvln_lbr_frc_ovr15 +pct_ovr64 +pct_female 
-     +pct_wht_non_hisp +prsnl_income +pct_in_pvrty +hsptl_beds_per_1k = .;
-
+     +pct_wht_non_hisp +prsnl_income +pct_in_pvrty +hsptl_beds_per_1k = .
+     
+ union
+ select 'Extreme outlier' as exclude_reason format=$30., b.*
+ from counties b
+ where mds_dos_y20>0
+ and popn +pct_cvln_lbr_frc_ovr15 +pct_ovr64 +pct_female 
+     +pct_wht_non_hisp +prsnl_income +pct_in_pvrty +hsptl_beds_per_1k ne .
+ and (   mds_dos_per_1k le &md_lowerb 
+      or mds_gp_per_1k le &gp_lowerb
+      or mds_spec_per_1k le &sp_lowerb
+      or mds_dos_per_1k ge &md_upperb 
+      or mds_gp_per_1k ge &md_upperb
+      or mds_spec_per_1k ge &md_upperb );
 ;quit;run;
 
 proc export 
@@ -147,8 +218,13 @@ proc sql;
  select * from counties 
  where mds_dos_y20>0
  and popn +pct_cvln_lbr_frc_ovr15 +pct_ovr64 +pct_female 
-     +pct_wht_non_hisp +prsnl_income +pct_in_pvrty +hsptl_beds_per_1k ne .;
-
+     +pct_wht_non_hisp +prsnl_income +pct_in_pvrty +hsptl_beds_per_1k ne .
+ and mds_dos_per_1k gt &md_lowerb 
+ and mds_gp_per_1k gt &gp_lowerb
+ and mds_spec_per_1k gt &sp_lowerb
+ and mds_dos_per_1k lt &md_upperb 
+ and mds_gp_per_1k lt &md_upperb
+ and mds_spec_per_1k lt &md_upperb 
 ;quit;run;
 
 proc export 
