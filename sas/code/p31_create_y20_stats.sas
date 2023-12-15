@@ -4,10 +4,7 @@ proc sql;
  select 
   fips_st_cnty, st_abbr, st_cnty_nm, 
   cbsa_ind_cd_msa, cbsa_status_central, rur_urb_cntm_cd_02, urb_infl_cd_2,
-  popn, 
-  mds_dos_y20, mds_dos_y20/popn*1000 as mds_dos_per_1k, 
-  mds_gp_y20, mds_gp_y20/popn*1000 as mds_gp_per_1k,
-  mds_spec_y20, mds_spec_y20/popn*1000 as mds_spec_per_1k
+  popn, mds_dos_per_1k, mds_gp_per_1k, mds_spec_per_1k
  from sas.selected_counties
 ;quit;run;
 
