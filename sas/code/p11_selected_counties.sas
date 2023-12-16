@@ -80,14 +80,19 @@ proc sql;
 
 ;quit;run; 
 
-*after other exclusions, find upper and lower bounds to exclude extreme outliers according to Q1-3*IQR and Q3+3*IQR;
-proc means data=counties qrange q1 q3 noprint;
+*after other exclusions, find upper and lower bounds to exclude extreme outliers.
+ Some authors (Kimber, 1990, Aucremanne et al., 2004) have adjusted the fence towards 
+ skewed data by use of the lower and upper semi-interquartile range SIQR{L}=Q2-Q1
+ and SIQR{U}=Q3-Q2, i.e. they define the fence as [Q1-1.5*2*SIQR{L}, Q3+1.5*2*SIQR{U}] or
+ [Q1-3*2*SIQR{L}, Q3+3*2*SIQR{U}] for extreme outliers.
+ https://www.sciencedirect.com/science/article/abs/pii/S0167947307004434;
+proc means data=counties median q1 q3 noprint;
  where mds_dos_y20>0
  and popn +pct_cvln_lbr_frc_ovr15 +pct_ovr64 +pct_female 
      +pct_wht_non_hisp +prsnl_income +pct_in_pvrty +hsptl_beds_per_1k ne .;
  var mds_dos_per_1k mds_gp_per_1k mds_spec_per_1k;
  output out=counties_iqr
-  qrange(mds_dos_per_1k)= qrange(mds_gp_per_1k)= qrange(mds_spec_per_1k)= 
+  median(mds_dos_per_1k)= median(mds_gp_per_1k)= median(mds_spec_per_1k)= 
   q1(mds_dos_per_1k)= q1(mds_gp_per_1k)= q1(mds_spec_per_1k)= 
   q3(mds_dos_per_1k)= q3(mds_gp_per_1k)= q3(mds_spec_per_1k)= 
  / autoname;
@@ -96,12 +101,12 @@ run;
 *put thresholds into macro variables;
 proc sql noprint;
  select 
-  mds_dos_per_1k_q1 - (3*mds_dos_per_1k_qrange),
-  mds_dos_per_1k_q3 + (3*mds_dos_per_1k_qrange), 
-  mds_gp_per_1k_q1 - (3*mds_gp_per_1k_qrange),
-  mds_gp_per_1k_q3 + (3*mds_gp_per_1k_qrange), 
-  mds_spec_per_1k_q1 - (3*mds_spec_per_1k_qrange),
-  mds_spec_per_1k_q3 + (3*mds_spec_per_1k_qrange)
+  mds_dos_per_1k_q1 - (3*2*(mds_dos_per_1k_median-mds_dos_per_1k_q1)),
+  mds_dos_per_1k_q3 + (3*2*(mds_dos_per_1k_q3-mds_dos_per_1k_median)), 
+  mds_gp_per_1k_q1 - (3*2*(mds_gp_per_1k_median-mds_gp_per_1k_q1)),
+  mds_gp_per_1k_q3 + (3*2*(mds_gp_per_1k_q3-mds_gp_per_1k_median)), 
+  mds_spec_per_1k_q1 - (3*2*(mds_spec_per_1k_median-mds_spec_per_1k_q1)),
+  mds_spec_per_1k_q3 + (3*2*(mds_spec_per_1k_q3-mds_spec_per_1k_median))
  into 
   :md_lowerb, :md_upperb, 
   :gp_lowerb, :gp_upperb, 
@@ -122,18 +127,18 @@ proc sql;
 
  create table sas.excluded_counties_smry as
  
- select distinct '1. Total Counties Before Exclusions' as Step format=$55., 
+ select distinct '1. Total Counties Before Exclusions' as Step format=$65., 
         count(distinct fips_st_cnty) as 'N Counties'n
  from counties
  
  union
- select distinct '2. Less: County has no MDs/DOs' as Step format=$55., 
+ select distinct '2. Less: County has no MDs/DOs' as Step format=$65., 
         count(distinct fips_st_cnty) as n_counties
  from counties
  where mds_dos_y20=. or mds_dos_y20=0
 
  union
- select distinct '3. Less: County has mising attributes' as Step format=$55., 
+ select distinct '3. Less: County has mising attributes' as Step format=$65., 
         count(distinct fips_st_cnty) as 'N Counties'n
  from counties
  where mds_dos_y20>0 
@@ -141,7 +146,7 @@ proc sql;
      +pct_wht_non_hisp +prsnl_income +pct_in_pvrty +hsptl_beds_per_1k = .
  
  union
- select distinct '4. Less: Extreme outliers (<Q1-3*IQR or >Q3+3*IQR)' as Step format=$55., 
+ select distinct '4. Less: Extreme outliers (<Q1-3*2*SIQR{L} or >Q3+3*2*SIQR{U})' as Step format=$65., 
         count(distinct fips_st_cnty) as 'N Counties'n
  from counties
  where mds_dos_y20>0
@@ -155,7 +160,7 @@ proc sql;
       or mds_spec_per_1k ge &md_upperb )
  
  union
- select distinct '5. Remaining Counties After Exclusions' as Step format=$55., 
+ select distinct '5. Remaining Counties After Exclusions' as Step format=$65., 
         count(distinct fips_st_cnty) as 'N Counties'n
  from counties
  where mds_dos_y20>0
