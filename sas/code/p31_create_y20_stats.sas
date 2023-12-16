@@ -37,7 +37,7 @@ CODE		METROPOLITAN
 * The 2013 Urban Influence Code = 2 In a small metro area of less than 1 million residents ;
 
 *This macro will create summary stats for different subsets of counties;
-%macro top(suffix,criteria);
+%macro top(title,suffix,criteria);
  /*creates a subset of counties based on &criteria named with &suffix*/
  proc sql;
   create table 
@@ -63,7 +63,7 @@ CODE		METROPOLITAN
  run;
 
  /*produces a dataset with the summary stats for the subset of counties*/
- title"Summary Stats for Similar Counties by &suffix.";
+ title"Summary Stats for &title.";
  proc means data=cnty_smlr_&suffix n nmiss mean std min p1 p5 p10 p25 p40 p50 p60 p75 p90 p95 p99 max;
   class ca_cnty;
   var mds_dos_per_1k mds_gp_per_1k mds_spec_per_1k;
@@ -98,11 +98,11 @@ CODE		METROPOLITAN
 %mend;
 
 ods html body='/home/maguirejonathan/physician_supply/output/p31_y20_stats.html' style=HTMLBlue;
-/*all counties*/            %top(all_,%str(1=1));
-/*same type counties as SB*/%top(type,%str(cbsa_ind_cd_msa=1 and cbsa_status_central=1 and rur_urb_cntm_cd_02=1 and urb_infl_cd_2=1));
-/*top 25 similar counties */%top(t_25,%str(fips_st_cnty in (select distinct fips_st_cnty from sas.county_similarity where sb_similar_rank le 26)));
-/*top 50 similar counties */%top(t_50,%str(fips_st_cnty in (select distinct fips_st_cnty from sas.county_similarity where sb_similar_rank le 51)));
-/*top 100 similar counties*/%top(t100,%str(fips_st_cnty in (select distinct fips_st_cnty from sas.county_similarity where sb_similar_rank le 101)));
+%top(All Counties,all_,%str(1=1));
+%top(Same Type Counties,type,%str(cbsa_ind_cd_msa=1 and cbsa_status_central=1 and rur_urb_cntm_cd_02=1 and urb_infl_cd_2=1));
+%top(Top 25 Similar Counties,t_25,%str(fips_st_cnty in (select distinct fips_st_cnty from sas.county_similarity where sb_similar_rank le 26)));
+%top(Top 50 Similar Counties,t_50,%str(fips_st_cnty in (select distinct fips_st_cnty from sas.county_similarity where sb_similar_rank le 51)));
+%top(Top 100 Similar Counties,t100,%str(fips_st_cnty in (select distinct fips_st_cnty from sas.county_similarity where sb_similar_rank le 101)));
 ods html close;
 
 *set all the summary datasets together in one permanent dataset;
