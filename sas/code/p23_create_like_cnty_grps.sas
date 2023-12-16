@@ -58,32 +58,18 @@ run;
  %end; 
 %mend;
 
-*insert the total number of counties into &n_counties macro variable;
+* Insert the total number of counties into &n_counties macro variable;
+* We want at least 3 groups of counties (K>=3) and we can stop searching
+  for K after a third of the total number of counties. Insert those limits
+  into macro variables.;
 proc sql noprint;
- select count(*) into :n_counties from cluster_std
+ select distinct count(*) into :n_counties from cluster_std;
+ select distinct floor(count(*)/3) into :max_k from cluster_std;
 ;quit;run;
 %put n_counties= &n_counties ;
-
-*Find all possible numbers of groupings (Ks) that evenly divide the total number of counties.
- We want at least 3 groups of counties and the largest possible number of groups should contain 
- at least 3 counties each. Need to do this in case the total number of counties is not evenly divisible.;
-data factors(where=(k ge 3 and k le &n_counties /3 ));
- do k=1 to &n_counties ;
-  if mod(&n_counties ,k)= 0 then do;
-   n_counties=&n_counties /k;
-   output;
-  end; 
- end;
-run; 
-
-*find the min and max number of groupings (Ks) from the possible range for input to the macro 
- that selects ks;
-proc sql noprint;
- select min(k) into :min_k from factors;
- select max(k) into :max_k from factors;
-;quit;run;
-%put min_k= &min_k;
 %put max_k= &max_k;
+%let min_k= 3 ;
+%put min_k= &min_k;
 
 *delete the file of appended stats from previous executions;
 proc delete data=describe_ks ; run;
