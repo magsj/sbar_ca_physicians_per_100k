@@ -1,0 +1,307 @@
+Subset|Measure|Statistic|Highlight|Value
+All CA Counties|MD GPs Per 1,000|StdDev|Smry|0.1266265709
+All CA Counties|MD GPs Per 1,000|N|Smry|58
+All CA Counties|MD GPs Per 1,000|P01|Ptile|0
+All CA Counties|MD GPs Per 1,000|Min|Extr|0
+All CA Counties|MD GPs Per 1,000|P05|Ptile|0.0353569282
+All CA Counties|MD GPs Per 1,000|P10|Ptile|0.0998003992
+All CA Counties|MD GPs Per 1,000|P25|IQR|0.1861071046
+All CA Counties|MD GPs Per 1,000|P40|Ptile|0.2438250647
+All CA Counties|MD GPs Per 1,000|Santa Barbara (P42)|SB|0.2450736899
+All CA Counties|MD GPs Per 1,000|Mean|Mean|0.2709347945
+All CA Counties|MD GPs Per 1,000|Median|IQR|0.2721356939
+All CA Counties|MD GPs Per 1,000|P60|Ptile|0.3085022185
+All CA Counties|MD GPs Per 1,000|P75|IQR|0.3369271173
+All CA Counties|MD GPs Per 1,000|P90|Ptile|0.4301027219
+All CA Counties|MD GPs Per 1,000|P95|Ptile|0.5334815226
+All CA Counties|MD GPs Per 1,000|Max|Extr|0.5512240236
+All CA Counties|MD GPs Per 1,000|P99|Ptile|0.5512240236
+All CA Counties|MD Specialists Per 1,000|StdDev|Smry|0.4107182307
+All CA Counties|MD Specialists Per 1,000|N|Smry|58
+All CA Counties|MD Specialists Per 1,000|P01|Ptile|0
+All CA Counties|MD Specialists Per 1,000|Min|Extr|0
+All CA Counties|MD Specialists Per 1,000|P05|Ptile|0
+All CA Counties|MD Specialists Per 1,000|P10|Ptile|0.0666311301
+All CA Counties|MD Specialists Per 1,000|P25|IQR|0.2076977067
+All CA Counties|MD Specialists Per 1,000|P40|Ptile|0.3492752538
+All CA Counties|MD Specialists Per 1,000|Median|IQR|0.4079083308
+All CA Counties|MD Specialists Per 1,000|P60|Ptile|0.4976026953
+All CA Counties|MD Specialists Per 1,000|Mean|Mean|0.5115062831
+All CA Counties|MD Specialists Per 1,000|P75|IQR|0.7121371555
+All CA Counties|MD Specialists Per 1,000|Santa Barbara (P76)|SB|0.7509556828
+All CA Counties|MD Specialists Per 1,000|P90|Ptile|1.0641734488
+All CA Counties|MD Specialists Per 1,000|P95|Ptile|1.4374106564
+All CA Counties|MD Specialists Per 1,000|P99|Ptile|1.9247501171
+All CA Counties|MD Specialists Per 1,000|Max|Extr|1.9247501171
+All CA Counties|MDs/DOs Per 1,000|StdDev|Smry|0.963493728
+All CA Counties|MDs/DOs Per 1,000|N|Smry|58
+All CA Counties|MDs/DOs Per 1,000|P01|Ptile|0.2121415691
+All CA Counties|MDs/DOs Per 1,000|Min|Extr|0.2121415691
+All CA Counties|MDs/DOs Per 1,000|P05|Ptile|0.3424657534
+All CA Counties|MDs/DOs Per 1,000|P10|Ptile|0.456464681
+All CA Counties|MDs/DOs Per 1,000|P25|IQR|0.8527925078
+All CA Counties|MDs/DOs Per 1,000|P40|Ptile|1.1975151561
+All CA Counties|MDs/DOs Per 1,000|Median|IQR|1.4106693533
+All CA Counties|MDs/DOs Per 1,000|Mean|Mean|1.5853068327
+All CA Counties|MDs/DOs Per 1,000|P60|Ptile|1.681456423
+All CA Counties|MDs/DOs Per 1,000|Santa Barbara (P71)|SB|2.0932345441
+All CA Counties|MDs/DOs Per 1,000|P75|IQR|2.271001204
+All CA Counties|MDs/DOs Per 1,000|P90|Ptile|2.7078933955
+All CA Counties|MDs/DOs Per 1,000|P95|Ptile|3.2546142201
+All CA Counties|MDs/DOs Per 1,000|P99|Ptile|4.6537873036
+All CA Counties|MDs/DOs Per 1,000|Max|Extr|4.6537873036
+All US Counties|MD GPs Per 1,000|StdDev|Smry|0.2059318025
+All US Counties|MD GPs Per 1,000|N|Smry|2927
+All US Counties|MD GPs Per 1,000|P01|Ptile|0
+All US Counties|MD GPs Per 1,000|Min|Extr|0
+All US Counties|MD GPs Per 1,000|P05|Ptile|0
+All US Counties|MD GPs Per 1,000|P10|Ptile|0.0645515283
+All US Counties|MD GPs Per 1,000|P25|IQR|0.1317870322
+All US Counties|MD GPs Per 1,000|P40|Ptile|0.1834940684
+All US Counties|MD GPs Per 1,000|Median|IQR|0.2162318005
+All US Counties|MD GPs Per 1,000|Santa Barbara (P57)|SB|0.2450716899
+All US Counties|MD GPs Per 1,000|Mean|Mean|0.2558353182
+All US Counties|MD GPs Per 1,000|P60|Ptile|0.2577762502
+All US Counties|MD GPs Per 1,000|P75|IQR|0.3289690111
+All US Counties|MD GPs Per 1,000|P90|Ptile|0.4764145736
+All US Counties|MD GPs Per 1,000|P95|Ptile|0.599880024
+All US Counties|MD GPs Per 1,000|P99|Ptile|0.9754367296
+All US Counties|MD GPs Per 1,000|Max|Extr|3.0911901082
+All US Counties|MD Specialists Per 1,000|StdDev|Smry|0.3288356873
+All US Counties|MD Specialists Per 1,000|N|Smry|2927
+All US Counties|MD Specialists Per 1,000|P10|Ptile|0
+All US Counties|MD Specialists Per 1,000|P05|Ptile|0
+All US Counties|MD Specialists Per 1,000|P01|Ptile|0
+All US Counties|MD Specialists Per 1,000|Min|Extr|0
+All US Counties|MD Specialists Per 1,000|P25|IQR|0.0426457418
+All US Counties|MD Specialists Per 1,000|P40|Ptile|0.1106072337
+All US Counties|MD Specialists Per 1,000|Median|IQR|0.1594351441
+All US Counties|MD Specialists Per 1,000|P60|Ptile|0.2259291336
+All US Counties|MD Specialists Per 1,000|Mean|Mean|0.2715188453
+All US Counties|MD Specialists Per 1,000|P75|IQR|0.3768334396
+All US Counties|MD Specialists Per 1,000|P90|Ptile|0.7001178616
+All US Counties|MD Specialists Per 1,000|Santa Barbara (P91)|SB|0.7509556828
+All US Counties|MD Specialists Per 1,000|P95|Ptile|0.9513306671
+All US Counties|MD Specialists Per 1,000|P99|Ptile|1.5610169957
+All US Counties|MD Specialists Per 1,000|Max|Extr|2.1663619744
+All US Counties|MDs/DOs Per 1,000|StdDev|Smry|0.8502945195
+All US Counties|MDs/DOs Per 1,000|N|Smry|2927
+All US Counties|MDs/DOs Per 1,000|Min|Extr|0.035151856
+All US Counties|MDs/DOs Per 1,000|P01|Ptile|0.0968335431
+All US Counties|MDs/DOs Per 1,000|P05|Ptile|0.1686056314
+All US Counties|MDs/DOs Per 1,000|P10|Ptile|0.2445585718
+All US Counties|MDs/DOs Per 1,000|P25|IQR|0.4128044433
+All US Counties|MDs/DOs Per 1,000|P40|Ptile|0.5921876779
+All US Counties|MDs/DOs Per 1,000|Median|IQR|0.7373991498
+All US Counties|MDs/DOs Per 1,000|P60|Ptile|0.9207931843
+All US Counties|MDs/DOs Per 1,000|Mean|Mean|1.0089078693
+All US Counties|MDs/DOs Per 1,000|P75|IQR|1.3168086754
+All US Counties|MDs/DOs Per 1,000|Santa Barbara (P88)|SB|2.0932345441
+All US Counties|MDs/DOs Per 1,000|P90|Ptile|2.1962082847
+All US Counties|MDs/DOs Per 1,000|P95|Ptile|2.8002319484
+All US Counties|MDs/DOs Per 1,000|P99|Ptile|4.1207056571
+All US Counties|MDs/DOs Per 1,000|Max|Extr|4.8708645593
+Central MSA US Counties of 250k-1M|MD GPs Per 1,000|StdDev|Smry|0.1344546738
+Central MSA US Counties of 250k-1M|MD GPs Per 1,000|N|Smry|231
+Central MSA US Counties of 250k-1M|MD GPs Per 1,000|Min|Extr|0.0603466484
+Central MSA US Counties of 250k-1M|MD GPs Per 1,000|P01|Ptile|0.0739481752
+Central MSA US Counties of 250k-1M|MD GPs Per 1,000|P05|Ptile|0.0936314976
+Central MSA US Counties of 250k-1M|MD GPs Per 1,000|P10|Ptile|0.1217166922
+Central MSA US Counties of 250k-1M|MD GPs Per 1,000|P25|IQR|0.1883316274
+Central MSA US Counties of 250k-1M|MD GPs Per 1,000|P40|Ptile|0.2357100766
+Central MSA US Counties of 250k-1M|MD GPs Per 1,000|Santa Barbara (P43)|SB|0.2450736899
+Central MSA US Counties of 250k-1M|MD GPs Per 1,000|Median|IQR|0.2618445211
+Central MSA US Counties of 250k-1M|MD GPs Per 1,000|Mean|Mean|0.2792003891
+Central MSA US Counties of 250k-1M|MD GPs Per 1,000|P60|Ptile|0.2942934658
+Central MSA US Counties of 250k-1M|MD GPs Per 1,000|P75|IQR|0.3463991805
+Central MSA US Counties of 250k-1M|MD GPs Per 1,000|P90|Ptile|0.4385360414
+Central MSA US Counties of 250k-1M|MD GPs Per 1,000|P95|Ptile|0.5334815226
+Central MSA US Counties of 250k-1M|MD GPs Per 1,000|P99|Ptile|0.7135347677
+Central MSA US Counties of 250k-1M|MD GPs Per 1,000|Max|Extr|0.8529997157
+Central MSA US Counties of 250k-1M|MD Specialists Per 1,000|StdDev|Smry|0.3880781981
+Central MSA US Counties of 250k-1M|MD Specialists Per 1,000|N|Smry|231
+Central MSA US Counties of 250k-1M|MD Specialists Per 1,000|Min|Extr|0.0180818747
+Central MSA US Counties of 250k-1M|MD Specialists Per 1,000|P01|Ptile|0.0241318565
+Central MSA US Counties of 250k-1M|MD Specialists Per 1,000|P05|Ptile|0.0686467439
+Central MSA US Counties of 250k-1M|MD Specialists Per 1,000|P10|Ptile|0.1201984992
+Central MSA US Counties of 250k-1M|MD Specialists Per 1,000|P25|IQR|0.290570972
+Central MSA US Counties of 250k-1M|MD Specialists Per 1,000|P40|Ptile|0.4329096496
+Central MSA US Counties of 250k-1M|MD Specialists Per 1,000|Median|IQR|0.5363958985
+Central MSA US Counties of 250k-1M|MD Specialists Per 1,000|Mean|Mean|0.5927414069
+Central MSA US Counties of 250k-1M|MD Specialists Per 1,000|P60|Ptile|0.6247099335
+Central MSA US Counties of 250k-1M|MD Specialists Per 1,000|Santa Barbara (P71)|SB|0.7509556828
+Central MSA US Counties of 250k-1M|MD Specialists Per 1,000|P75|IQR|0.795882494
+Central MSA US Counties of 250k-1M|MD Specialists Per 1,000|P90|Ptile|1.172808654
+Central MSA US Counties of 250k-1M|MD Specialists Per 1,000|P95|Ptile|1.3416943907
+Central MSA US Counties of 250k-1M|MD Specialists Per 1,000|P99|Ptile|1.6590940673
+Central MSA US Counties of 250k-1M|MD Specialists Per 1,000|Max|Extr|1.8881413723
+Central MSA US Counties of 250k-1M|MDs/DOs Per 1,000|StdDev|Smry|1.0315165186
+Central MSA US Counties of 250k-1M|MDs/DOs Per 1,000|N|Smry|231
+Central MSA US Counties of 250k-1M|MDs/DOs Per 1,000|Min|Extr|0.1265731231
+Central MSA US Counties of 250k-1M|MDs/DOs Per 1,000|P01|Ptile|0.2606304651
+Central MSA US Counties of 250k-1M|MDs/DOs Per 1,000|P05|Ptile|0.365254799
+Central MSA US Counties of 250k-1M|MDs/DOs Per 1,000|P10|Ptile|0.5208333333
+Central MSA US Counties of 250k-1M|MDs/DOs Per 1,000|P25|IQR|0.9952010969
+Central MSA US Counties of 250k-1M|MDs/DOs Per 1,000|P40|Ptile|1.4438773164
+Central MSA US Counties of 250k-1M|MDs/DOs Per 1,000|Median|IQR|1.7210065325
+Central MSA US Counties of 250k-1M|MDs/DOs Per 1,000|Mean|Mean|1.8363109942
+Central MSA US Counties of 250k-1M|MDs/DOs Per 1,000|P60|Ptile|2.0404903786
+Central MSA US Counties of 250k-1M|MDs/DOs Per 1,000|Santa Barbara (P62)|SB|2.0932345441
+Central MSA US Counties of 250k-1M|MDs/DOs Per 1,000|P75|IQR|2.4301924051
+Central MSA US Counties of 250k-1M|MDs/DOs Per 1,000|P90|Ptile|3.2264609385
+Central MSA US Counties of 250k-1M|MDs/DOs Per 1,000|P95|Ptile|3.8333516778
+Central MSA US Counties of 250k-1M|MDs/DOs Per 1,000|P99|Ptile|4.569880056
+Central MSA US Counties of 250k-1M|MDs/DOs Per 1,000|Max|Extr|4.7906240643
+Top 100 Most Similar US Counties|MD GPs Per 1,000|StdDev|Smry|0.1106879366
+Top 100 Most Similar US Counties|MD GPs Per 1,000|N|Smry|101
+Top 100 Most Similar US Counties|MD GPs Per 1,000|Min|Extr|0.0603466484
+Top 100 Most Similar US Counties|MD GPs Per 1,000|P01|Ptile|0.0739481752
+Top 100 Most Similar US Counties|MD GPs Per 1,000|P05|Ptile|0.1477398489
+Top 100 Most Similar US Counties|MD GPs Per 1,000|P10|Ptile|0.1962271556
+Top 100 Most Similar US Counties|MD GPs Per 1,000|P25|IQR|0.240405198
+Top 100 Most Similar US Counties|MD GPs Per 1,000|Santa Barbara (P28)|SB|0.2450736899
+Top 100 Most Similar US Counties|MD GPs Per 1,000|P40|Ptile|0.2882254478
+Top 100 Most Similar US Counties|MD GPs Per 1,000|Median|IQR|0.3096971648
+Top 100 Most Similar US Counties|MD GPs Per 1,000|Mean|Mean|0.3133862801
+Top 100 Most Similar US Counties|MD GPs Per 1,000|P60|Ptile|0.326319707
+Top 100 Most Similar US Counties|MD GPs Per 1,000|P75|IQR|0.3808373421
+Top 100 Most Similar US Counties|MD GPs Per 1,000|P90|Ptile|0.4862164989
+Top 100 Most Similar US Counties|MD GPs Per 1,000|P95|Ptile|0.5334815226
+Top 100 Most Similar US Counties|MD GPs Per 1,000|P99|Ptile|0.5538100685
+Top 100 Most Similar US Counties|MD GPs Per 1,000|Max|Extr|0.5837925733
+Top 100 Most Similar US Counties|MD Specialists Per 1,000|StdDev|Smry|0.3523690753
+Top 100 Most Similar US Counties|MD Specialists Per 1,000|N|Smry|101
+Top 100 Most Similar US Counties|MD Specialists Per 1,000|Min|Extr|0.0373245745
+Top 100 Most Similar US Counties|MD Specialists Per 1,000|P01|Ptile|0.1043701263
+Top 100 Most Similar US Counties|MD Specialists Per 1,000|P05|Ptile|0.272024249
+Top 100 Most Similar US Counties|MD Specialists Per 1,000|P10|Ptile|0.343516133
+Top 100 Most Similar US Counties|MD Specialists Per 1,000|P25|IQR|0.4966280349
+Top 100 Most Similar US Counties|MD Specialists Per 1,000|P40|Ptile|0.6119527064
+Top 100 Most Similar US Counties|MD Specialists Per 1,000|Median|IQR|0.6806213954
+Top 100 Most Similar US Counties|MD Specialists Per 1,000|Mean|Mean|0.7433150908
+Top 100 Most Similar US Counties|MD Specialists Per 1,000|Santa Barbara (P57)|SB|0.7509556828
+Top 100 Most Similar US Counties|MD Specialists Per 1,000|P60|Ptile|0.7794145483
+Top 100 Most Similar US Counties|MD Specialists Per 1,000|P75|IQR|0.9414037308
+Top 100 Most Similar US Counties|MD Specialists Per 1,000|P90|Ptile|1.2110788484
+Top 100 Most Similar US Counties|MD Specialists Per 1,000|P95|Ptile|1.4055167371
+Top 100 Most Similar US Counties|MD Specialists Per 1,000|P99|Ptile|1.669053228
+Top 100 Most Similar US Counties|MD Specialists Per 1,000|Max|Extr|1.8881413723
+Top 100 Most Similar US Counties|MDs/DOs Per 1,000|StdDev|Smry|0.9045036246
+Top 100 Most Similar US Counties|MDs/DOs Per 1,000|N|Smry|101
+Top 100 Most Similar US Counties|MDs/DOs Per 1,000|Min|Extr|0.223947447
+Top 100 Most Similar US Counties|MDs/DOs Per 1,000|P01|Ptile|0.4025704871
+Top 100 Most Similar US Counties|MDs/DOs Per 1,000|P05|Ptile|0.9952010969
+Top 100 Most Similar US Counties|MDs/DOs Per 1,000|P10|Ptile|1.1504333709
+Top 100 Most Similar US Counties|MDs/DOs Per 1,000|P25|IQR|1.6414019504
+Top 100 Most Similar US Counties|MDs/DOs Per 1,000|P40|Ptile|1.9773842645
+Top 100 Most Similar US Counties|MDs/DOs Per 1,000|Santa Barbara (P45)|SB|2.0932365441
+Top 100 Most Similar US Counties|MDs/DOs Per 1,000|Median|IQR|2.2434406719
+Top 100 Most Similar US Counties|MDs/DOs Per 1,000|Mean|Mean|2.2511341244
+Top 100 Most Similar US Counties|MDs/DOs Per 1,000|P60|Ptile|2.4078353916
+Top 100 Most Similar US Counties|MDs/DOs Per 1,000|P75|IQR|2.8051944463
+Top 100 Most Similar US Counties|MDs/DOs Per 1,000|P90|Ptile|3.3094411586
+Top 100 Most Similar US Counties|MDs/DOs Per 1,000|P95|Ptile|3.9673999495
+Top 100 Most Similar US Counties|MDs/DOs Per 1,000|P99|Ptile|4.6694016658
+Top 100 Most Similar US Counties|MDs/DOs Per 1,000|Max|Extr|4.7906240643
+Top 25 Most Similar US Counties|MD GPs Per 1,000|StdDev|Smry|0.1271034943
+Top 25 Most Similar US Counties|MD GPs Per 1,000|N|Smry|26
+Top 25 Most Similar US Counties|MD GPs Per 1,000|P01|Ptile|0.0739481752
+Top 25 Most Similar US Counties|MD GPs Per 1,000|Min|Extr|0.0739481752
+Top 25 Most Similar US Counties|MD GPs Per 1,000|P05|Ptile|0.1524892509
+Top 25 Most Similar US Counties|MD GPs Per 1,000|P10|Ptile|0.2213636784
+Top 25 Most Similar US Counties|MD GPs Per 1,000|P25|IQR|0.2450726899
+Top 25 Most Similar US Counties|MD GPs Per 1,000|Santa Barbara (P25)|SB|0.2450736899
+Top 25 Most Similar US Counties|MD GPs Per 1,000|P40|Ptile|0.2926841683
+Top 25 Most Similar US Counties|MD GPs Per 1,000|Median|IQR|0.3127579031
+Top 25 Most Similar US Counties|MD GPs Per 1,000|P60|Ptile|0.3331974842
+Top 25 Most Similar US Counties|MD GPs Per 1,000|Mean|Mean|0.3357783674
+Top 25 Most Similar US Counties|MD GPs Per 1,000|P75|IQR|0.4180933184
+Top 25 Most Similar US Counties|MD GPs Per 1,000|P90|Ptile|0.5433741444
+Top 25 Most Similar US Counties|MD GPs Per 1,000|P95|Ptile|0.5512240236
+Top 25 Most Similar US Counties|MD GPs Per 1,000|P99|Ptile|0.5538100685
+Top 25 Most Similar US Counties|MD GPs Per 1,000|Max|Extr|0.5538100685
+Top 25 Most Similar US Counties|MD Specialists Per 1,000|StdDev|Smry|0.3197859756
+Top 25 Most Similar US Counties|MD Specialists Per 1,000|N|Smry|26
+Top 25 Most Similar US Counties|MD Specialists Per 1,000|P01|Ptile|0.4948129282
+Top 25 Most Similar US Counties|MD Specialists Per 1,000|Min|Extr|0.4948129282
+Top 25 Most Similar US Counties|MD Specialists Per 1,000|P05|Ptile|0.4966280349
+Top 25 Most Similar US Counties|MD Specialists Per 1,000|P10|Ptile|0.5017442886
+Top 25 Most Similar US Counties|MD Specialists Per 1,000|P25|IQR|0.6260998425
+Top 25 Most Similar US Counties|MD Specialists Per 1,000|P40|Ptile|0.6806213954
+Top 25 Most Similar US Counties|MD Specialists Per 1,000|Santa Barbara (P48)|SB|0.7509576828
+Top 25 Most Similar US Counties|MD Specialists Per 1,000|Median|IQR|0.7678206707
+Top 25 Most Similar US Counties|MD Specialists Per 1,000|Mean|Mean|0.8683826603
+Top 25 Most Similar US Counties|MD Specialists Per 1,000|P60|Ptile|0.8942917049
+Top 25 Most Similar US Counties|MD Specialists Per 1,000|P75|IQR|1.1648314912
+Top 25 Most Similar US Counties|MD Specialists Per 1,000|P90|Ptile|1.3521952044
+Top 25 Most Similar US Counties|MD Specialists Per 1,000|P95|Ptile|1.4690608303
+Top 25 Most Similar US Counties|MD Specialists Per 1,000|P99|Ptile|1.5048530914
+Top 25 Most Similar US Counties|MD Specialists Per 1,000|Max|Extr|1.5048530914
+Top 25 Most Similar US Counties|MDs/DOs Per 1,000|StdDev|Smry|0.7977287369
+Top 25 Most Similar US Counties|MDs/DOs Per 1,000|N|Smry|26
+Top 25 Most Similar US Counties|MDs/DOs Per 1,000|P01|Ptile|1.2969307275
+Top 25 Most Similar US Counties|MDs/DOs Per 1,000|Min|Extr|1.2969307275
+Top 25 Most Similar US Counties|MDs/DOs Per 1,000|P05|Ptile|1.408883419
+Top 25 Most Similar US Counties|MDs/DOs Per 1,000|P10|Ptile|1.617522151
+Top 25 Most Similar US Counties|MDs/DOs Per 1,000|P25|IQR|1.9538383381
+Top 25 Most Similar US Counties|MDs/DOs Per 1,000|P40|Ptile|2.0932355441
+Top 25 Most Similar US Counties|MDs/DOs Per 1,000|Santa Barbara (P40)|SB|2.0932365441
+Top 25 Most Similar US Counties|MDs/DOs Per 1,000|Median|IQR|2.4044754185
+Top 25 Most Similar US Counties|MDs/DOs Per 1,000|Mean|Mean|2.521013189
+Top 25 Most Similar US Counties|MDs/DOs Per 1,000|P60|Ptile|2.6272763682
+Top 25 Most Similar US Counties|MDs/DOs Per 1,000|P75|IQR|3.0248325015
+Top 25 Most Similar US Counties|MDs/DOs Per 1,000|P90|Ptile|3.4315372101
+Top 25 Most Similar US Counties|MDs/DOs Per 1,000|P95|Ptile|3.9673999495
+Top 25 Most Similar US Counties|MDs/DOs Per 1,000|P99|Ptile|4.4212535977
+Top 25 Most Similar US Counties|MDs/DOs Per 1,000|Max|Extr|4.4212535977
+Top 50 Most Similar US Counties|MD GPs Per 1,000|StdDev|Smry|0.1207183901
+Top 50 Most Similar US Counties|MD GPs Per 1,000|N|Smry|51
+Top 50 Most Similar US Counties|MD GPs Per 1,000|P01|Ptile|0.0603466484
+Top 50 Most Similar US Counties|MD GPs Per 1,000|Min|Extr|0.0603466484
+Top 50 Most Similar US Counties|MD GPs Per 1,000|P05|Ptile|0.1031321226
+Top 50 Most Similar US Counties|MD GPs Per 1,000|P10|Ptile|0.1947664821
+Top 50 Most Similar US Counties|MD GPs Per 1,000|Santa Barbara (P23)|SB|0.2450736899
+Top 50 Most Similar US Counties|MD GPs Per 1,000|P25|IQR|0.2507697933
+Top 50 Most Similar US Counties|MD GPs Per 1,000|P40|Ptile|0.3082962075
+Top 50 Most Similar US Counties|MD GPs Per 1,000|Median|IQR|0.3197832998
+Top 50 Most Similar US Counties|MD GPs Per 1,000|Mean|Mean|0.3262802068
+Top 50 Most Similar US Counties|MD GPs Per 1,000|P60|Ptile|0.3331974842
+Top 50 Most Similar US Counties|MD GPs Per 1,000|P75|IQR|0.3922095302
+Top 50 Most Similar US Counties|MD GPs Per 1,000|P90|Ptile|0.505282069
+Top 50 Most Similar US Counties|MD GPs Per 1,000|P95|Ptile|0.5512240236
+Top 50 Most Similar US Counties|MD GPs Per 1,000|P99|Ptile|0.5837925733
+Top 50 Most Similar US Counties|MD GPs Per 1,000|Max|Extr|0.5837925733
+Top 50 Most Similar US Counties|MD Specialists Per 1,000|StdDev|Smry|0.3574556858
+Top 50 Most Similar US Counties|MD Specialists Per 1,000|N|Smry|51
+Top 50 Most Similar US Counties|MD Specialists Per 1,000|P01|Ptile|0.1753246084
+Top 50 Most Similar US Counties|MD Specialists Per 1,000|Min|Extr|0.1753246084
+Top 50 Most Similar US Counties|MD Specialists Per 1,000|P05|Ptile|0.415604769
+Top 50 Most Similar US Counties|MD Specialists Per 1,000|P10|Ptile|0.4966280349
+Top 50 Most Similar US Counties|MD Specialists Per 1,000|P25|IQR|0.6204304449
+Top 50 Most Similar US Counties|MD Specialists Per 1,000|P40|Ptile|0.7189539744
+Top 50 Most Similar US Counties|MD Specialists Per 1,000|Santa Barbara (P42)|SB|0.7509576828
+Top 50 Most Similar US Counties|MD Specialists Per 1,000|Median|IQR|0.8279351244
+Top 50 Most Similar US Counties|MD Specialists Per 1,000|Mean|Mean|0.872843105
+Top 50 Most Similar US Counties|MD Specialists Per 1,000|P60|Ptile|0.9153268404
+Top 50 Most Similar US Counties|MD Specialists Per 1,000|P75|IQR|1.1542745828
+Top 50 Most Similar US Counties|MD Specialists Per 1,000|P90|Ptile|1.3521952044
+Top 50 Most Similar US Counties|MD Specialists Per 1,000|P95|Ptile|1.5048530914
+Top 50 Most Similar US Counties|MD Specialists Per 1,000|P99|Ptile|1.8881413723
+Top 50 Most Similar US Counties|MD Specialists Per 1,000|Max|Extr|1.8881413723
+Top 50 Most Similar US Counties|MDs/DOs Per 1,000|StdDev|Smry|0.8984154093
+Top 50 Most Similar US Counties|MDs/DOs Per 1,000|N|Smry|51
+Top 50 Most Similar US Counties|MDs/DOs Per 1,000|P01|Ptile|0.9797551643
+Top 50 Most Similar US Counties|MDs/DOs Per 1,000|Min|Extr|0.9797551643
+Top 50 Most Similar US Counties|MDs/DOs Per 1,000|P05|Ptile|1.2969307275
+Top 50 Most Similar US Counties|MDs/DOs Per 1,000|P10|Ptile|1.617522151
+Top 50 Most Similar US Counties|MDs/DOs Per 1,000|P25|IQR|1.9538383381
+Top 50 Most Similar US Counties|MDs/DOs Per 1,000|Santa Barbara (P34)|SB|2.0932365441
+Top 50 Most Similar US Counties|MDs/DOs Per 1,000|P40|Ptile|2.330658067
+Top 50 Most Similar US Counties|MDs/DOs Per 1,000|Median|IQR|2.4373026644
+Top 50 Most Similar US Counties|MDs/DOs Per 1,000|Mean|Mean|2.5976707898
+Top 50 Most Similar US Counties|MDs/DOs Per 1,000|P60|Ptile|2.8183281187
+Top 50 Most Similar US Counties|MDs/DOs Per 1,000|P75|IQR|3.1764293932
+Top 50 Most Similar US Counties|MDs/DOs Per 1,000|P90|Ptile|3.4315372101
+Top 50 Most Similar US Counties|MDs/DOs Per 1,000|P95|Ptile|4.569880056
+Top 50 Most Similar US Counties|MDs/DOs Per 1,000|P99|Ptile|4.7906240643
+Top 50 Most Similar US Counties|MDs/DOs Per 1,000|Max|Extr|4.7906240643
