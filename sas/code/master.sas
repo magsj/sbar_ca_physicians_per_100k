@@ -1,5 +1,5 @@
 *KEEP THIS STATEMENT FIRST TO REDIRECT LENGTHY LOG TO A FILE;
-/*proc printto log='/home/maguirejonathan/physician_supply/code/master.log'; run; resetline;*/
+proc printto log='/home/maguirejonathan/physician_supply/code/master.log'; run; resetline;
 
 * Program:    master.sas                                        ;
 * Programmer: Jon Maguire                                       ;
@@ -15,7 +15,7 @@ ods noproctitle;
 options nolabel;
 
 *Wipe any temp datasets from last execution.;
-proc datasets library=work kill nolist; run;
+proc datasets library=work kill memtype=data nolist; run;
 
 *Using SAS On-Demand for Academics (ODA) environment. File locations are set to that environment.;
 libname sas  '/home/maguirejonathan/physician_supply/data'; *main project folder;
@@ -142,10 +142,20 @@ libname ahrf '/home/maguirejonathan/physician_supply/ahrf'; *AHRF data folder;
 *                     p31_y20_stats.html                             ;
 %include '/home/maguirejonathan/physician_supply/code/p31_create_y20_stats.sas';
 
-*Program 3.2: Format data for tableau.                               ;
-*             Creates physicians_per_1k_tblo.sas7bdat                ;
-*                     physicians_per_1k_tblo.txt                     ;
-%include '/home/maguirejonathan/physician_supply/code/p32_data_for_tblo.sas';
+*Program 3.2: Format summary stats data for tableau.                 ;
+*             Creates phys_per1k_stats_tblo.sas7bdat                 ;
+*                     p32_phys_per1k_stats_tblo.txt                  ;
+%include '/home/maguirejonathan/physician_supply/code/p32_stats_for_tblo.sas';
+
+*Program 3.3: Calculate bins to show distributions of variables of   ;
+*             interest within each subset for the latest year (2020).;
+*             Creates only temporary outputs                         ;
+%include '/home/maguirejonathan/physician_supply/code/p33_create_y20_bins.sas';
+
+*Program 3.4: Format bins data for tableau.                          ;
+*             Creates phys_per1k_bins.sas7bdat                       ;
+*                     p34_phys_per1k_bins.txt                        ;
+%include '/home/maguirejonathan/physician_supply/code/p34_bins_for_tblo.sas';
 
 *KEEP THIS STATEMENT LAST TO RESTORE NORMAL LOGGING;
-/*proc printto log=log; run;*/
+proc printto log=log; run;
