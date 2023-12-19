@@ -1,0 +1,22 @@
+Subset|Measure|Intercept|Slope|N
+All CA Counties (n=58) (slope=-0.17%)|MD GPs Per 1,000|3.6513627153|-0.001674764|58
+All CA Counties (n=58) (slope=0.06%)|MDs/DOs Per 1,000|0.4101522645|0.0005811121|58
+All CA Counties (n=58) (slope=0.21%)|MD Specialists Per 1,000|-3.706569119|0.0020914786|58
+All US Counties (n=2,927) (slope=-0.07%)|MD Specialists Per 1,000|1.7344562779|-0.000724862|2927
+All US Counties (n=2,927) (slope=-0.16%)|MD GPs Per 1,000|3.5336712814|-0.001623334|2927
+All US Counties (n=2,927) (slope=-0.37%)|MDs/DOs Per 1,000|8.5197917144|-0.003721201|2927
+Central MSA US Counties of 250k-1M (n=231) (slope=0.08%)|MD GPs Per 1,000|-1.353151948|0.0008074632|231
+Central MSA US Counties of 250k-1M (n=231) (slope=0.19%)|MD Specialists Per 1,000|-3.283174087|0.0019186673|231
+Central MSA US Counties of 250k-1M (n=231) (slope=0.32%)|MDs/DOs Per 1,000|-4.647791539|0.0032089608|231
+Santa Barbara County (n=1) (slope=-0.07%)|MD Specialists Per 1,000|2.1750028746|-0.000696393|1
+Santa Barbara County (n=1) (slope=-0.41%)|MD GPs Per 1,000|8.4354213746|-0.004060969|1
+Santa Barbara County (n=1) (slope=-0.74%)|MDs/DOs Per 1,000|17.119006876|-0.007442778|1
+Top 100 Most Similar US Counties (n=101) (slope=0.13%)|MD GPs Per 1,000|-2.31634836|0.001301218|101
+Top 100 Most Similar US Counties (n=101) (slope=0.25%)|MD Specialists Per 1,000|-4.311802204|0.0025011169|101
+Top 100 Most Similar US Counties (n=101) (slope=0.40%)|MDs/DOs Per 1,000|-5.883774732|0.0040244685|101
+Top 25 Most Similar US Counties (n=26) (slope=0.24%)|MD GPs Per 1,000|-4.43050739|0.0023575708|26
+Top 25 Most Similar US Counties (n=26) (slope=0.31%)|MD Specialists Per 1,000|-5.426922789|0.0031155497|26
+Top 25 Most Similar US Counties (n=26) (slope=0.82%)|MDs/DOs Per 1,000|-14.02358894|0.0081845538|26
+Top 50 Most Similar US Counties (n=51) (slope=0.15%)|MD GPs Per 1,000|-2.712179538|0.0015021908|51
+Top 50 Most Similar US Counties (n=51) (slope=0.39%)|MD Specialists Per 1,000|-7.09528063|0.0039445226|51
+Top 50 Most Similar US Counties (n=51) (slope=0.92%)|MDs/DOs Per 1,000|-16.0904947|0.0092491944|51

@@ -1,0 +1,3576 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta name="Generator" content="SAS Software Version 9.4, see www.sas.com">
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<title>SAS Output</title>
+<style type="text/css">
+<!--
+.accessiblecaption
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.activelink
+{
+  color: #800080;
+}
+.aftercaption
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+  padding-top: 4pt;
+}
+.batch
+{
+  background-color: #FAFBFE;
+  border: 1px solid #C1C1C1;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: 'SAS Monospace', 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  padding: 7px;
+}
+.beforecaption
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.body
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.bodydate
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  text-align: right;
+  vertical-align: top;
+  width: 100%;
+}
+.bycontentfolder
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.byline
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.bylinecontainer
+{
+  background-color: #FAFBFE;
+  border: 0px solid #000000;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.caption
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.cell
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.container
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.contentfolder
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.contentitem
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.contentproclabel
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.contentprocname
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.contents
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: decimal;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.contentsdate
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.contenttitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.continued
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+  width: 100%;
+}
+.data
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.dataemphasis
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.dataemphasisfixed
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.dataempty
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.datafixed
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.datastrong
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.datastrongfixed
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.date
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.document
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+a:link {
+color:#0000FF
+}
+a:visited {
+color:#800080
+}
+a:active {
+color:#800080
+}
+.errorbanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.errorcontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.errorcontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.extendedpage
+{
+  background-color: #FAFBFE;
+  border: 1pt solid #000000;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+  text-align: center;
+}
+.fatalbanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.fatalcontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.fatalcontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.folderaction
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.footer
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.footeremphasis
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.footeremphasisfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.footerempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.footerfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.footerstrong
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.footerstrongfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.frame
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.graph
+{
+  background-color: #FAFBFE;
+  border: 1px solid #C1C1C1;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.header
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headeremphasis
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.headeremphasisfixed
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.headerempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headerfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.headersandfooters
+{
+  background-color: #EDF2F9;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headerstrong
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headerstrongfixed
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.heading1
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading2
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading3
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading4
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading5
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading6
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.index
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.indexaction
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.indexitem
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.indexprocname
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.indextitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.layoutcontainer
+{
+  border: 0px solid #000000;
+  border-spacing: 30px;
+}
+.layoutregion
+{
+  border: 0px solid #000000;
+  border-spacing: 30px;
+}
+.linecontent
+{
+  background-color: #FAFBFE;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.link
+{
+  color: #0000FF;
+}
+.list
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: disc;
+}
+.list10
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list2
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: circle;
+}
+.list3
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list4
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list5
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list6
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list7
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list8
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list9
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: disc;
+}
+.listitem10
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem2
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: circle;
+}
+.listitem3
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem4
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem5
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem6
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem7
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem8
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem9
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.note
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.notebanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.notecontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.notecontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.output
+{
+  background-color: #FAFBFE;
+  border: 1px solid #C1C1C1;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.pageno
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+  text-align: right;
+  vertical-align: top;
+}
+.pages
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: decimal;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.pagesdate
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.pagesitem
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.pagesproclabel
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.pagesprocname
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.pagestitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.paragraph
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.parskip
+{
+  border: 0px solid #000000;
+  border-spacing: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.prepage
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  text-align: left;
+}
+.proctitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.proctitlefixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooter
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooteremphasis
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowfooteremphasisfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowfooterempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooterfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.rowfooterstrong
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooterstrongfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheader
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheaderemphasis
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowheaderemphasisfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowheaderempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheaderfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.rowheaderstrong
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheaderstrongfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemfooter
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter10
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter2
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter3
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter4
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter5
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter6
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter7
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter8
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter9
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemtitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle10
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle2
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle3
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle4
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle5
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle6
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle7
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle8
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle9
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systitleandfootercontainer
+{
+  background-color: #FAFBFE;
+  border: 0px solid #000000;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.table
+{
+  border-bottom-width: 0px;
+  border-collapse: collapse;
+  border-color: #C1C1C1;
+  border-left-width: 1px;
+  border-right-width: 0px;
+  border-spacing: 0px;
+  border-style: solid;
+  border-top-width: 1px;
+}
+.top_stacked_value
+{
+  padding-bottom: 1px;
+  border: 0;
+}
+.middle_stacked_value
+{
+  padding-top: 1px;
+  padding-bottom: 1px;
+  border: 0;
+}
+.bottom_stacked_value
+{
+  padding-top: 1px;
+  border: 0;
+}
+.titleandnotecontainer
+{
+  background-color: #FAFBFE;
+  border: 0px solid #000000;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.titlesandfooters
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.usertext
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.visitedlink
+{
+  color: #800080;
+}
+.warnbanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.warncontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.warncontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.l {text-align: left }
+.c {text-align: center }
+.r {text-align: right }
+.d {text-align: right }
+.j {text-align: justify }
+.t {vertical-align: top }
+.m {vertical-align: middle }
+.b {vertical-align: bottom }
+TD, TH {vertical-align: top }
+.stacked_cell{padding: 0 }
+-->
+</style>
+<script language="javascript" type="text/javascript">
+<!-- 
+function startup(){
+
+}
+function shutdown(){
+
+}
+
+//-->
+</script>
+
+</head>
+<body onload="startup()" onunload="shutdown()" class="body">
+
+<script language="javascript" type="text/javascript">
+<!-- 
+var _info = navigator.userAgent
+var _ie = (_info.indexOf("MSIE") > 0
+          && _info.indexOf("Win") > 0
+          && _info.indexOf("Windows 3.1") < 0);
+var _ie64 = _info.indexOf("x64") > 0
+
+//-->
+</script>
+
+<div class="branch">
+<a name="IDX"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">Summary Stats for All US Counties</td>
+</tr>
+</table><br>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Means: Summary statistics">
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<colgroup>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="r b header" scope="col">year</th>
+<th class="r b header" scope="col">N Obs</th>
+<th class="l b header" scope="col">Variable</th>
+<th class="r b header" scope="col">Mean</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r t data">2010</th>
+<th class="r t data">2927</th>
+<th class="l stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<th class="l data top_stacked_value">mds_dos_per1k</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">mds_gp_per1k</th>
+</tr>
+<tr>
+<th class="l data bottom_stacked_value">mds_spec_per1k</th>
+</tr>
+</table></th>
+<td class="r stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td class="r data top_stacked_value">1.0364120</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0.2722846</td>
+</tr>
+<tr>
+<td class="r data bottom_stacked_value">0.2727666</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<th class="r t data">2011</th>
+<th class="r t data">2927</th>
+<th class="l stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<th class="l data top_stacked_value">mds_dos_per1k</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">mds_gp_per1k</th>
+</tr>
+<tr>
+<th class="l data bottom_stacked_value">mds_spec_per1k</th>
+</tr>
+</table></th>
+<td class="r stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td class="r data top_stacked_value">1.0357410</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0.2697499</td>
+</tr>
+<tr>
+<td class="r data bottom_stacked_value">0.2763191</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<th class="r t data">2012</th>
+<th class="r t data">2927</th>
+<th class="l stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<th class="l data top_stacked_value">mds_dos_per1k</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">mds_gp_per1k</th>
+</tr>
+<tr>
+<th class="l data bottom_stacked_value">mds_spec_per1k</th>
+</tr>
+</table></th>
+<td class="r stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td class="r data top_stacked_value">1.0371279</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0.2684168</td>
+</tr>
+<tr>
+<td class="r data bottom_stacked_value">0.2789728</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<th class="r t data">2013</th>
+<th class="r t data">2927</th>
+<th class="l stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<th class="l data top_stacked_value">mds_dos_per1k</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">mds_gp_per1k</th>
+</tr>
+<tr>
+<th class="l data bottom_stacked_value">mds_spec_per1k</th>
+</tr>
+</table></th>
+<td class="r stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td class="r data top_stacked_value">1.0442426</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0.2672055</td>
+</tr>
+<tr>
+<td class="r data bottom_stacked_value">0.2819287</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<th class="r t data">2014</th>
+<th class="r t data">2927</th>
+<th class="l stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<th class="l data top_stacked_value">mds_dos_per1k</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">mds_gp_per1k</th>
+</tr>
+<tr>
+<th class="l data bottom_stacked_value">mds_spec_per1k</th>
+</tr>
+</table></th>
+<td class="r stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td class="r data top_stacked_value">1.0254405</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0.2617287</td>
+</tr>
+<tr>
+<td class="r data bottom_stacked_value">0.2766008</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<th class="r t data">2015</th>
+<th class="r t data">2927</th>
+<th class="l stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<th class="l data top_stacked_value">mds_dos_per1k</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">mds_gp_per1k</th>
+</tr>
+<tr>
+<th class="l data bottom_stacked_value">mds_spec_per1k</th>
+</tr>
+</table></th>
+<td class="r stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td class="r data top_stacked_value">1.0074321</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0.2585929</td>
+</tr>
+<tr>
+<td class="r data bottom_stacked_value">0.2704409</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<th class="r t data">2016</th>
+<th class="r t data">2927</th>
+<th class="l stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<th class="l data top_stacked_value">mds_dos_per1k</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">mds_gp_per1k</th>
+</tr>
+<tr>
+<th class="l data bottom_stacked_value">mds_spec_per1k</th>
+</tr>
+</table></th>
+<td class="r stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td class="r data top_stacked_value">1.0132177</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0.2605600</td>
+</tr>
+<tr>
+<td class="r data bottom_stacked_value">0.2717333</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<th class="r t data">2017</th>
+<th class="r t data">2927</th>
+<th class="l stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<th class="l data top_stacked_value">mds_dos_per1k</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">mds_gp_per1k</th>
+</tr>
+<tr>
+<th class="l data bottom_stacked_value">mds_spec_per1k</th>
+</tr>
+</table></th>
+<td class="r stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td class="r data top_stacked_value">1.0151614</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0.2594056</td>
+</tr>
+<tr>
+<td class="r data bottom_stacked_value">0.2711218</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<th class="r t data">2018</th>
+<th class="r t data">2927</th>
+<th class="l stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<th class="l data top_stacked_value">mds_dos_per1k</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">mds_gp_per1k</th>
+</tr>
+<tr>
+<th class="l data bottom_stacked_value">mds_spec_per1k</th>
+</tr>
+</table></th>
+<td class="r stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td class="r data top_stacked_value">1.0015370</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0.2568963</td>
+</tr>
+<tr>
+<td class="r data bottom_stacked_value">0.2690396</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<th class="r t data">2019</th>
+<th class="r t data">2927</th>
+<th class="l stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<th class="l data top_stacked_value">mds_dos_per1k</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">mds_gp_per1k</th>
+</tr>
+<tr>
+<th class="l data bottom_stacked_value">mds_spec_per1k</th>
+</tr>
+</table></th>
+<td class="r stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td class="r data top_stacked_value">1.0120776</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0.2585022</td>
+</tr>
+<tr>
+<td class="r data bottom_stacked_value">0.2720154</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<th class="r t data">2020</th>
+<th class="r t data">2927</th>
+<th class="l stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<th class="l data top_stacked_value">mds_dos_per1k</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">mds_gp_per1k</th>
+</tr>
+<tr>
+<th class="l data bottom_stacked_value">mds_spec_per1k</th>
+</tr>
+</table></th>
+<td class="r stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td class="r data top_stacked_value">1.0089079</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0.2558353</td>
+</tr>
+<tr>
+<td class="r data bottom_stacked_value">0.2715188</td>
+</tr>
+</table></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX1"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">Summary Stats for All CA Counties</td>
+</tr>
+</table><br>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Means: Summary statistics">
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<colgroup>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="r b header" scope="col">year</th>
+<th class="r b header" scope="col">N Obs</th>
+<th class="l b header" scope="col">Variable</th>
+<th class="r b header" scope="col">Mean</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r t data">2010</th>
+<th class="r t data">58</th>
+<th class="l stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<th class="l data top_stacked_value">mds_dos_per1k</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">mds_gp_per1k</th>
+</tr>
+<tr>
+<th class="l data bottom_stacked_value">mds_spec_per1k</th>
+</tr>
+</table></th>
+<td class="r stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td class="r data top_stacked_value">1.5603272</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0.2824523</td>
+</tr>
+<tr>
+<td class="r data bottom_stacked_value">0.4845599</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<th class="r t data">2011</th>
+<th class="r t data">58</th>
+<th class="l stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<th class="l data top_stacked_value">mds_dos_per1k</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">mds_gp_per1k</th>
+</tr>
+<tr>
+<th class="l data bottom_stacked_value">mds_spec_per1k</th>
+</tr>
+</table></th>
+<td class="r stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td class="r data top_stacked_value">1.5619121</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0.2782728</td>
+</tr>
+<tr>
+<td class="r data bottom_stacked_value">0.4929938</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<th class="r t data">2012</th>
+<th class="r t data">58</th>
+<th class="l stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<th class="l data top_stacked_value">mds_dos_per1k</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">mds_gp_per1k</th>
+</tr>
+<tr>
+<th class="l data bottom_stacked_value">mds_spec_per1k</th>
+</tr>
+</table></th>
+<td class="r stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td class="r data top_stacked_value">1.5897530</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0.2850642</td>
+</tr>
+<tr>
+<td class="r data bottom_stacked_value">0.5043087</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<th class="r t data">2013</th>
+<th class="r t data">58</th>
+<th class="l stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<th class="l data top_stacked_value">mds_dos_per1k</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">mds_gp_per1k</th>
+</tr>
+<tr>
+<th class="l data bottom_stacked_value">mds_spec_per1k</th>
+</tr>
+</table></th>
+<td class="r stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td class="r data top_stacked_value">1.6259777</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0.2904994</td>
+</tr>
+<tr>
+<td class="r data bottom_stacked_value">0.5163706</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<th class="r t data">2014</th>
+<th class="r t data">58</th>
+<th class="l stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<th class="l data top_stacked_value">mds_dos_per1k</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">mds_gp_per1k</th>
+</tr>
+<tr>
+<th class="l data bottom_stacked_value">mds_spec_per1k</th>
+</tr>
+</table></th>
+<td class="r stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td class="r data top_stacked_value">1.5901997</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0.2777435</td>
+</tr>
+<tr>
+<td class="r data bottom_stacked_value">0.5094566</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<th class="r t data">2015</th>
+<th class="r t data">58</th>
+<th class="l stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<th class="l data top_stacked_value">mds_dos_per1k</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">mds_gp_per1k</th>
+</tr>
+<tr>
+<th class="l data bottom_stacked_value">mds_spec_per1k</th>
+</tr>
+</table></th>
+<td class="r stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td class="r data top_stacked_value">1.5633539</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0.2746781</td>
+</tr>
+<tr>
+<td class="r data bottom_stacked_value">0.5121879</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<th class="r t data">2016</th>
+<th class="r t data">58</th>
+<th class="l stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<th class="l data top_stacked_value">mds_dos_per1k</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">mds_gp_per1k</th>
+</tr>
+<tr>
+<th class="l data bottom_stacked_value">mds_spec_per1k</th>
+</tr>
+</table></th>
+<td class="r stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td class="r data top_stacked_value">1.5693507</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0.2748678</td>
+</tr>
+<tr>
+<td class="r data bottom_stacked_value">0.5179426</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<th class="r t data">2017</th>
+<th class="r t data">58</th>
+<th class="l stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<th class="l data top_stacked_value">mds_dos_per1k</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">mds_gp_per1k</th>
+</tr>
+<tr>
+<th class="l data bottom_stacked_value">mds_spec_per1k</th>
+</tr>
+</table></th>
+<td class="r stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td class="r data top_stacked_value">1.5939672</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0.2722553</td>
+</tr>
+<tr>
+<td class="r data bottom_stacked_value">0.5169170</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<th class="r t data">2018</th>
+<th class="r t data">58</th>
+<th class="l stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<th class="l data top_stacked_value">mds_dos_per1k</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">mds_gp_per1k</th>
+</tr>
+<tr>
+<th class="l data bottom_stacked_value">mds_spec_per1k</th>
+</tr>
+</table></th>
+<td class="r stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td class="r data top_stacked_value">1.5667056</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0.2672955</td>
+</tr>
+<tr>
+<td class="r data bottom_stacked_value">0.5058262</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<th class="r t data">2019</th>
+<th class="r t data">58</th>
+<th class="l stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<th class="l data top_stacked_value">mds_dos_per1k</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">mds_gp_per1k</th>
+</tr>
+<tr>
+<th class="l data bottom_stacked_value">mds_spec_per1k</th>
+</tr>
+</table></th>
+<td class="r stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td class="r data top_stacked_value">1.5851712</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0.2697812</td>
+</tr>
+<tr>
+<td class="r data bottom_stacked_value">0.5132937</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<th class="r t data">2020</th>
+<th class="r t data">58</th>
+<th class="l stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<th class="l data top_stacked_value">mds_dos_per1k</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">mds_gp_per1k</th>
+</tr>
+<tr>
+<th class="l data bottom_stacked_value">mds_spec_per1k</th>
+</tr>
+</table></th>
+<td class="r stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td class="r data top_stacked_value">1.5853068</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0.2709348</td>
+</tr>
+<tr>
+<td class="r data bottom_stacked_value">0.5115063</td>
+</tr>
+</table></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX2"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">Summary Stats for Same Type Counties</td>
+</tr>
+</table><br>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Means: Summary statistics">
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<colgroup>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="r b header" scope="col">year</th>
+<th class="r b header" scope="col">N Obs</th>
+<th class="l b header" scope="col">Variable</th>
+<th class="r b header" scope="col">Mean</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r t data">2010</th>
+<th class="r t data">231</th>
+<th class="l stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<th class="l data top_stacked_value">mds_dos_per1k</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">mds_gp_per1k</th>
+</tr>
+<tr>
+<th class="l data bottom_stacked_value">mds_spec_per1k</th>
+</tr>
+</table></th>
+<td class="r stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td class="r data top_stacked_value">1.7754548</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0.2672394</td>
+</tr>
+<tr>
+<td class="r data bottom_stacked_value">0.5623722</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<th class="r t data">2011</th>
+<th class="r t data">231</th>
+<th class="l stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<th class="l data top_stacked_value">mds_dos_per1k</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">mds_gp_per1k</th>
+</tr>
+<tr>
+<th class="l data bottom_stacked_value">mds_spec_per1k</th>
+</tr>
+</table></th>
+<td class="r stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td class="r data top_stacked_value">1.7995095</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0.2717396</td>
+</tr>
+<tr>
+<td class="r data bottom_stacked_value">0.5720537</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<th class="r t data">2012</th>
+<th class="r t data">231</th>
+<th class="l stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<th class="l data top_stacked_value">mds_dos_per1k</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">mds_gp_per1k</th>
+</tr>
+<tr>
+<th class="l data bottom_stacked_value">mds_spec_per1k</th>
+</tr>
+</table></th>
+<td class="r stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td class="r data top_stacked_value">1.8177360</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0.2716450</td>
+</tr>
+<tr>
+<td class="r data bottom_stacked_value">0.5818194</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<th class="r t data">2013</th>
+<th class="r t data">231</th>
+<th class="l stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<th class="l data top_stacked_value">mds_dos_per1k</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">mds_gp_per1k</th>
+</tr>
+<tr>
+<th class="l data bottom_stacked_value">mds_spec_per1k</th>
+</tr>
+</table></th>
+<td class="r stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td class="r data top_stacked_value">1.8503321</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0.2753701</td>
+</tr>
+<tr>
+<td class="r data bottom_stacked_value">0.5917648</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<th class="r t data">2014</th>
+<th class="r t data">231</th>
+<th class="l stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<th class="l data top_stacked_value">mds_dos_per1k</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">mds_gp_per1k</th>
+</tr>
+<tr>
+<th class="l data bottom_stacked_value">mds_spec_per1k</th>
+</tr>
+</table></th>
+<td class="r stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td class="r data top_stacked_value">1.8293905</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0.2730796</td>
+</tr>
+<tr>
+<td class="r data bottom_stacked_value">0.5886703</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<th class="r t data">2015</th>
+<th class="r t data">231</th>
+<th class="l stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<th class="l data top_stacked_value">mds_dos_per1k</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">mds_gp_per1k</th>
+</tr>
+<tr>
+<th class="l data bottom_stacked_value">mds_spec_per1k</th>
+</tr>
+</table></th>
+<td class="r stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td class="r data top_stacked_value">1.8040947</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0.2729672</td>
+</tr>
+<tr>
+<td class="r data bottom_stacked_value">0.5795760</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<th class="r t data">2016</th>
+<th class="r t data">231</th>
+<th class="l stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<th class="l data top_stacked_value">mds_dos_per1k</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">mds_gp_per1k</th>
+</tr>
+<tr>
+<th class="l data bottom_stacked_value">mds_spec_per1k</th>
+</tr>
+</table></th>
+<td class="r stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td class="r data top_stacked_value">1.8202235</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0.2759081</td>
+</tr>
+<tr>
+<td class="r data bottom_stacked_value">0.5850514</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<th class="r t data">2017</th>
+<th class="r t data">231</th>
+<th class="l stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<th class="l data top_stacked_value">mds_dos_per1k</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">mds_gp_per1k</th>
+</tr>
+<tr>
+<th class="l data bottom_stacked_value">mds_spec_per1k</th>
+</tr>
+</table></th>
+<td class="r stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td class="r data top_stacked_value">1.8246291</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0.2747109</td>
+</tr>
+<tr>
+<td class="r data bottom_stacked_value">0.5852881</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<th class="r t data">2018</th>
+<th class="r t data">231</th>
+<th class="l stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<th class="l data top_stacked_value">mds_dos_per1k</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">mds_gp_per1k</th>
+</tr>
+<tr>
+<th class="l data bottom_stacked_value">mds_spec_per1k</th>
+</tr>
+</table></th>
+<td class="r stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td class="r data top_stacked_value">1.8123919</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0.2741633</td>
+</tr>
+<tr>
+<td class="r data bottom_stacked_value">0.5825796</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<th class="r t data">2019</th>
+<th class="r t data">231</th>
+<th class="l stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<th class="l data top_stacked_value">mds_dos_per1k</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">mds_gp_per1k</th>
+</tr>
+<tr>
+<th class="l data bottom_stacked_value">mds_spec_per1k</th>
+</tr>
+</table></th>
+<td class="r stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td class="r data top_stacked_value">1.8308369</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0.2767273</td>
+</tr>
+<tr>
+<td class="r data bottom_stacked_value">0.5904284</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<th class="r t data">2020</th>
+<th class="r t data">231</th>
+<th class="l stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<th class="l data top_stacked_value">mds_dos_per1k</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">mds_gp_per1k</th>
+</tr>
+<tr>
+<th class="l data bottom_stacked_value">mds_spec_per1k</th>
+</tr>
+</table></th>
+<td class="r stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td class="r data top_stacked_value">1.8363110</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0.2792004</td>
+</tr>
+<tr>
+<td class="r data bottom_stacked_value">0.5927414</td>
+</tr>
+</table></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX3"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">Summary Stats for Top 25 Similar Counties</td>
+</tr>
+</table><br>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Means: Summary statistics">
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<colgroup>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="r b header" scope="col">year</th>
+<th class="r b header" scope="col">N Obs</th>
+<th class="l b header" scope="col">Variable</th>
+<th class="r b header" scope="col">Mean</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r t data">2010</th>
+<th class="r t data">26</th>
+<th class="l stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<th class="l data top_stacked_value">mds_dos_per1k</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">mds_gp_per1k</th>
+</tr>
+<tr>
+<th class="l data bottom_stacked_value">mds_spec_per1k</th>
+</tr>
+</table></th>
+<td class="r stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td class="r data top_stacked_value">2.4006400</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0.3057042</td>
+</tr>
+<tr>
+<td class="r data bottom_stacked_value">0.8165125</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<th class="r t data">2011</th>
+<th class="r t data">26</th>
+<th class="l stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<th class="l data top_stacked_value">mds_dos_per1k</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">mds_gp_per1k</th>
+</tr>
+<tr>
+<th class="l data bottom_stacked_value">mds_spec_per1k</th>
+</tr>
+</table></th>
+<td class="r stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td class="r data top_stacked_value">2.4205291</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0.3086003</td>
+</tr>
+<tr>
+<td class="r data bottom_stacked_value">0.8344838</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<th class="r t data">2012</th>
+<th class="r t data">26</th>
+<th class="l stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<th class="l data top_stacked_value">mds_dos_per1k</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">mds_gp_per1k</th>
+</tr>
+<tr>
+<th class="l data bottom_stacked_value">mds_spec_per1k</th>
+</tr>
+</table></th>
+<td class="r stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td class="r data top_stacked_value">2.4629485</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0.3137037</td>
+</tr>
+<tr>
+<td class="r data bottom_stacked_value">0.8503397</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<th class="r t data">2013</th>
+<th class="r t data">26</th>
+<th class="l stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<th class="l data top_stacked_value">mds_dos_per1k</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">mds_gp_per1k</th>
+</tr>
+<tr>
+<th class="l data bottom_stacked_value">mds_spec_per1k</th>
+</tr>
+</table></th>
+<td class="r stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td class="r data top_stacked_value">2.5114675</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0.3227501</td>
+</tr>
+<tr>
+<td class="r data bottom_stacked_value">0.8719559</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<th class="r t data">2014</th>
+<th class="r t data">26</th>
+<th class="l stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<th class="l data top_stacked_value">mds_dos_per1k</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">mds_gp_per1k</th>
+</tr>
+<tr>
+<th class="l data bottom_stacked_value">mds_spec_per1k</th>
+</tr>
+</table></th>
+<td class="r stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td class="r data top_stacked_value">2.4709785</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0.3184913</td>
+</tr>
+<tr>
+<td class="r data bottom_stacked_value">0.8552827</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<th class="r t data">2015</th>
+<th class="r t data">26</th>
+<th class="l stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<th class="l data top_stacked_value">mds_dos_per1k</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">mds_gp_per1k</th>
+</tr>
+<tr>
+<th class="l data bottom_stacked_value">mds_spec_per1k</th>
+</tr>
+</table></th>
+<td class="r stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td class="r data top_stacked_value">2.4409412</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0.3206953</td>
+</tr>
+<tr>
+<td class="r data bottom_stacked_value">0.8418741</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<th class="r t data">2016</th>
+<th class="r t data">26</th>
+<th class="l stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<th class="l data top_stacked_value">mds_dos_per1k</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">mds_gp_per1k</th>
+</tr>
+<tr>
+<th class="l data bottom_stacked_value">mds_spec_per1k</th>
+</tr>
+</table></th>
+<td class="r stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td class="r data top_stacked_value">2.4660987</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0.3199479</td>
+</tr>
+<tr>
+<td class="r data bottom_stacked_value">0.8526572</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<th class="r t data">2017</th>
+<th class="r t data">26</th>
+<th class="l stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<th class="l data top_stacked_value">mds_dos_per1k</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">mds_gp_per1k</th>
+</tr>
+<tr>
+<th class="l data bottom_stacked_value">mds_spec_per1k</th>
+</tr>
+</table></th>
+<td class="r stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td class="r data top_stacked_value">2.4777696</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0.3217661</td>
+</tr>
+<tr>
+<td class="r data bottom_stacked_value">0.8528180</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<th class="r t data">2018</th>
+<th class="r t data">26</th>
+<th class="l stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<th class="l data top_stacked_value">mds_dos_per1k</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">mds_gp_per1k</th>
+</tr>
+<tr>
+<th class="l data bottom_stacked_value">mds_spec_per1k</th>
+</tr>
+</table></th>
+<td class="r stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td class="r data top_stacked_value">2.4734062</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0.3251699</td>
+</tr>
+<tr>
+<td class="r data bottom_stacked_value">0.8495891</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<th class="r t data">2019</th>
+<th class="r t data">26</th>
+<th class="l stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<th class="l data top_stacked_value">mds_dos_per1k</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">mds_gp_per1k</th>
+</tr>
+<tr>
+<th class="l data bottom_stacked_value">mds_spec_per1k</th>
+</tr>
+</table></th>
+<td class="r stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td class="r data top_stacked_value">2.5053635</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0.3273691</td>
+</tr>
+<tr>
+<td class="r data bottom_stacked_value">0.8661120</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<th class="r t data">2020</th>
+<th class="r t data">26</th>
+<th class="l stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<th class="l data top_stacked_value">mds_dos_per1k</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">mds_gp_per1k</th>
+</tr>
+<tr>
+<th class="l data bottom_stacked_value">mds_spec_per1k</th>
+</tr>
+</table></th>
+<td class="r stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td class="r data top_stacked_value">2.5210132</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0.3357784</td>
+</tr>
+<tr>
+<td class="r data bottom_stacked_value">0.8683827</td>
+</tr>
+</table></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX4"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">Summary Stats for Top 50 Similar Counties</td>
+</tr>
+</table><br>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Means: Summary statistics">
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<colgroup>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="r b header" scope="col">year</th>
+<th class="r b header" scope="col">N Obs</th>
+<th class="l b header" scope="col">Variable</th>
+<th class="r b header" scope="col">Mean</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r t data">2010</th>
+<th class="r t data">51</th>
+<th class="l stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<th class="l data top_stacked_value">mds_dos_per1k</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">mds_gp_per1k</th>
+</tr>
+<tr>
+<th class="l data bottom_stacked_value">mds_spec_per1k</th>
+</tr>
+</table></th>
+<td class="r stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td class="r data top_stacked_value">2.4628010</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0.3056003</td>
+</tr>
+<tr>
+<td class="r data bottom_stacked_value">0.8103701</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<th class="r t data">2011</th>
+<th class="r t data">51</th>
+<th class="l stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<th class="l data top_stacked_value">mds_dos_per1k</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">mds_gp_per1k</th>
+</tr>
+<tr>
+<th class="l data bottom_stacked_value">mds_spec_per1k</th>
+</tr>
+</table></th>
+<td class="r stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td class="r data top_stacked_value">2.4989197</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0.3071685</td>
+</tr>
+<tr>
+<td class="r data bottom_stacked_value">0.8353090</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<th class="r t data">2012</th>
+<th class="r t data">51</th>
+<th class="l stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<th class="l data top_stacked_value">mds_dos_per1k</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">mds_gp_per1k</th>
+</tr>
+<tr>
+<th class="l data bottom_stacked_value">mds_spec_per1k</th>
+</tr>
+</table></th>
+<td class="r stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td class="r data top_stacked_value">2.5243227</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0.3103446</td>
+</tr>
+<tr>
+<td class="r data bottom_stacked_value">0.8488484</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<th class="r t data">2013</th>
+<th class="r t data">51</th>
+<th class="l stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<th class="l data top_stacked_value">mds_dos_per1k</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">mds_gp_per1k</th>
+</tr>
+<tr>
+<th class="l data bottom_stacked_value">mds_spec_per1k</th>
+</tr>
+</table></th>
+<td class="r stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td class="r data top_stacked_value">2.5895407</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0.3179007</td>
+</tr>
+<tr>
+<td class="r data bottom_stacked_value">0.8713218</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<th class="r t data">2014</th>
+<th class="r t data">51</th>
+<th class="l stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<th class="l data top_stacked_value">mds_dos_per1k</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">mds_gp_per1k</th>
+</tr>
+<tr>
+<th class="l data bottom_stacked_value">mds_spec_per1k</th>
+</tr>
+</table></th>
+<td class="r stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td class="r data top_stacked_value">2.5609621</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0.3152219</td>
+</tr>
+<tr>
+<td class="r data bottom_stacked_value">0.8575545</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<th class="r t data">2015</th>
+<th class="r t data">51</th>
+<th class="l stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<th class="l data top_stacked_value">mds_dos_per1k</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">mds_gp_per1k</th>
+</tr>
+<tr>
+<th class="l data bottom_stacked_value">mds_spec_per1k</th>
+</tr>
+</table></th>
+<td class="r stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td class="r data top_stacked_value">2.5311518</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0.3142842</td>
+</tr>
+<tr>
+<td class="r data bottom_stacked_value">0.8476098</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<th class="r t data">2016</th>
+<th class="r t data">51</th>
+<th class="l stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<th class="l data top_stacked_value">mds_dos_per1k</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">mds_gp_per1k</th>
+</tr>
+<tr>
+<th class="l data bottom_stacked_value">mds_spec_per1k</th>
+</tr>
+</table></th>
+<td class="r stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td class="r data top_stacked_value">2.5597610</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0.3145223</td>
+</tr>
+<tr>
+<td class="r data bottom_stacked_value">0.8589907</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<th class="r t data">2017</th>
+<th class="r t data">51</th>
+<th class="l stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<th class="l data top_stacked_value">mds_dos_per1k</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">mds_gp_per1k</th>
+</tr>
+<tr>
+<th class="l data bottom_stacked_value">mds_spec_per1k</th>
+</tr>
+</table></th>
+<td class="r stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td class="r data top_stacked_value">2.5562043</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0.3145845</td>
+</tr>
+<tr>
+<td class="r data bottom_stacked_value">0.8565430</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<th class="r t data">2018</th>
+<th class="r t data">51</th>
+<th class="l stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<th class="l data top_stacked_value">mds_dos_per1k</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">mds_gp_per1k</th>
+</tr>
+<tr>
+<th class="l data bottom_stacked_value">mds_spec_per1k</th>
+</tr>
+</table></th>
+<td class="r stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td class="r data top_stacked_value">2.5468935</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0.3158242</td>
+</tr>
+<tr>
+<td class="r data bottom_stacked_value">0.8540313</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<th class="r t data">2019</th>
+<th class="r t data">51</th>
+<th class="l stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<th class="l data top_stacked_value">mds_dos_per1k</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">mds_gp_per1k</th>
+</tr>
+<tr>
+<th class="l data bottom_stacked_value">mds_spec_per1k</th>
+</tr>
+</table></th>
+<td class="r stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td class="r data top_stacked_value">2.5847257</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0.3203521</td>
+</tr>
+<tr>
+<td class="r data bottom_stacked_value">0.8688354</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<th class="r t data">2020</th>
+<th class="r t data">51</th>
+<th class="l stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<th class="l data top_stacked_value">mds_dos_per1k</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">mds_gp_per1k</th>
+</tr>
+<tr>
+<th class="l data bottom_stacked_value">mds_spec_per1k</th>
+</tr>
+</table></th>
+<td class="r stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td class="r data top_stacked_value">2.5976708</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0.3262802</td>
+</tr>
+<tr>
+<td class="r data bottom_stacked_value">0.8728431</td>
+</tr>
+</table></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX5"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">Summary Stats for Top 100 Similar Counties</td>
+</tr>
+</table><br>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Means: Summary statistics">
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<colgroup>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="r b header" scope="col">year</th>
+<th class="r b header" scope="col">N Obs</th>
+<th class="l b header" scope="col">Variable</th>
+<th class="r b header" scope="col">Mean</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r t data">2010</th>
+<th class="r t data">101</th>
+<th class="l stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<th class="l data top_stacked_value">mds_dos_per1k</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">mds_gp_per1k</th>
+</tr>
+<tr>
+<th class="l data bottom_stacked_value">mds_spec_per1k</th>
+</tr>
+</table></th>
+<td class="r stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td class="r data top_stacked_value">2.1798887</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0.2991694</td>
+</tr>
+<tr>
+<td class="r data bottom_stacked_value">0.7022452</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<th class="r t data">2011</th>
+<th class="r t data">101</th>
+<th class="l stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<th class="l data top_stacked_value">mds_dos_per1k</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">mds_gp_per1k</th>
+</tr>
+<tr>
+<th class="l data bottom_stacked_value">mds_spec_per1k</th>
+</tr>
+</table></th>
+<td class="r stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td class="r data top_stacked_value">2.2010914</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0.2990540</td>
+</tr>
+<tr>
+<td class="r data bottom_stacked_value">0.7169234</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<th class="r t data">2012</th>
+<th class="r t data">101</th>
+<th class="l stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<th class="l data top_stacked_value">mds_dos_per1k</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">mds_gp_per1k</th>
+</tr>
+<tr>
+<th class="l data bottom_stacked_value">mds_spec_per1k</th>
+</tr>
+</table></th>
+<td class="r stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td class="r data top_stacked_value">2.2193605</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0.3008486</td>
+</tr>
+<tr>
+<td class="r data bottom_stacked_value">0.7248032</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<th class="r t data">2013</th>
+<th class="r t data">101</th>
+<th class="l stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<th class="l data top_stacked_value">mds_dos_per1k</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">mds_gp_per1k</th>
+</tr>
+<tr>
+<th class="l data bottom_stacked_value">mds_spec_per1k</th>
+</tr>
+</table></th>
+<td class="r stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td class="r data top_stacked_value">2.2658949</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0.3054698</td>
+</tr>
+<tr>
+<td class="r data bottom_stacked_value">0.7406760</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<th class="r t data">2014</th>
+<th class="r t data">101</th>
+<th class="l stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<th class="l data top_stacked_value">mds_dos_per1k</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">mds_gp_per1k</th>
+</tr>
+<tr>
+<th class="l data bottom_stacked_value">mds_spec_per1k</th>
+</tr>
+</table></th>
+<td class="r stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td class="r data top_stacked_value">2.2367571</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0.3050043</td>
+</tr>
+<tr>
+<td class="r data bottom_stacked_value">0.7310273</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<th class="r t data">2015</th>
+<th class="r t data">101</th>
+<th class="l stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<th class="l data top_stacked_value">mds_dos_per1k</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">mds_gp_per1k</th>
+</tr>
+<tr>
+<th class="l data bottom_stacked_value">mds_spec_per1k</th>
+</tr>
+</table></th>
+<td class="r stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td class="r data top_stacked_value">2.2079134</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0.3061517</td>
+</tr>
+<tr>
+<td class="r data bottom_stacked_value">0.7232941</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<th class="r t data">2016</th>
+<th class="r t data">101</th>
+<th class="l stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<th class="l data top_stacked_value">mds_dos_per1k</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">mds_gp_per1k</th>
+</tr>
+<tr>
+<th class="l data bottom_stacked_value">mds_spec_per1k</th>
+</tr>
+</table></th>
+<td class="r stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td class="r data top_stacked_value">2.2280894</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0.3074100</td>
+</tr>
+<tr>
+<td class="r data bottom_stacked_value">0.7305148</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<th class="r t data">2017</th>
+<th class="r t data">101</th>
+<th class="l stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<th class="l data top_stacked_value">mds_dos_per1k</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">mds_gp_per1k</th>
+</tr>
+<tr>
+<th class="l data bottom_stacked_value">mds_spec_per1k</th>
+</tr>
+</table></th>
+<td class="r stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td class="r data top_stacked_value">2.2287100</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0.3069562</td>
+</tr>
+<tr>
+<td class="r data bottom_stacked_value">0.7294605</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<th class="r t data">2018</th>
+<th class="r t data">101</th>
+<th class="l stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<th class="l data top_stacked_value">mds_dos_per1k</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">mds_gp_per1k</th>
+</tr>
+<tr>
+<th class="l data bottom_stacked_value">mds_spec_per1k</th>
+</tr>
+</table></th>
+<td class="r stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td class="r data top_stacked_value">2.2159821</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0.3074273</td>
+</tr>
+<tr>
+<td class="r data bottom_stacked_value">0.7258683</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<th class="r t data">2019</th>
+<th class="r t data">101</th>
+<th class="l stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<th class="l data top_stacked_value">mds_dos_per1k</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">mds_gp_per1k</th>
+</tr>
+<tr>
+<th class="l data bottom_stacked_value">mds_spec_per1k</th>
+</tr>
+</table></th>
+<td class="r stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td class="r data top_stacked_value">2.2460006</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0.3107877</td>
+</tr>
+<tr>
+<td class="r data bottom_stacked_value">0.7393037</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<th class="r t data">2020</th>
+<th class="r t data">101</th>
+<th class="l stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<th class="l data top_stacked_value">mds_dos_per1k</th>
+</tr>
+<tr>
+<th class="l data middle_stacked_value">mds_gp_per1k</th>
+</tr>
+<tr>
+<th class="l data bottom_stacked_value">mds_spec_per1k</th>
+</tr>
+</table></th>
+<td class="r stacked_cell data"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+<tr>
+<td class="r data top_stacked_value">2.2511341</td>
+</tr>
+<tr>
+<td class="r data middle_stacked_value">0.3133863</td>
+</tr>
+<tr>
+<td class="r data bottom_stacked_value">0.7433151</td>
+</tr>
+</table></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+</body>
+</html>
