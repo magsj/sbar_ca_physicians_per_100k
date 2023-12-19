@@ -1,4 +1,4 @@
-*create metadata labels for the summary stats to be used for both x and y axes in tableau;
+*create metadata labels for the summary stats to be used in tableau;
 proc sql;
  create table sas.phys_per1k_bins (where=(Subset ne 'REMOVE')) as
  
@@ -28,9 +28,7 @@ proc sql;
 *output the permanent file to pipe delimited text for consumption by tableau.;
 proc export 
  data=sas.phys_per1k_bins  
- outfile='/home/maguirejonathan/physician_supply/output/p33_phys_per1k_bins_tblo.txt'
+ outfile='/home/maguirejonathan/physician_supply/output/p34_phys_per1k_bins_tblo.txt'
  dbms=dlm replace;
  delimiter='|';
 run;
-
- 
