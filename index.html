@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+html,body,h1,h2,h3,h4 {font-family: "Roboto", sans-serif;}
 .w3-sidebar {
   z-index: 3;
   width: 250px;
@@ -77,10 +77,8 @@ function includeHTML() {
   <h4 class="w3-bar-item"><b>Contents</b></h4>
   <a class="w3-bar-item w3-button w3-hover-black" href="#">Executive Summary</a>
   <a class="w3-bar-item w3-button w3-hover-black" href="#h2">Background & Motivation</a>
-  <a class="w3-bar-item w3-button w3-hover-black" href="#h3">Data & Tools</a>
-  <a class="w3-bar-item w3-button w3-hover-black" href="#h4">Similar Counties</a>
-  <a class="w3-bar-item w3-button w3-hover-black" href="#h5">Analysis & Conclusions</a>
-  <a class="w3-bar-item w3-button w3-hover-black" href="#h6">Interactive Visualization</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="#h3">Interactive Visualization</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="#h4">Data & Tools</a>
 </nav>
 
 <!-- Overlay effect when opening sidebar on small screens -->
@@ -134,6 +132,44 @@ function includeHTML() {
   <div id="h3">
   <div class="w3-row w3-padding-32">
     <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal" href="#">Tableau Visualization</h1>
+        <div class='tableauPlaceholder' id='viz1703051298169' style='position: relative'>
+          <noscript>
+            <a href='#'><img alt='Physicians Per 1,000 Population ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ph&#47;PhysiciansPer1000Population&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a>
+          </noscript>
+          <object class='tableauViz'  style='display:none;'>
+            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+            <param name='embed_code_version' value='3' /> 
+            <param name='site_root' value='' />
+            <param name='name' value='PhysiciansPer1000Population&#47;Dashboard1' />
+            <param name='tabs' value='no' />
+            <param name='toolbar' value='yes' />
+            <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ph&#47;PhysiciansPer1000Population&#47;Dashboard1&#47;1.png' /> 
+            <param name='animate_transition' value='yes' />
+            <param name='display_static_image' value='yes' />
+            <param name='display_spinner' value='yes' />
+            <param name='display_overlay' value='yes' />
+            <param name='display_count' value='yes' />
+            <param name='language' value='en-US' />
+          </object>
+       </div>                
+       <script type='text/javascript'>
+         var divElement = document.getElementById('viz1703051298169');                    
+         var vizElement = divElement.getElementsByTagName('object')[0];                    
+         if ( divElement.offsetWidth > 800 ) { vizElement.style.width='800px';vizElement.style.height='927px';} 
+         else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='800px';vizElement.style.height='927px';} 
+         else { vizElement.style.width='100%';vizElement.style.height='1477px';}                     
+         var scriptElement = document.createElement('script');                    
+         scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+         vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+       </script>    
+    </div>
+  </div>
+  </div>
+	
+  <div id="h4">
+  <div class="w3-row w3-padding-32">
+    <div class="w3-twothird w3-container">
       <h1 class="w3-text-teal" href="#">Data & Tools</h1>
       <p><b>Resources Utilized</b></p>
       <ul>
@@ -141,7 +177,7 @@ function includeHTML() {
 	      <li>A <a href="https://github.com/magsj/sbar_ca_physicians_per_k" rel="nofollow" target="_blank">GitHub Repository</a> was used for file storage and version control.</li>
 	      <li><a href="https://www.sas.com/en_us/software/on-demand-for-academics.html" rel="nofollow" target="_blank">SAS OnDemand for Academics</a> was used for data manipulation and management and for quantitative analysis. The code is parameterized and modular and is designed to be reused in the future. SQL, the SAS macro language, and SAS/STAT procedures are used throughout. The code is heavily commented and the entire process is executed from the master.sas program. You are invited to examine the code in the <a href="https://github.com/magsj/sbar_ca_physicians_per_k" rel="nofollow" target="_blank">GitHub repository</a> using master.sas as a guide. It can be found in the <a href="https://github.com/magsj/sbar_ca_physicians_per_k/tree/main/sas/code" rel="nofollow" target="_blank">/sas/code folder</a>.</li>
 	      <li>The outputs from the SAS process are used to describe the processing itself and to supply data to an interactive visualization dashboard produced using <a href="https://public.tableau.com/app/discover" rel="nofollow" target="_blank">Tableau Public</a>.</li>
-	      <li>The Tableau interactive visualization dashboard was used to conduct this exploratory analysis and is available <a href="#h6">at the bottom of this page</a>.</li>
+	      <li>The Tableau interactive visualization dashboard was used to conduct this exploratory analysis and is available <a href="#h3">above</a>.</li>
 	      <li>The results were summarized and written up on this website using mostly HTML which is hosted by <a href="https://pages.github.com/" rel="nofollow" target="_blank">GitHub Pages</a>. The website&apos;s HTML is found in index.html also stored in the <a href="https://github.com/magsj/sbar_ca_physicians_per_k" rel="nofollow" target="_blank">GitHub Repository</a> and it can be examined there.</li>
       </ul>
       <p><b>Data Processing</b></p>
@@ -182,12 +218,18 @@ function includeHTML() {
               <div w3-include-html="sas/output/p11_excl_smry.html"></div>
 	      <ul>
 	        <li><a href="sas/output/excluded_counties_dtl.txt" download rel="nofollow" target="_blank">Download pipe delimited list of the excluded counties.</a></li>
-		<p>&nbsp;</p>
+		<br>&nbsp;</br>
 	        <li>Click <a href="sas/output/p11_incl_desc.html" rel="nofollow" target="_blank">here</a> to view output summarizing the remaining included counties.</li>
 	        <li><a href="sas/output/selected_counties.txt" download rel="nofollow" target="_blank">Download pipe delimited list of the included counties.</a></li>
+		<br>&nbsp;</br>
               </ul>
         </ul>
-        <li>Check correlations, refine field list accordingly, estimate similarity between counties, create groups of counties most similar to Santa Barbara. This step is discussed in detail <a href="#h4">in the next section.</a></li>
+        <li>To identify counties similar to Santa Barbara a k-means approach was used to divide all counties into groups of similar counties, and the counties grouped together with Santa Barbara most frequently were designated as similar to Santa Barbara. SAS&apos; <a href="https://support.sas.com/documentation/onlinedoc/stat/131/fastclus.pdf" rel="nofollow" target="_blank">FASTCLUS procedure</a> was used which uses Euclidean distances, so the cluster centers are based on least squares estimation. This kind of clustering method is often called a k-means model, since the cluster centers are the means of the observations assigned to each cluster when the algorithm is run to convergence.</li>
+	  <ol>
+            <li>Prior to running the clustering algorithm, the data must be checked for corellations since it does not perform well with highly correlated variables. <a href="sas/output/p21_init_corr.html" rel="nofollow" target="_blank">Click to view initial correlation heat map.</a></li>
+            <li>After reviewing the coreelation heat map with the initial variables it was found that cbsa_ind_cd_msa, cbsa_status_central, rur_urb_cntm_cd_02, and urb_infl_cd_2 are highly correlated. Rur_urb_cntm_cd_02 indicates counties in metro areas of 250k-1M and urb_infl_cd_2 indicates counties in a small metro area of less than 1M. These are very similar and rur_urb_cntm_cd_02 is more specific so urb_infl_cd_2 was removed. Pct_cvln_lbr_frc_ovr15, prsnl_income, and pct_in_pvrty are also highly correlated. Income and labor force participation might account for more variability in demand for healthcare so pct_in_pvrty was removed. In the resulting correlation matrix no two variables had a correlation coefficient of .6 or more. <a href="sas/output/p22_fnl_corr.html" rel="nofollow" target="_blank">Click to view final correlation heat map.</a></li>
+            <li>Finally, PROC FASTCLUS was used to iteratively divide all counties into groups of similar counties, and the counties grouped together with Santa Barbara most frequently were recorded and designated as similar to Santa Barbara. <a href="sas/output/p23_sb_similar_counties.html" rel="nofollow" target="_blank">Click to view the list of 100 counties most similar to Santa Barbara.</a></li>
+	  </ol>
         <li>Calculate summary statistics for the latest year (currently 2020) and trend data since 2010, and format data for loading into Tableau.</li>
 	  <ol>
             <li>Calculate measures of central tendency and percentiles. <a href="sas/output/p31_y20_stats.html" rel="nofollow" target="_blank">View output.</a></li>
@@ -198,64 +240,6 @@ function includeHTML() {
             <li>Format trend data back to 2010 for Tableau. <a href="sas/output/p36_phys_per1k_yrs_tblo.txt" download rel="nofollow" target="_blank">Download pipe delimited file.</a></li>
 	  </ol>
       </ol>  
-    </div>
-  </div>
-  </div>
-
-  <div id="h4">
-  <div class="w3-row w3-padding-32">
-    <div class="w3-twothird w3-container">
-      <h1 class="w3-text-teal" href="#">Similar Counties</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum
-        dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </div>
-  </div>
-  </div>
-
-  <div id="h5">
-  <div class="w3-row w3-padding-32">
-    <div class="w3-twothird w3-container">
-      <h1 class="w3-text-teal" href="#">Analysis</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum
-        dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </div>
-  </div>
-  </div>
-
-  <div id="h6">
-  <div class="w3-row w3-padding-32">
-    <div class="w3-twothird w3-container">
-      <h1 class="w3-text-teal" href="#">Tableau Visualization</h1>
-        <div class='tableauPlaceholder' id='viz1703051298169' style='position: relative'>
-          <noscript>
-            <a href='#'><img alt='Physicians Per 1,000 Population ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ph&#47;PhysiciansPer1000Population&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a>
-          </noscript>
-          <object class='tableauViz'  style='display:none;'>
-            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
-            <param name='embed_code_version' value='3' /> 
-            <param name='site_root' value='' />
-            <param name='name' value='PhysiciansPer1000Population&#47;Dashboard1' />
-            <param name='tabs' value='no' />
-            <param name='toolbar' value='yes' />
-            <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ph&#47;PhysiciansPer1000Population&#47;Dashboard1&#47;1.png' /> 
-            <param name='animate_transition' value='yes' />
-            <param name='display_static_image' value='yes' />
-            <param name='display_spinner' value='yes' />
-            <param name='display_overlay' value='yes' />
-            <param name='display_count' value='yes' />
-            <param name='language' value='en-US' />
-          </object>
-       </div>                
-       <script type='text/javascript'>
-         var divElement = document.getElementById('viz1703051298169');                    
-         var vizElement = divElement.getElementsByTagName('object')[0];                    
-         if ( divElement.offsetWidth > 800 ) { vizElement.style.width='800px';vizElement.style.height='927px';} 
-         else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='800px';vizElement.style.height='927px';} 
-         else { vizElement.style.width='100%';vizElement.style.height='1477px';}                     
-         var scriptElement = document.createElement('script');                    
-         scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
-         vizElement.parentNode.insertBefore(scriptElement, vizElement);                
-       </script>    
     </div>
   </div>
   </div>
