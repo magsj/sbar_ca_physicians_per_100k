@@ -178,10 +178,14 @@ function includeHTML() {
                 <li>F13223: American Community Survey Persons in Poverty</li>
                 <li>F08921: American Hospital Asscoiation Annual Survey of Hospitals Count of Hospital Beds</li>
               </ul>
-            <li>Using these fields apply exclusion logic to exclude counties that have no physicians or that represent extreme outliers in terms of physician counts (using the semi-IQR method since the data are skewed), or that have missing data in any of the slected fields. Exclusion results summarized below.</li>
+            <li>Using these fields apply exclusion logic to exclude counties that have no physicians or that represent extreme outliers in terms of physician counts (using the semi-IQR method since the data are skewed), or that have missing data in any of the slected fields. Exclusion results summarized below.</a></li>
               <div w3-include-html="sas/output/p11_excl_smry.html"></div>
-            <li>The remaining included counties are summarized below.</li>
-              <div w3-include-html="sas/output/p11_incl_desc.html"></div>
+	      <ul>
+	        <li><a href="sas/output/excluded_counties_dtl.txt" download rel="nofollow" target="_blank">Download pipe delimited list of the excluded counties.</a></li>
+		<p>&nbsp;</p>
+	        <li>Click <a href="sas/output/p11_incl_desc.html" rel="nofollow" target="_blank">here</a> to view output summarizing the remaining included counties.</li>
+	        <li><a href="sas/output/selected_counties.txt" download rel="nofollow" target="_blank">Download pipe delimited list of the included counties.</a></li>
+              </ul>
         </ul>
         <li>Check correlations, refine field list accordingly, estimate similarity between counties, create groups of counties most similar to Santa Barbara. This step is discussed in detail <a href="#h4">in the next section.</a></li>
         <li>Calculate summary statistics for the latest year (currently 2020) and trend data since 2010, and format data for loading into Tableau.</li>
