@@ -217,10 +217,10 @@ function includeHTML() {
             <li>Using these fields apply exclusion logic to exclude counties that have no physicians or that represent extreme outliers in terms of physician counts (using the semi-IQR method since the data are skewed), or that have missing data in any of the slected fields. Exclusion results summarized below.</a></li>
               <div w3-include-html="sas/output/p11_excl_smry.html"></div>
 	      <ul>
-	        <li><a href="sas/output/excluded_counties_dtl.txt" download rel="nofollow" target="_blank">Download pipe delimited list of the excluded counties.</a></li>
+	        <li><a href="sas/output/p11_excluded_counties_dtl.txt" download rel="nofollow" target="_blank">Download pipe delimited list of the excluded counties.</a></li>
 		<br>&nbsp;</br>
 	        <li>Click <a href="sas/output/p11_incl_desc.html" rel="nofollow" target="_blank">here</a> to view output summarizing the remaining included counties.</li>
-	        <li><a href="sas/output/selected_counties.txt" download rel="nofollow" target="_blank">Download pipe delimited list of the included counties.</a></li>
+	        <li><a href="sas/output/p11_selected_counties.txt" download rel="nofollow" target="_blank">Download pipe delimited list of the included counties.</a></li>
 		<br>&nbsp;</br>
               </ul>
         </ul>
@@ -235,7 +235,7 @@ function includeHTML() {
             <li>Calculate measures of central tendency and percentiles. <a href="sas/output/p31_y20_stats.html" rel="nofollow" target="_blank">View output.</a></li>
             <li>Format data with measures of central tendency and percentiles for Tableau. <a href="sas/output/p32_phys_per1k_stats_tblo.txt" download rel="nofollow" target="_blank">Download pipe delimited file.</a></li>
             <li>Calculate bins to show distributions.</li>
-            <li>Format data with bins to show distributions for Tableau. <a href="sas/output/p34_phys_per1k_bins.txt" download rel="nofollow" target="_blank">Download pipe delimited file.</a></li>
+            <li>Format data with bins to show distributions for Tableau. <a href="sas/output/p34_phys_per1k_bins_tblo.txt" download rel="nofollow" target="_blank">Download pipe delimited file.</a></li>
             <li>Calculate trend data back to 2010. <a href="sas/output/p35_yrs_stats.html" rel="nofollow" target="_blank">View output.</a></li>
             <li>Format trend data back to 2010 for Tableau. <a href="sas/output/p36_phys_per1k_yrs_tblo.txt" download rel="nofollow" target="_blank">Download pipe delimited file.</a></li>
 	  </ol>
