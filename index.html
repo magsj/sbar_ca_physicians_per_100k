@@ -57,9 +57,9 @@ function includeHTML() {
 <div class="w3-top">
   <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
     <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
-    <a href="#h6" class="w3-bar-item w3-button w3-theme-l1">Physicians Per 1,000 Population</a>
+    <a href="#" class="w3-bar-item w3-button w3-theme-l1">Physicians Per 1,000 Population</a>
+    <a href="https://www.linkedin.com/in/maguirejon/" target="_blank" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Jon Maguire on LinkedIn</a>
     <!--   
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About</a>
     <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Values</a>
     <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">News</a>
     <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
@@ -152,8 +152,37 @@ function includeHTML() {
             <li>Since the file contains thousands of fields a small subset was identified as potentially useful to begin working with.</li>
           </ol>
         <li>Refine feild list further and apply county inclusion/exclusion logic.</li>
+          <ol>
+            <li>Fields selected to count physicians.</li>
+              <ol>
+                <li>cbsa_ind_cd_msa: 1 = Metropolitan Statistical Area (Santa Barbara&apos;s classification), else 0</li>
+                <li>cbsa_status_central: 1 = Counties with &gt;50% residing in urban areas of 10,000 or more population, or contain at least 5,000 people residing within a single urban area of 10,000+ (Santa Barbara&apos;s classification), else 0</li>
+                <li>rur_urb_cntm_cd_02: 1 = Counties in metro areas of 250,000 – 1,000,000 population (Santa Barbara&apos;s classification), else 0</li>
+                <li>urb_infl_cd_2: 1 = Counties in a small metro area of less than 1 million residents (Santa Barbara&apos;s classification), else 0</li>
+              </ol>
+            <li>Fields selected to classify counties by type and status.</li>
+              <ol>
+                <li>F04603: Non-Federal Office-Based MDs with Primary Activity of Patient Care from the AMA Physician Masterfiles</li>
+                <li>F14694: Non-Federal Office-Based MDs with Primary Activity of Patient Care from the AMA Physician Masterfiles</li>
+                <li>F08860: Non-Federal Office-Based General Practitioner MDs with Primary Activity of Patient Care from the AMA Physician Masterfiles</li>
+                <li>F08861: Non-Federal Office-Based Medical Specialist MDs with Primary Activity of Patient Care from the AMA Physician Masterfiles</li>
+              </ol>
+            <li>Fields selected to estimate similarity between counties.</li>
+              <ol>
+                <li>F11984: US Census Bureau Population Estimate</li>
+                <li>F06792: Bureau of Labor Statistics Civilian Labor Force Estimate Age 16+</li>
+                <li>F14083: US Census Bureau Population Estimate, Age 65+</li>
+                <li>F13907: US Census Bureau Population Estimate, Total Female</li>
+                <li>F13926+F13927: US Census Bureau Population Estimate, White Non-Hispanic Males+Females</li>
+                <li>F09781: US Bureau of Economic Analysis Per Capita Personal Income</li>
+                <li>F13223: American Community Survey Persons in Poverty</li>
+                <li>F08921: American Hospital Asscoiation Annual Survey of Hospitals Count of Hospital Beds</li>
+              </ol>
+            <li>Using these fields apply inclusion/exclusion logic. Exclusion results summarized below.</li>
+              <div w3-include-html="sas/output/p11_excl_smry.html"></div>
+            <li>The remaining included counties are summarized below.</li>
+              <div w3-include-html="sas/output/p11_incl_desc.html"></div>
       </ol>
-      <div w3-include-html="sas/output/p11_excl_smry.html"></div>
     </div>
   </div>
   </div>
@@ -234,7 +263,7 @@ function includeHTML() {
     <div class="w3-container w3-theme-l2 w3-padding-16">
       <h4> 
         <img src="https://github.com/magsj.png" class="w3-circle" alt="Jon Maguire" width="42" height="42">
-        Copyright Jon Maguire <a href="https://www.linkedin.com/in/maguirejon/">linkedin.com/in/maguirejon/</a>
+        Author: Jon Maguire <a href="https://www.linkedin.com/in/maguirejon/" target="_blank">linkedin.com/in/maguirejon/</a>
       </h4>
     </div>
 
