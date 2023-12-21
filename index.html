@@ -152,23 +152,23 @@ function includeHTML() {
             <li>Since the file contains thousands of fields a small subset was identified as potentially useful to begin working with.</li>
           </ol>
         <li>Refine feild list further and apply county inclusion/exclusion logic.</li>
-          <ol>
+          <ul>
             <li>Fields selected to count physicians.</li>
-              <ol>
+              <ul>
                 <li>cbsa_ind_cd_msa: 1 = Metropolitan Statistical Area (Santa Barbara&apos;s classification), else 0</li>
                 <li>cbsa_status_central: 1 = Counties with &gt;50% residing in urban areas of 10,000 or more population, or contain at least 5,000 people residing within a single urban area of 10,000+ (Santa Barbara&apos;s classification), else 0</li>
                 <li>rur_urb_cntm_cd_02: 1 = Counties in metro areas of 250,000 – 1,000,000 population (Santa Barbara&apos;s classification), else 0</li>
                 <li>urb_infl_cd_2: 1 = Counties in a small metro area of less than 1 million residents (Santa Barbara&apos;s classification), else 0</li>
-              </ol>
+              </ul>
             <li>Fields selected to classify counties by type and status.</li>
-              <ol>
+              <ul>
                 <li>F04603: Non-Federal Office-Based MDs with Primary Activity of Patient Care from the AMA Physician Masterfiles</li>
                 <li>F14694: Non-Federal Office-Based MDs with Primary Activity of Patient Care from the AMA Physician Masterfiles</li>
                 <li>F08860: Non-Federal Office-Based General Practitioner MDs with Primary Activity of Patient Care from the AMA Physician Masterfiles</li>
                 <li>F08861: Non-Federal Office-Based Medical Specialist MDs with Primary Activity of Patient Care from the AMA Physician Masterfiles</li>
-              </ol>
+              </ul>
             <li>Fields selected to estimate similarity between counties.</li>
-              <ol>
+              <ul>
                 <li>F11984: US Census Bureau Population Estimate</li>
                 <li>F06792: Bureau of Labor Statistics Civilian Labor Force Estimate Age 16+</li>
                 <li>F14083: US Census Bureau Population Estimate, Age 65+</li>
@@ -177,12 +177,23 @@ function includeHTML() {
                 <li>F09781: US Bureau of Economic Analysis Per Capita Personal Income</li>
                 <li>F13223: American Community Survey Persons in Poverty</li>
                 <li>F08921: American Hospital Asscoiation Annual Survey of Hospitals Count of Hospital Beds</li>
-              </ol>
-            <li>Using these fields apply inclusion/exclusion logic. Exclusion results summarized below.</li>
+              </ul>
+            <li>Using these fields apply exclusion logic to exclude counties that have no physicians or that represent extreme outliers in terms of physician counts (using the semi-IQR method since the data are skewed), or that have missing data in any of the slected fields. Exclusion results summarized below.</li>
               <div w3-include-html="sas/output/p11_excl_smry.html"></div>
             <li>The remaining included counties are summarized below.</li>
               <div w3-include-html="sas/output/p11_incl_desc.html"></div>
-      </ol>
+        </ul>
+        <li>Check correlations, refine field list accordingly, estimate similarity between counties, create groups of counties most similar to Santa Barbara. This step is discussed in detail <a href="#h4">in the next section.</a></li>
+        <li>Calculate summary statistics for the latest year (currently 2020) and trend data since 2010, and format data for loading into Tableau.</li>
+	  <ol>
+            <li>Calculate measures of central tendency and percentiles. <a href="sas/output/p31_y20_stats.html" rel="nofollow" target="_blank">View output.</a></li>
+            <li>Format data with measures of central tendency and percentiles for Tableau. <a href="sas/output/p32_phys_per1k_stats_tblo.txt" download rel="nofollow" target="_blank">Download pipe delimited file.</a></li>
+            <li>Calculate bins to show distributions.</li>
+            <li>Format data with bins to show distributions for Tableau. <a href="sas/output/p34_phys_per1k_bins.txt" download rel="nofollow" target="_blank">Download pipe delimited file.</a></li>
+            <li>Calculate trend data back to 2010. <a href="sas/output/p35_yrs_stats.html" rel="nofollow" target="_blank">View output.</a></li>
+            <li>Format trend data back to 2010 for Tableau. <a href="sas/output/p36_phys_per1k_yrs_tblo.txt" download rel="nofollow" target="_blank">Download pipe delimited file.</a></li>
+	  </ol>
+      </ol>  
     </div>
   </div>
   </div>
