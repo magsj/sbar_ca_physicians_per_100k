@@ -1,6 +1,6 @@
 *transpose stats output data so that all the stats are in one column called Value;
 proc transpose 
- data=sas.phys_per1k_yrs
+ data=sas.phys_per100k_yrs
  out=phys_per1k_yrs_tblo (rename=(col1=Value));
  by sb_similar_ind year st_county_ct;
 run;
@@ -10,7 +10,7 @@ proc sql;
  create table phys_per1k_yrs_tblo as
  select a.*, b.intercept as 'Intercept'n, b.year as 'Slope'n
  from phys_per1k_yrs_tblo a
- left join phys_per1k_yrs_slopes b
+ left join phys_per100k_yrs_slopes b
  on a._name_=b._depvar_
  and a.sb_similar_ind=b.sb_similar_ind 
 ;quit;run;
@@ -50,9 +50,9 @@ proc sql;
                           
        else 'REMOVE' end as Subset length=75,
 
-  case when substr(_name_,1,6)='mds_do' then 'MDs/DOs Per 1,000'
-       when substr(_name_,1,6)='mds_gp' then 'MD GPs Per 1,000'
-       when substr(_name_,1,6)='mds_sp' then 'MD Specialists Per 1,000'
+  case when substr(_name_,1,6)='mds_do' then 'MDs/DOs Per 100k'
+       when substr(_name_,1,6)='mds_gp' then 'MD GPs Per 100k'
+       when substr(_name_,1,6)='mds_sp' then 'MD Specialists Per 100k'
        else '' end as Measure length=25,
        
   year as 'Year'n,            
@@ -75,15 +75,15 @@ run;
 
 *create a permanent summary file with just slopes, etc.;
 proc sql;
- create table sas.phys_per1k_yrs_slopes_tblo as 
+ create table sas.phys_per100k_yrs_slopes_tblo as 
  select distinct Subset, Measure, Intercept, Slope, N
  from sas.phys_per1k_yrs_tblo 
 ;quit;run; 
 
 *output the permanent slopes file to pipe delimited text for consumption by tableau.;
 proc export 
- data=sas.phys_per1k_yrs_slopes_tblo   
- outfile='/home/maguirejonathan/physician_supply/output/p36_phys_per1k_yrs_slopes_tblo.txt'
+ data=sas.phys_per100k_yrs_slopes_tblo   
+ outfile='/home/maguirejonathan/physician_supply/output/p36_phys_per100k_yrs_slopes_tblo.txt'
  dbms=dlm replace;
  delimiter='|';
 run;
