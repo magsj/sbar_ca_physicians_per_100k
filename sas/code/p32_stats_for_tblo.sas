@@ -1,6 +1,6 @@
 *transpose stats output data so that all the stats are in one column called Value;
 proc transpose 
- data=sas.physicians_per_1k_smry (where=(st_abbr in ('CA','US')))
+ data=sas.physicians_per_100k_smry (where=(st_abbr in ('CA','US')))
  out=physicians_per_1k_tblo (rename=(col1=Value));
  by st_abbr	sb_similar_ind;
 run;
@@ -18,9 +18,9 @@ proc sql;
        when sb_similar_ind='T100' and st_abbr='US' then 'Top 100 Most Similar US Counties'
        else 'REMOVE' end as Subset length=35,
 
-  case when substr(_name_,1,6)='mds_do' then 'MDs/DOs Per 1,000'
-       when substr(_name_,1,6)='mds_gp' then 'MD GPs Per 1,000'
-       when substr(_name_,1,6)='mds_sp' then 'MD Specialists Per 1,000'
+  case when substr(_name_,1,6)='mds_do' then 'MDs/DOs Per 100k'
+       when substr(_name_,1,6)='mds_gp' then 'MD GPs Per 100k'
+       when substr(_name_,1,6)='mds_sp' then 'MD Specialists Per 100k'
        else '' end as Measure length=25,
        
   case when substr(_name_,length(_name_),1)='N' then 'N'
@@ -68,7 +68,7 @@ proc sql;
 
 *transpose SB percentiles data so that those stats are in one column called Value;
 proc transpose 
- data=sas.physicians_per_1k_sb
+ data=sas.physicians_per_100k_sb
  out=physicians_per_1k_sb (rename=(col1=Value) drop=_label_);
  by st_abbr	sb_similar_ind;
 run;
@@ -85,9 +85,9 @@ proc sql;
        when sb_similar_ind='T100' and substr(_name_,length(_name_)-7,8)='us_ptile' then 'Top 100 Most Similar US Counties'
        else 'REMOVE' end as Subset length=35,
 
-  case when substr(_name_,1,6)='mds_do' then 'MDs/DOs Per 1,000'
-       when substr(_name_,1,6)='mds_gp' then 'MD GPs Per 1,000'
-       when substr(_name_,1,6)='mds_sp' then 'MD Specialists Per 1,000'
+  case when substr(_name_,1,6)='mds_do' then 'MDs/DOs Per 100k'
+       when substr(_name_,1,6)='mds_gp' then 'MD GPs Per 100k'
+       when substr(_name_,1,6)='mds_sp' then 'MD Specialists Per 100k'
        else '' end as Measure length=25,
 
   /*embed SB's percentile in the Statistic label for visibility in tableau*/
@@ -114,9 +114,9 @@ proc sql;
        when sb_similar_ind='T100' and st_abbr='US' then 'Top 100 Most Similar US Counties'
        else 'REMOVE' end as Subset length=35,
 
-  case when _name_='mds_dos_per_1k' then 'MDs/DOs Per 1,000'
-       when _name_='mds_gp_per_1k' then 'MD GPs Per 1,000'
-       when _name_='mds_spec_per_1k' then 'MD Specialists Per 1,000'
+  case when _name_='mds_dos_per_100k' then 'MDs/DOs Per 100k'
+       when _name_='mds_gp_per_100k' then 'MD GPs Per 100k'
+       when _name_='mds_spec_per_100k' then 'MD Specialists Per 100k'
        else '' end as Measure length=25,
 
   'SB' as Highlight,
@@ -124,7 +124,7 @@ proc sql;
   Value
 
  from physicians_per_1k_sb 
- where substr(_name_,length(_name_)-1,2)='1k'
+ where substr(_name_,length(_name_)-3,4)='100k'
 
  order by Subset, Measure
 ;quit;run;
