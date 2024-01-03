@@ -1,10 +1,10 @@
-*Create temp dataset with county classifications and physicians per 1k measures; 
+*Create temp dataset with county classifications and physicians per 100k measures; 
 proc sql;
- create table physicians_per_1k_cnty as
+ create table physicians_per_100k_cnty as
  select 
   fips_st_cnty, st_abbr, st_cnty_nm, 
   cbsa_ind_cd_msa, cbsa_status_central, rur_urb_cntm_cd_02, urb_infl_cd_2,
-  popn, mds_dos_per_1k, mds_gp_per_1k, mds_spec_per_1k
+  popn, mds_dos_per_100k, mds_gp_per_100k, mds_spec_per_100k
  from sas.selected_counties
 ;quit;run;
 
@@ -44,44 +44,44 @@ CODE		METROPOLITAN
    cnty_smlr_&suffix
   as
   select *, case when st_abbr='CA' then 'Y' else 'N' end as ca_cnty
-  from physicians_per_1k_cnty 
+  from physicians_per_100k_cnty 
   where ( &criteria )
  ;quit;run;
 
  /*find the percentiles of counties within the subset for the US*/
  proc rank data=cnty_smlr_&suffix out=cnty_smlr_&suffix ties=high groups=100;
-  var mds_dos_per_1k mds_gp_per_1k mds_spec_per_1k;
-  ranks mds_dos_per_1k_us_ptile mds_gp_per_1k_us_ptile mds_spec_per_1k_us_ptile;
+  var mds_dos_per_100k mds_gp_per_100k mds_spec_per_100k;
+  ranks mds_dos_per_100k_us_ptile mds_gp_per_100k_us_ptile mds_spec_per_100k_us_ptile;
  run;
 
  /*find the percentiles of counties within the subset for CA*/
  proc sort data=cnty_smlr_&suffix ; by ca_cnty; run;
  proc rank data=cnty_smlr_&suffix out=cnty_smlr_&suffix ties=high groups=100;
   by ca_cnty;
-  var mds_dos_per_1k mds_gp_per_1k mds_spec_per_1k;
-  ranks mds_dos_per_1k_st_ptile mds_gp_per_1k_st_ptile mds_spec_per_1k_st_ptile;
+  var mds_dos_per_100k mds_gp_per_100k mds_spec_per_100k;
+  ranks mds_dos_per_100k_st_ptile mds_gp_per_100k_st_ptile mds_spec_per_100k_st_ptile;
  run;
 
  /*produces a dataset with the summary stats for the subset of counties*/
  title"Summary Stats for &title.";
  proc means data=cnty_smlr_&suffix n nmiss mean std min p1 p5 p10 p25 p40 p50 p60 p75 p90 p95 p99 max;
   class ca_cnty;
-  var mds_dos_per_1k mds_gp_per_1k mds_spec_per_1k;
+  var mds_dos_per_100k mds_gp_per_100k mds_spec_per_100k;
   output out=cnty_smlr_&suffix._smry
-   n(mds_dos_per_1k)= mean(mds_dos_per_1k)= std(mds_dos_per_1k)= min(mds_dos_per_1k)=
-   p1(mds_dos_per_1k)= p5(mds_dos_per_1k)= p10(mds_dos_per_1k)= p25(mds_dos_per_1k)= 
-   p40(mds_dos_per_1k)= p50(mds_dos_per_1k)= p60(mds_dos_per_1k)= p75(mds_dos_per_1k)= 
-   p90(mds_dos_per_1k)= p95(mds_dos_per_1k)= p99(mds_dos_per_1k)= max(mds_dos_per_1k)= 
+   n(mds_dos_per_100k)= mean(mds_dos_per_100k)= std(mds_dos_per_100k)= min(mds_dos_per_100k)=
+   p1(mds_dos_per_100k)= p5(mds_dos_per_100k)= p10(mds_dos_per_100k)= p25(mds_dos_per_100k)= 
+   p40(mds_dos_per_100k)= p50(mds_dos_per_100k)= p60(mds_dos_per_100k)= p75(mds_dos_per_100k)= 
+   p90(mds_dos_per_100k)= p95(mds_dos_per_100k)= p99(mds_dos_per_100k)= max(mds_dos_per_100k)= 
  
-   n(mds_gp_per_1k)= mean(mds_gp_per_1k)= std(mds_gp_per_1k)= min(mds_gp_per_1k)=
-   p1(mds_gp_per_1k)= p5(mds_gp_per_1k)= p10(mds_gp_per_1k)= p25(mds_gp_per_1k)= 
-   p40(mds_gp_per_1k)= p50(mds_gp_per_1k)= p60(mds_gp_per_1k)= p75(mds_gp_per_1k)= 
-   p90(mds_gp_per_1k)= p95(mds_gp_per_1k)= p99(mds_gp_per_1k)= max(mds_gp_per_1k)= 
+   n(mds_gp_per_100k)= mean(mds_gp_per_100k)= std(mds_gp_per_100k)= min(mds_gp_per_100k)=
+   p1(mds_gp_per_100k)= p5(mds_gp_per_100k)= p10(mds_gp_per_100k)= p25(mds_gp_per_100k)= 
+   p40(mds_gp_per_100k)= p50(mds_gp_per_100k)= p60(mds_gp_per_100k)= p75(mds_gp_per_100k)= 
+   p90(mds_gp_per_100k)= p95(mds_gp_per_100k)= p99(mds_gp_per_100k)= max(mds_gp_per_100k)= 
   
-   n(mds_spec_per_1k)= mean(mds_spec_per_1k)= std(mds_spec_per_1k)= min(mds_spec_per_1k)= 
-   p1(mds_spec_per_1k)= p5(mds_spec_per_1k)= p10(mds_spec_per_1k)= p25(mds_spec_per_1k)= 
-   p40(mds_spec_per_1k)= p50(mds_spec_per_1k)= p60(mds_spec_per_1k)= p75(mds_spec_per_1k)= 
-   p90(mds_spec_per_1k)= p95(mds_spec_per_1k)= p99(mds_spec_per_1k)= max(mds_spec_per_1k)= 
+   n(mds_spec_per_100k)= mean(mds_spec_per_100k)= std(mds_spec_per_100k)= min(mds_spec_per_100k)= 
+   p1(mds_spec_per_100k)= p5(mds_spec_per_100k)= p10(mds_spec_per_100k)= p25(mds_spec_per_100k)= 
+   p40(mds_spec_per_100k)= p50(mds_spec_per_100k)= p60(mds_spec_per_100k)= p75(mds_spec_per_100k)= 
+   p90(mds_spec_per_100k)= p95(mds_spec_per_100k)= p99(mds_spec_per_100k)= max(mds_spec_per_100k)= 
   / autoname;
  run;
  title;
@@ -106,7 +106,7 @@ ods html body='/home/maguirejonathan/physician_supply/output/p31_y20_stats.html'
 ods html close;
 
 *set all the summary datasets together in one permanent dataset;
-data sas.physicians_per_1k_smry;
+data sas.physicians_per_100k_smry;
  set cnty_smlr_all__smry(in=a) 
      cnty_smlr_type_smry(in=b) 
      cnty_smlr_t_25_smry(in=c)
@@ -119,12 +119,12 @@ data sas.physicians_per_1k_smry;
  if e then sb_similar_ind='T100';
 run; 
 
-proc sort data=sas.physicians_per_1k_smry;
+proc sort data=sas.physicians_per_100k_smry;
  by st_abbr sb_similar_ind;
 run;
 
 *set all the datasets with SB's percentiles within each subset together in one permanent dataset;
-data sas.physicians_per_1k_sb;
+data sas.physicians_per_100k_sb;
  set cnty_smlr_all_(in=a) 
      cnty_smlr_type(in=b) 
      cnty_smlr_t_25(in=c)
@@ -139,6 +139,6 @@ data sas.physicians_per_1k_sb;
  if st_cnty_nm='Santa Barbara, CA';
 run; 
 
-proc sort data=sas.physicians_per_1k_sb;
+proc sort data=sas.physicians_per_100k_sb;
  by st_abbr sb_similar_ind;
 run;
