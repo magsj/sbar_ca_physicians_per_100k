@@ -5,7 +5,7 @@ proc printto log='/home/maguirejonathan/physician_supply/code/master.log'; run; 
 * Programmer: Jon Maguire                                       ;
 * Purpose:    This program calls each sas code unit in sequence ;
 *             to produce analytic data sets and outputs for the ;
-*             Physicians Per 1,000 Population analysis.         ;
+*             Physicians Per 100k Population analysis.          ;
 * Revisions:  Tracked in GitHub                                 ;
 
 ***NOTE: Search this file for %let statements to set parameters.;
@@ -90,7 +90,7 @@ libname ahrf '/home/maguirejonathan/physician_supply/ahrf'; *AHRF data folder;
   cbsa_ind_cd_msa cbsa_status_central rur_urb_cntm_cd_02 urb_infl_cd_2 
   pct_wht_non_hisp pct_ovr64 pct_female 
   pct_cvln_lbr_frc_ovr15 prsnl_income pct_in_pvrty 
-  hsptl_beds_per_1k ;
+  hsptl_beds_per_100k ;
 %include '/home/maguirejonathan/physician_supply/code/p21_check_init_corr.sas';
 
 *Program 2.2: After reviewing P21 we find that Cbsa_ind_cd_msa,      ; 
@@ -112,7 +112,7 @@ libname ahrf '/home/maguirejonathan/physician_supply/ahrf'; *AHRF data folder;
   cbsa_ind_cd_msa cbsa_status_central rur_urb_cntm_cd_02 
   pct_wht_non_hisp pct_ovr64 pct_female 
   pct_cvln_lbr_frc_ovr15 prsnl_income 
-  hsptl_beds_per_1k ;
+  hsptl_beds_per_100k ;
 *stop exection of master.sas if fnl_vars is empty; 
 %if %symexist(fnl_vars)=0 %then %do;
  %put NOTE: Ending SAS session since manual selection of county demographic variables base on correlations is not complete.;
@@ -137,12 +137,13 @@ libname ahrf '/home/maguirejonathan/physician_supply/ahrf'; *AHRF data folder;
 
 *Program 3.1: Calculate means and percentiles and summarize to state ;
 *             and national levels for the latest year (2020).        ;
-*             Creates physicians_per_1k_smry.sas7bdat                ;
-*                     physicians_per_1k_sb.sas7bdat                  ;
+*             Creates physicians_per_100k_smry.sas7bdat              ;
+*                     physicians_per_100k_sb.sas7bdat                ;
 *                     p31_y20_stats.html                             ;
 %include '/home/maguirejonathan/physician_supply/code/p31_create_y20_stats.sas';
 
-*Program 3.2: Format summary stats data for tableau.                 ;
+*Program 3.2: Format summary stats data for tableau. Retaining       ;
+*             original 1k file naming for ease of import to tableau. ;
 *             Creates phys_per1k_stats_tblo.sas7bdat                 ;
 *                     p32_phys_per1k_stats_tblo.txt                  ;
 %include '/home/maguirejonathan/physician_supply/code/p32_stats_for_tblo.sas';
@@ -152,10 +153,26 @@ libname ahrf '/home/maguirejonathan/physician_supply/ahrf'; *AHRF data folder;
 *             Creates only temporary outputs                         ;
 %include '/home/maguirejonathan/physician_supply/code/p33_create_y20_bins.sas';
 
-*Program 3.4: Format bins data for tableau.                          ;
+*Program 3.4: Format bins data for tableau. Retaining original 1k    ;
+*             file naming for ease of import to tableau.             ;
 *             Creates phys_per1k_bins.sas7bdat                       ;
 *                     p34_phys_per1k_bins.txt                        ;
 %include '/home/maguirejonathan/physician_supply/code/p34_bins_for_tblo.sas';
+
+*Program 3.5: Calculate measures over historical years to show trends;
+*             from 2010 through the latest year (2020).              ;
+*             Creates phys_per100k_yrs.sas7bdat                      ;
+*                     phys_per100k_yrs_slopes.sas7bdat               ;
+*                     p35_yrs_stats.html                             ;
+%include '/home/maguirejonathan/physician_supply/code/p35_over_yrs.sas';
+
+*Program 3.6: Format annual data for tableau. Retaining original 1k  ;
+*             file naming for ease of import to tableau.             ;
+*             Creates phys_per1k_yrs_tblo.sas7bdat                   ;
+*                     phys_per100k_yrs_slopes_tblo.sas7bdat          ;
+*                     p36_phys_per1k_yrs_tblo.txt                    ;
+*                     p36_phys_per100k_yrs_slopes_tblo.txt           ;
+%include '/home/maguirejonathan/physician_supply/code/p36_yrs_for_tblo.sas';
 
 *KEEP THIS STATEMENT LAST TO RESTORE NORMAL LOGGING;
 proc printto log=log; run;
