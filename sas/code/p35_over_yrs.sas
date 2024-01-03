@@ -1,6 +1,6 @@
-*Create temp dataset with county classifications and physicians per 1k measures by year; 
+*Create temp dataset with county classifications and physicians per 100k measures by year; 
 proc sql;
- create table phys_per1k_yrs as
+ create table phys_per100k_yrs as
  select 
   a.fips_st_cnty, a.st_abbr, a.st_cnty_nm, b.metric,
   a.cbsa_ind_cd_msa, a.cbsa_status_central, a.rur_urb_cntm_cd_02, a.urb_infl_cd_2,
@@ -19,22 +19,22 @@ proc sql;
 ;quit;run;
 
 *check summary stats;
-proc means data=phys_per1k_yrs n nmiss mean std min p1 p10 p25 median p75 p90 p99 max;
+proc means data=phys_per100k_yrs n nmiss mean std min p1 p10 p25 median p75 p90 p99 max;
  class metric;
  var y20 y19 y18 y17 y16 y15 y14 y13 y12 y11 y10;
 run;
 
 *transpose dataset so there is one observation per county and year;
-proc transpose data=phys_per1k_yrs out=phys_per1k_yrs name=year;
+proc transpose data=phys_per100k_yrs out=phys_per100k_yrs name=year;
  by fips_st_cnty st_abbr st_cnty_nm 
     cbsa_ind_cd_msa cbsa_status_central rur_urb_cntm_cd_02 urb_infl_cd_2;
  var y20 y19 y18 y17 y16 y15 y14 y13 y12 y11 y10;
  id metric;
 run;
 
-*calclate rates per 1000;
+*calclate rates per 100000;
 proc sql;
- create table phys_per1k_yrs as
+ create table phys_per100k_yrs as
  select 
   fips_st_cnty, st_abbr, st_cnty_nm, input('20'||substr(year,2,2),4.0) as year,  
   cbsa_ind_cd_msa, cbsa_status_central, rur_urb_cntm_cd_02, urb_infl_cd_2,
@@ -42,17 +42,17 @@ proc sql;
   
   'F04603 MDs PtnCr Ofc Basd Non-Fd'n+'F14694 DOs PtnCr Ofc Basd Non-Fd'n as mds_dos,
   ('F04603 MDs PtnCr Ofc Basd Non-Fd'n+'F14694 DOs PtnCr Ofc Basd Non-Fd'n) /
-  coalesce('F11984 Population Estimate'n,'F04530 Census Population'n)*1000 as mds_dos_per1k,
+  coalesce('F11984 Population Estimate'n,'F04530 Census Population'n)*100000 as mds_dos_per100k,
   
   'F08860 MDs PtnCrOfcBsd GP Non-Fd'n as mds_gp,
   'F08860 MDs PtnCrOfcBsd GP Non-Fd'n /
-  coalesce('F11984 Population Estimate'n,'F04530 Census Population'n)*1000 as mds_gp_per1k,
+  coalesce('F11984 Population Estimate'n,'F04530 Census Population'n)*100000 as mds_gp_per100k,
   
   'F08861 MDs PtnCrOfcBsdMSpc Nn-Fd'n as mds_spec,
   'F08861 MDs PtnCrOfcBsdMSpc Nn-Fd'n /
-  coalesce('F11984 Population Estimate'n,'F04530 Census Population'n)*1000 as mds_spec_per1k
+  coalesce('F11984 Population Estimate'n,'F04530 Census Population'n)*100000 as mds_spec_per100k
 
- from phys_per1k_yrs 
+ from phys_per100k_yrs 
 ;quit;run;
 
 *This macro will create yearly stats for different subsets of counties;
@@ -60,7 +60,7 @@ proc sql;
  /*creates a subset of counties based on &criteria named with &suffix*/
  proc sql;
   create table yrs_subs_&suffix as
-  select * from phys_per1k_yrs 
+  select * from phys_per100k_yrs 
   where ( &criteria )
  ;quit;run;
 
@@ -68,9 +68,9 @@ proc sql;
  title"Summary Stats for &title.";
  proc means data=yrs_subs_&suffix mean ;
   class year;
-  var mds_dos_per1k mds_gp_per1k mds_spec_per1k;
+  var mds_dos_per100k mds_gp_per100k mds_spec_per100k;
   output out=yrs_subs_&suffix._smry 
-  mean(mds_dos_per1k)= mean(mds_gp_per1k)= mean(mds_spec_per1k)= / autoname;
+  mean(mds_dos_per100k)= mean(mds_gp_per100k)= mean(mds_spec_per100k)= / autoname;
  run;
  title;
  
@@ -92,18 +92,18 @@ ods html close;
 
 *set all the summary datasets together in one permanent dataset. 
  include the data for SB as a separate group.;
-data sas.phys_per1k_yrs (drop=st_cnty_nm);
+data sas.phys_per100k_yrs (drop=st_cnty_nm);
  set yrs_subs_alus_smry(in=a) 
      yrs_subs_alca_smry(in=b) 
      yrs_subs_type_smry(in=c) 
      yrs_subs_t_25_smry(in=d)
      yrs_subs_t_50_smry(in=e)
      yrs_subs_t100_smry(in=f)
-     phys_per1k_yrs    (in=g
+     phys_per100k_yrs    (in=g
        where=(st_cnty_nm='Santa Barbara, CA')
-       keep=year st_cnty_nm mds_dos_per1k mds_gp_per1k mds_spec_per1k
-       rename=(mds_dos_per1k=mds_dos_per1k_mean mds_gp_per1k=mds_gp_per1k_mean
-               mds_spec_per1k=mds_spec_per1k_mean) 
+       keep=year st_cnty_nm mds_dos_per100k mds_gp_per100k mds_spec_per100k
+       rename=(mds_dos_per100k=mds_dos_per100k_mean mds_gp_per100k=mds_gp_per100k_mean
+               mds_spec_per100k=mds_spec_per100k_mean) 
       );
      
      ;
@@ -118,17 +118,17 @@ data sas.phys_per1k_yrs (drop=st_cnty_nm);
  if g then sb_similar_ind='SBCA';  
 run; 
 
-proc sort data=sas.phys_per1k_yrs;
+proc sort data=sas.phys_per100k_yrs;
  by sb_similar_ind year;
 run;
 
 *get slopes of each measure over years using linear regression ;
-proc reg data=sas.phys_per1k_yrs noprint 
- outest=phys_per1k_yrs_slopes(keep=sb_similar_ind _depvar_ intercept year);
+proc reg data=sas.phys_per100k_yrs noprint 
+ outest=phys_per100k_yrs_slopes(keep=sb_similar_ind _depvar_ intercept year);
  by sb_similar_ind ;
- model mds_dos_per1k_mean=year;
- model mds_gp_per1k_mean=year;
- model mds_spec_per1k_mean=year;
+ model mds_dos_per100k_mean=year;
+ model mds_gp_per100k_mean=year;
+ model mds_spec_per100k_mean=year;
 run;
  
  
