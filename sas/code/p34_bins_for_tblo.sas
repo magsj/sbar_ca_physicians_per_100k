@@ -11,9 +11,9 @@ proc sql;
        when sb_similar_ind='t100' and geo='US' then 'Top 100 Most Similar US Counties'
        else 'REMOVE' end as Subset length=35,
   
-  case when var like 'mds_dos%' then 'MDs/DOs Per 1,000'
-       when var like 'mds_gp%' then 'MD GPs Per 1,000'
-       when var like 'mds_spec%' then 'MD Specialists Per 1,000'
+  case when var like 'mds_dos%' then 'MDs/DOs Per 100k'
+       when var like 'mds_gp%' then 'MD GPs Per 100k'
+       when var like 'mds_spec%' then 'MD Specialists Per 100k'
        else '' end as Measure length=25,
        
   bin as 'Bin Index'n, 
@@ -32,3 +32,5 @@ proc export
  dbms=dlm replace;
  delimiter='|';
 run;
+
+ 
