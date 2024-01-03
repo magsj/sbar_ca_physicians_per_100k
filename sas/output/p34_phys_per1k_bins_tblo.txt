@@ -1,361 +1,361 @@
 Subset|Measure|Bin Index|Bin|Santa Barbara|N Counties
-All CA Counties|MD GPs Per 1,000|0|0.00 - 0.15|Bin without SB|9
-All CA Counties|MD GPs Per 1,000|1|0.15 - 0.31|Bin with SB|26
-All CA Counties|MD GPs Per 1,000|2|0.31 - 0.46|Bin without SB|19
-All CA Counties|MD GPs Per 1,000|3|0.46 - 0.62|Bin without SB|4
-All CA Counties|MD GPs Per 1,000|4|0.62 - 0.77|Bin without SB|0
-All CA Counties|MD GPs Per 1,000|5|0.77 - 0.93|Bin without SB|0
-All CA Counties|MD GPs Per 1,000|6|0.93 - 1.08|Bin without SB|0
-All CA Counties|MD GPs Per 1,000|7|1.08 - 1.24|Bin without SB|0
-All CA Counties|MD GPs Per 1,000|8|1.24 - 1.39|Bin without SB|0
-All CA Counties|MD GPs Per 1,000|9|1.39 - 1.55|Bin without SB|0
-All CA Counties|MD GPs Per 1,000|10|1.55 - 1.70|Bin without SB|0
-All CA Counties|MD GPs Per 1,000|11|1.70 - 1.85|Bin without SB|0
-All CA Counties|MD GPs Per 1,000|12|1.85 - 2.01|Bin without SB|0
-All CA Counties|MD GPs Per 1,000|13|2.01 - 2.16|Bin without SB|0
-All CA Counties|MD GPs Per 1,000|14|2.16 - 2.32|Bin without SB|0
-All CA Counties|MD GPs Per 1,000|15|2.32 - 2.47|Bin without SB|0
-All CA Counties|MD GPs Per 1,000|16|2.47 - 2.63|Bin without SB|0
-All CA Counties|MD GPs Per 1,000|17|2.63 - 2.78|Bin without SB|0
-All CA Counties|MD GPs Per 1,000|18|2.78 - 2.94|Bin without SB|0
-All CA Counties|MD GPs Per 1,000|19|2.94 - 3.09|Bin without SB|0
-All CA Counties|MD Specialists Per 1,000|0|0.00 - 0.11|Bin without SB|8
-All CA Counties|MD Specialists Per 1,000|1|0.11 - 0.22|Bin without SB|9
-All CA Counties|MD Specialists Per 1,000|2|0.22 - 0.32|Bin without SB|3
-All CA Counties|MD Specialists Per 1,000|3|0.32 - 0.43|Bin without SB|10
-All CA Counties|MD Specialists Per 1,000|4|0.43 - 0.54|Bin without SB|8
-All CA Counties|MD Specialists Per 1,000|5|0.54 - 0.65|Bin without SB|4
-All CA Counties|MD Specialists Per 1,000|6|0.65 - 0.76|Bin with SB|3
-All CA Counties|MD Specialists Per 1,000|7|0.76 - 0.87|Bin without SB|4
-All CA Counties|MD Specialists Per 1,000|8|0.87 - 0.97|Bin without SB|1
-All CA Counties|MD Specialists Per 1,000|9|0.97 - 1.08|Bin without SB|3
-All CA Counties|MD Specialists Per 1,000|10|1.08 - 1.19|Bin without SB|2
-All CA Counties|MD Specialists Per 1,000|11|1.19 - 1.30|Bin without SB|0
-All CA Counties|MD Specialists Per 1,000|12|1.30 - 1.41|Bin without SB|0
-All CA Counties|MD Specialists Per 1,000|13|1.41 - 1.52|Bin without SB|1
-All CA Counties|MD Specialists Per 1,000|14|1.52 - 1.62|Bin without SB|0
-All CA Counties|MD Specialists Per 1,000|15|1.62 - 1.73|Bin without SB|1
-All CA Counties|MD Specialists Per 1,000|16|1.73 - 1.84|Bin without SB|0
-All CA Counties|MD Specialists Per 1,000|17|1.84 - 1.95|Bin without SB|1
-All CA Counties|MD Specialists Per 1,000|18|1.95 - 2.06|Bin without SB|0
-All CA Counties|MD Specialists Per 1,000|19|2.06 - 2.17|Bin without SB|0
-All CA Counties|MDs/DOs Per 1,000|0|0.04 - 0.28|Bin without SB|1
-All CA Counties|MDs/DOs Per 1,000|1|0.28 - 0.52|Bin without SB|5
-All CA Counties|MDs/DOs Per 1,000|2|0.52 - 0.76|Bin without SB|4
-All CA Counties|MDs/DOs Per 1,000|3|0.76 - 1.00|Bin without SB|10
-All CA Counties|MDs/DOs Per 1,000|4|1.00 - 1.24|Bin without SB|4
-All CA Counties|MDs/DOs Per 1,000|5|1.24 - 1.49|Bin without SB|6
-All CA Counties|MDs/DOs Per 1,000|6|1.49 - 1.73|Bin without SB|6
-All CA Counties|MDs/DOs Per 1,000|7|1.73 - 1.97|Bin without SB|3
-All CA Counties|MDs/DOs Per 1,000|8|1.97 - 2.21|Bin with SB|3
-All CA Counties|MDs/DOs Per 1,000|9|2.21 - 2.45|Bin without SB|5
-All CA Counties|MDs/DOs Per 1,000|10|2.45 - 2.69|Bin without SB|4
-All CA Counties|MDs/DOs Per 1,000|11|2.69 - 2.94|Bin without SB|3
-All CA Counties|MDs/DOs Per 1,000|12|2.94 - 3.18|Bin without SB|1
-All CA Counties|MDs/DOs Per 1,000|13|3.18 - 3.42|Bin without SB|1
-All CA Counties|MDs/DOs Per 1,000|14|3.42 - 3.66|Bin without SB|0
-All CA Counties|MDs/DOs Per 1,000|15|3.66 - 3.90|Bin without SB|0
-All CA Counties|MDs/DOs Per 1,000|16|3.90 - 4.15|Bin without SB|0
-All CA Counties|MDs/DOs Per 1,000|17|4.15 - 4.39|Bin without SB|0
-All CA Counties|MDs/DOs Per 1,000|18|4.39 - 4.63|Bin without SB|1
-All CA Counties|MDs/DOs Per 1,000|19|4.63 - 4.87|Bin without SB|1
-All US Counties|MD GPs Per 1,000|0|0.00 - 0.15|Bin without SB|926
-All US Counties|MD GPs Per 1,000|1|0.15 - 0.31|Bin with SB|1159
-All US Counties|MD GPs Per 1,000|2|0.31 - 0.46|Bin without SB|522
-All US Counties|MD GPs Per 1,000|3|0.46 - 0.62|Bin without SB|184
-All US Counties|MD GPs Per 1,000|4|0.62 - 0.77|Bin without SB|77
-All US Counties|MD GPs Per 1,000|5|0.77 - 0.93|Bin without SB|27
-All US Counties|MD GPs Per 1,000|6|0.93 - 1.08|Bin without SB|11
-All US Counties|MD GPs Per 1,000|7|1.08 - 1.24|Bin without SB|8
-All US Counties|MD GPs Per 1,000|8|1.24 - 1.39|Bin without SB|3
-All US Counties|MD GPs Per 1,000|9|1.39 - 1.55|Bin without SB|4
-All US Counties|MD GPs Per 1,000|10|1.55 - 1.70|Bin without SB|1
-All US Counties|MD GPs Per 1,000|11|1.70 - 1.85|Bin without SB|0
-All US Counties|MD GPs Per 1,000|12|1.85 - 2.01|Bin without SB|1
-All US Counties|MD GPs Per 1,000|13|2.01 - 2.16|Bin without SB|2
-All US Counties|MD GPs Per 1,000|14|2.16 - 2.32|Bin without SB|1
-All US Counties|MD GPs Per 1,000|15|2.32 - 2.47|Bin without SB|0
-All US Counties|MD GPs Per 1,000|16|2.47 - 2.63|Bin without SB|0
-All US Counties|MD GPs Per 1,000|17|2.63 - 2.78|Bin without SB|0
-All US Counties|MD GPs Per 1,000|18|2.78 - 2.94|Bin without SB|0
-All US Counties|MD GPs Per 1,000|19|2.94 - 3.09|Bin without SB|1
-All US Counties|MD Specialists Per 1,000|0|0.00 - 0.11|Bin without SB|1153
-All US Counties|MD Specialists Per 1,000|1|0.11 - 0.22|Bin without SB|572
-All US Counties|MD Specialists Per 1,000|2|0.22 - 0.32|Bin without SB|334
-All US Counties|MD Specialists Per 1,000|3|0.32 - 0.43|Bin without SB|257
-All US Counties|MD Specialists Per 1,000|4|0.43 - 0.54|Bin without SB|144
-All US Counties|MD Specialists Per 1,000|5|0.54 - 0.65|Bin without SB|131
-All US Counties|MD Specialists Per 1,000|6|0.65 - 0.76|Bin with SB|94
-All US Counties|MD Specialists Per 1,000|7|0.76 - 0.87|Bin without SB|60
-All US Counties|MD Specialists Per 1,000|8|0.87 - 0.97|Bin without SB|43
-All US Counties|MD Specialists Per 1,000|9|0.97 - 1.08|Bin without SB|33
-All US Counties|MD Specialists Per 1,000|10|1.08 - 1.19|Bin without SB|24
-All US Counties|MD Specialists Per 1,000|11|1.19 - 1.30|Bin without SB|22
-All US Counties|MD Specialists Per 1,000|12|1.30 - 1.41|Bin without SB|11
-All US Counties|MD Specialists Per 1,000|13|1.41 - 1.52|Bin without SB|15
-All US Counties|MD Specialists Per 1,000|14|1.52 - 1.62|Bin without SB|11
-All US Counties|MD Specialists Per 1,000|15|1.62 - 1.73|Bin without SB|13
-All US Counties|MD Specialists Per 1,000|16|1.73 - 1.84|Bin without SB|2
-All US Counties|MD Specialists Per 1,000|17|1.84 - 1.95|Bin without SB|5
-All US Counties|MD Specialists Per 1,000|18|1.95 - 2.06|Bin without SB|2
-All US Counties|MD Specialists Per 1,000|19|2.06 - 2.17|Bin without SB|1
-All US Counties|MDs/DOs Per 1,000|0|0.04 - 0.28|Bin without SB|284
-All US Counties|MDs/DOs Per 1,000|1|0.28 - 0.52|Bin without SB|627
-All US Counties|MDs/DOs Per 1,000|2|0.52 - 0.76|Bin without SB|524
-All US Counties|MDs/DOs Per 1,000|3|0.76 - 1.00|Bin without SB|384
-All US Counties|MDs/DOs Per 1,000|4|1.00 - 1.24|Bin without SB|281
-All US Counties|MDs/DOs Per 1,000|5|1.24 - 1.49|Bin without SB|197
-All US Counties|MDs/DOs Per 1,000|6|1.49 - 1.73|Bin without SB|134
-All US Counties|MDs/DOs Per 1,000|7|1.73 - 1.97|Bin without SB|109
-All US Counties|MDs/DOs Per 1,000|8|1.97 - 2.21|Bin with SB|89
-All US Counties|MDs/DOs Per 1,000|9|2.21 - 2.45|Bin without SB|68
-All US Counties|MDs/DOs Per 1,000|10|2.45 - 2.69|Bin without SB|58
-All US Counties|MDs/DOs Per 1,000|11|2.69 - 2.94|Bin without SB|50
-All US Counties|MDs/DOs Per 1,000|12|2.94 - 3.18|Bin without SB|26
-All US Counties|MDs/DOs Per 1,000|13|3.18 - 3.42|Bin without SB|19
-All US Counties|MDs/DOs Per 1,000|14|3.42 - 3.66|Bin without SB|18
-All US Counties|MDs/DOs Per 1,000|15|3.66 - 3.90|Bin without SB|16
-All US Counties|MDs/DOs Per 1,000|16|3.90 - 4.15|Bin without SB|13
-All US Counties|MDs/DOs Per 1,000|17|4.15 - 4.39|Bin without SB|11
-All US Counties|MDs/DOs Per 1,000|18|4.39 - 4.63|Bin without SB|12
-All US Counties|MDs/DOs Per 1,000|19|4.63 - 4.87|Bin without SB|7
-Central MSA US Counties of 250k-1M|MD GPs Per 1,000|0|0.00 - 0.15|Bin without SB|44
-Central MSA US Counties of 250k-1M|MD GPs Per 1,000|1|0.15 - 0.31|Bin with SB|103
-Central MSA US Counties of 250k-1M|MD GPs Per 1,000|2|0.31 - 0.46|Bin without SB|64
-Central MSA US Counties of 250k-1M|MD GPs Per 1,000|3|0.46 - 0.62|Bin without SB|15
-Central MSA US Counties of 250k-1M|MD GPs Per 1,000|4|0.62 - 0.77|Bin without SB|4
-Central MSA US Counties of 250k-1M|MD GPs Per 1,000|5|0.77 - 0.93|Bin without SB|1
-Central MSA US Counties of 250k-1M|MD GPs Per 1,000|6|0.93 - 1.08|Bin without SB|0
-Central MSA US Counties of 250k-1M|MD GPs Per 1,000|7|1.08 - 1.24|Bin without SB|0
-Central MSA US Counties of 250k-1M|MD GPs Per 1,000|8|1.24 - 1.39|Bin without SB|0
-Central MSA US Counties of 250k-1M|MD GPs Per 1,000|9|1.39 - 1.55|Bin without SB|0
-Central MSA US Counties of 250k-1M|MD GPs Per 1,000|10|1.55 - 1.70|Bin without SB|0
-Central MSA US Counties of 250k-1M|MD GPs Per 1,000|11|1.70 - 1.85|Bin without SB|0
-Central MSA US Counties of 250k-1M|MD GPs Per 1,000|12|1.85 - 2.01|Bin without SB|0
-Central MSA US Counties of 250k-1M|MD GPs Per 1,000|13|2.01 - 2.16|Bin without SB|0
-Central MSA US Counties of 250k-1M|MD GPs Per 1,000|14|2.16 - 2.32|Bin without SB|0
-Central MSA US Counties of 250k-1M|MD GPs Per 1,000|15|2.32 - 2.47|Bin without SB|0
-Central MSA US Counties of 250k-1M|MD GPs Per 1,000|16|2.47 - 2.63|Bin without SB|0
-Central MSA US Counties of 250k-1M|MD GPs Per 1,000|17|2.63 - 2.78|Bin without SB|0
-Central MSA US Counties of 250k-1M|MD GPs Per 1,000|18|2.78 - 2.94|Bin without SB|0
-Central MSA US Counties of 250k-1M|MD GPs Per 1,000|19|2.94 - 3.09|Bin without SB|0
-Central MSA US Counties of 250k-1M|MD Specialists Per 1,000|0|0.00 - 0.11|Bin without SB|22
-Central MSA US Counties of 250k-1M|MD Specialists Per 1,000|1|0.11 - 0.22|Bin without SB|15
-Central MSA US Counties of 250k-1M|MD Specialists Per 1,000|2|0.22 - 0.32|Bin without SB|33
-Central MSA US Counties of 250k-1M|MD Specialists Per 1,000|3|0.32 - 0.43|Bin without SB|23
-Central MSA US Counties of 250k-1M|MD Specialists Per 1,000|4|0.43 - 0.54|Bin without SB|24
-Central MSA US Counties of 250k-1M|MD Specialists Per 1,000|5|0.54 - 0.65|Bin without SB|26
-Central MSA US Counties of 250k-1M|MD Specialists Per 1,000|6|0.65 - 0.76|Bin with SB|24
-Central MSA US Counties of 250k-1M|MD Specialists Per 1,000|7|0.76 - 0.87|Bin without SB|13
-Central MSA US Counties of 250k-1M|MD Specialists Per 1,000|8|0.87 - 0.97|Bin without SB|14
-Central MSA US Counties of 250k-1M|MD Specialists Per 1,000|9|0.97 - 1.08|Bin without SB|10
-Central MSA US Counties of 250k-1M|MD Specialists Per 1,000|10|1.08 - 1.19|Bin without SB|5
-Central MSA US Counties of 250k-1M|MD Specialists Per 1,000|11|1.19 - 1.30|Bin without SB|9
-Central MSA US Counties of 250k-1M|MD Specialists Per 1,000|12|1.30 - 1.41|Bin without SB|4
-Central MSA US Counties of 250k-1M|MD Specialists Per 1,000|13|1.41 - 1.52|Bin without SB|5
-Central MSA US Counties of 250k-1M|MD Specialists Per 1,000|14|1.52 - 1.62|Bin without SB|0
-Central MSA US Counties of 250k-1M|MD Specialists Per 1,000|15|1.62 - 1.73|Bin without SB|3
-Central MSA US Counties of 250k-1M|MD Specialists Per 1,000|16|1.73 - 1.84|Bin without SB|0
-Central MSA US Counties of 250k-1M|MD Specialists Per 1,000|17|1.84 - 1.95|Bin without SB|1
-Central MSA US Counties of 250k-1M|MD Specialists Per 1,000|18|1.95 - 2.06|Bin without SB|0
-Central MSA US Counties of 250k-1M|MD Specialists Per 1,000|19|2.06 - 2.17|Bin without SB|0
-Central MSA US Counties of 250k-1M|MDs/DOs Per 1,000|0|0.04 - 0.28|Bin without SB|2
-Central MSA US Counties of 250k-1M|MDs/DOs Per 1,000|1|0.28 - 0.52|Bin without SB|20
-Central MSA US Counties of 250k-1M|MDs/DOs Per 1,000|2|0.52 - 0.76|Bin without SB|8
-Central MSA US Counties of 250k-1M|MDs/DOs Per 1,000|3|0.76 - 1.00|Bin without SB|23
-Central MSA US Counties of 250k-1M|MDs/DOs Per 1,000|4|1.00 - 1.24|Bin without SB|24
-Central MSA US Counties of 250k-1M|MDs/DOs Per 1,000|5|1.24 - 1.49|Bin without SB|17
-Central MSA US Counties of 250k-1M|MDs/DOs Per 1,000|6|1.49 - 1.73|Bin without SB|18
-Central MSA US Counties of 250k-1M|MDs/DOs Per 1,000|7|1.73 - 1.97|Bin without SB|19
-Central MSA US Counties of 250k-1M|MDs/DOs Per 1,000|8|1.97 - 2.21|Bin with SB|18
-Central MSA US Counties of 250k-1M|MDs/DOs Per 1,000|9|2.21 - 2.45|Bin without SB|23
-Central MSA US Counties of 250k-1M|MDs/DOs Per 1,000|10|2.45 - 2.69|Bin without SB|10
-Central MSA US Counties of 250k-1M|MDs/DOs Per 1,000|11|2.69 - 2.94|Bin without SB|14
-Central MSA US Counties of 250k-1M|MDs/DOs Per 1,000|12|2.94 - 3.18|Bin without SB|9
-Central MSA US Counties of 250k-1M|MDs/DOs Per 1,000|13|3.18 - 3.42|Bin without SB|6
-Central MSA US Counties of 250k-1M|MDs/DOs Per 1,000|14|3.42 - 3.66|Bin without SB|5
-Central MSA US Counties of 250k-1M|MDs/DOs Per 1,000|15|3.66 - 3.90|Bin without SB|4
-Central MSA US Counties of 250k-1M|MDs/DOs Per 1,000|16|3.90 - 4.15|Bin without SB|4
-Central MSA US Counties of 250k-1M|MDs/DOs Per 1,000|17|4.15 - 4.39|Bin without SB|2
-Central MSA US Counties of 250k-1M|MDs/DOs Per 1,000|18|4.39 - 4.63|Bin without SB|3
-Central MSA US Counties of 250k-1M|MDs/DOs Per 1,000|19|4.63 - 4.87|Bin without SB|2
-Top 100 Most Similar US Counties|MD GPs Per 1,000|0|0.00 - 0.15|Bin without SB|7
-Top 100 Most Similar US Counties|MD GPs Per 1,000|1|0.15 - 0.31|Bin with SB|43
-Top 100 Most Similar US Counties|MD GPs Per 1,000|2|0.31 - 0.46|Bin without SB|40
-Top 100 Most Similar US Counties|MD GPs Per 1,000|3|0.46 - 0.62|Bin without SB|11
-Top 100 Most Similar US Counties|MD GPs Per 1,000|4|0.62 - 0.77|Bin without SB|0
-Top 100 Most Similar US Counties|MD GPs Per 1,000|5|0.77 - 0.93|Bin without SB|0
-Top 100 Most Similar US Counties|MD GPs Per 1,000|6|0.93 - 1.08|Bin without SB|0
-Top 100 Most Similar US Counties|MD GPs Per 1,000|7|1.08 - 1.24|Bin without SB|0
-Top 100 Most Similar US Counties|MD GPs Per 1,000|8|1.24 - 1.39|Bin without SB|0
-Top 100 Most Similar US Counties|MD GPs Per 1,000|9|1.39 - 1.55|Bin without SB|0
-Top 100 Most Similar US Counties|MD GPs Per 1,000|10|1.55 - 1.70|Bin without SB|0
-Top 100 Most Similar US Counties|MD GPs Per 1,000|11|1.70 - 1.85|Bin without SB|0
-Top 100 Most Similar US Counties|MD GPs Per 1,000|12|1.85 - 2.01|Bin without SB|0
-Top 100 Most Similar US Counties|MD GPs Per 1,000|13|2.01 - 2.16|Bin without SB|0
-Top 100 Most Similar US Counties|MD GPs Per 1,000|14|2.16 - 2.32|Bin without SB|0
-Top 100 Most Similar US Counties|MD GPs Per 1,000|15|2.32 - 2.47|Bin without SB|0
-Top 100 Most Similar US Counties|MD GPs Per 1,000|16|2.47 - 2.63|Bin without SB|0
-Top 100 Most Similar US Counties|MD GPs Per 1,000|17|2.63 - 2.78|Bin without SB|0
-Top 100 Most Similar US Counties|MD GPs Per 1,000|18|2.78 - 2.94|Bin without SB|0
-Top 100 Most Similar US Counties|MD GPs Per 1,000|19|2.94 - 3.09|Bin without SB|0
-Top 100 Most Similar US Counties|MD Specialists Per 1,000|0|0.00 - 0.11|Bin without SB|2
-Top 100 Most Similar US Counties|MD Specialists Per 1,000|1|0.11 - 0.22|Bin without SB|1
-Top 100 Most Similar US Counties|MD Specialists Per 1,000|2|0.22 - 0.32|Bin without SB|6
-Top 100 Most Similar US Counties|MD Specialists Per 1,000|3|0.32 - 0.43|Bin without SB|10
-Top 100 Most Similar US Counties|MD Specialists Per 1,000|4|0.43 - 0.54|Bin without SB|13
-Top 100 Most Similar US Counties|MD Specialists Per 1,000|5|0.54 - 0.65|Bin without SB|14
-Top 100 Most Similar US Counties|MD Specialists Per 1,000|6|0.65 - 0.76|Bin with SB|13
-Top 100 Most Similar US Counties|MD Specialists Per 1,000|7|0.76 - 0.87|Bin without SB|10
-Top 100 Most Similar US Counties|MD Specialists Per 1,000|8|0.87 - 0.97|Bin without SB|11
-Top 100 Most Similar US Counties|MD Specialists Per 1,000|9|0.97 - 1.08|Bin without SB|5
-Top 100 Most Similar US Counties|MD Specialists Per 1,000|10|1.08 - 1.19|Bin without SB|4
-Top 100 Most Similar US Counties|MD Specialists Per 1,000|11|1.19 - 1.30|Bin without SB|4
-Top 100 Most Similar US Counties|MD Specialists Per 1,000|12|1.30 - 1.41|Bin without SB|3
-Top 100 Most Similar US Counties|MD Specialists Per 1,000|13|1.41 - 1.52|Bin without SB|3
-Top 100 Most Similar US Counties|MD Specialists Per 1,000|14|1.52 - 1.62|Bin without SB|0
-Top 100 Most Similar US Counties|MD Specialists Per 1,000|15|1.62 - 1.73|Bin without SB|1
-Top 100 Most Similar US Counties|MD Specialists Per 1,000|16|1.73 - 1.84|Bin without SB|0
-Top 100 Most Similar US Counties|MD Specialists Per 1,000|17|1.84 - 1.95|Bin without SB|1
-Top 100 Most Similar US Counties|MD Specialists Per 1,000|18|1.95 - 2.06|Bin without SB|0
-Top 100 Most Similar US Counties|MD Specialists Per 1,000|19|2.06 - 2.17|Bin without SB|0
-Top 100 Most Similar US Counties|MDs/DOs Per 1,000|0|0.04 - 0.28|Bin without SB|1
-Top 100 Most Similar US Counties|MDs/DOs Per 1,000|1|0.28 - 0.52|Bin without SB|1
-Top 100 Most Similar US Counties|MDs/DOs Per 1,000|2|0.52 - 0.76|Bin without SB|0
-Top 100 Most Similar US Counties|MDs/DOs Per 1,000|3|0.76 - 1.00|Bin without SB|1
-Top 100 Most Similar US Counties|MDs/DOs Per 1,000|4|1.00 - 1.24|Bin without SB|10
-Top 100 Most Similar US Counties|MDs/DOs Per 1,000|5|1.24 - 1.49|Bin without SB|7
-Top 100 Most Similar US Counties|MDs/DOs Per 1,000|6|1.49 - 1.73|Bin without SB|9
-Top 100 Most Similar US Counties|MDs/DOs Per 1,000|7|1.73 - 1.97|Bin without SB|9
-Top 100 Most Similar US Counties|MDs/DOs Per 1,000|8|1.97 - 2.21|Bin with SB|10
-Top 100 Most Similar US Counties|MDs/DOs Per 1,000|9|2.21 - 2.45|Bin without SB|17
-Top 100 Most Similar US Counties|MDs/DOs Per 1,000|10|2.45 - 2.69|Bin without SB|6
-Top 100 Most Similar US Counties|MDs/DOs Per 1,000|11|2.69 - 2.94|Bin without SB|9
-Top 100 Most Similar US Counties|MDs/DOs Per 1,000|12|2.94 - 3.18|Bin without SB|6
-Top 100 Most Similar US Counties|MDs/DOs Per 1,000|13|3.18 - 3.42|Bin without SB|5
-Top 100 Most Similar US Counties|MDs/DOs Per 1,000|14|3.42 - 3.66|Bin without SB|3
-Top 100 Most Similar US Counties|MDs/DOs Per 1,000|15|3.66 - 3.90|Bin without SB|1
-Top 100 Most Similar US Counties|MDs/DOs Per 1,000|16|3.90 - 4.15|Bin without SB|2
-Top 100 Most Similar US Counties|MDs/DOs Per 1,000|17|4.15 - 4.39|Bin without SB|0
-Top 100 Most Similar US Counties|MDs/DOs Per 1,000|18|4.39 - 4.63|Bin without SB|2
-Top 100 Most Similar US Counties|MDs/DOs Per 1,000|19|4.63 - 4.87|Bin without SB|2
-Top 25 Most Similar US Counties|MD GPs Per 1,000|0|0.00 - 0.15|Bin without SB|2
-Top 25 Most Similar US Counties|MD GPs Per 1,000|1|0.15 - 0.31|Bin with SB|10
-Top 25 Most Similar US Counties|MD GPs Per 1,000|2|0.31 - 0.46|Bin without SB|9
-Top 25 Most Similar US Counties|MD GPs Per 1,000|3|0.46 - 0.62|Bin without SB|5
-Top 25 Most Similar US Counties|MD GPs Per 1,000|4|0.62 - 0.77|Bin without SB|0
-Top 25 Most Similar US Counties|MD GPs Per 1,000|5|0.77 - 0.93|Bin without SB|0
-Top 25 Most Similar US Counties|MD GPs Per 1,000|6|0.93 - 1.08|Bin without SB|0
-Top 25 Most Similar US Counties|MD GPs Per 1,000|7|1.08 - 1.24|Bin without SB|0
-Top 25 Most Similar US Counties|MD GPs Per 1,000|8|1.24 - 1.39|Bin without SB|0
-Top 25 Most Similar US Counties|MD GPs Per 1,000|9|1.39 - 1.55|Bin without SB|0
-Top 25 Most Similar US Counties|MD GPs Per 1,000|10|1.55 - 1.70|Bin without SB|0
-Top 25 Most Similar US Counties|MD GPs Per 1,000|11|1.70 - 1.85|Bin without SB|0
-Top 25 Most Similar US Counties|MD GPs Per 1,000|12|1.85 - 2.01|Bin without SB|0
-Top 25 Most Similar US Counties|MD GPs Per 1,000|13|2.01 - 2.16|Bin without SB|0
-Top 25 Most Similar US Counties|MD GPs Per 1,000|14|2.16 - 2.32|Bin without SB|0
-Top 25 Most Similar US Counties|MD GPs Per 1,000|15|2.32 - 2.47|Bin without SB|0
-Top 25 Most Similar US Counties|MD GPs Per 1,000|16|2.47 - 2.63|Bin without SB|0
-Top 25 Most Similar US Counties|MD GPs Per 1,000|17|2.63 - 2.78|Bin without SB|0
-Top 25 Most Similar US Counties|MD GPs Per 1,000|18|2.78 - 2.94|Bin without SB|0
-Top 25 Most Similar US Counties|MD GPs Per 1,000|19|2.94 - 3.09|Bin without SB|0
-Top 25 Most Similar US Counties|MD Specialists Per 1,000|0|0.00 - 0.11|Bin without SB|0
-Top 25 Most Similar US Counties|MD Specialists Per 1,000|1|0.11 - 0.22|Bin without SB|0
-Top 25 Most Similar US Counties|MD Specialists Per 1,000|2|0.22 - 0.32|Bin without SB|0
-Top 25 Most Similar US Counties|MD Specialists Per 1,000|3|0.32 - 0.43|Bin without SB|0
-Top 25 Most Similar US Counties|MD Specialists Per 1,000|4|0.43 - 0.54|Bin without SB|5
-Top 25 Most Similar US Counties|MD Specialists Per 1,000|5|0.54 - 0.65|Bin without SB|3
-Top 25 Most Similar US Counties|MD Specialists Per 1,000|6|0.65 - 0.76|Bin with SB|5
-Top 25 Most Similar US Counties|MD Specialists Per 1,000|7|0.76 - 0.87|Bin without SB|2
-Top 25 Most Similar US Counties|MD Specialists Per 1,000|8|0.87 - 0.97|Bin without SB|2
-Top 25 Most Similar US Counties|MD Specialists Per 1,000|9|0.97 - 1.08|Bin without SB|2
-Top 25 Most Similar US Counties|MD Specialists Per 1,000|10|1.08 - 1.19|Bin without SB|1
-Top 25 Most Similar US Counties|MD Specialists Per 1,000|11|1.19 - 1.30|Bin without SB|3
-Top 25 Most Similar US Counties|MD Specialists Per 1,000|12|1.30 - 1.41|Bin without SB|1
-Top 25 Most Similar US Counties|MD Specialists Per 1,000|13|1.41 - 1.52|Bin without SB|2
-Top 25 Most Similar US Counties|MD Specialists Per 1,000|14|1.52 - 1.62|Bin without SB|0
-Top 25 Most Similar US Counties|MD Specialists Per 1,000|15|1.62 - 1.73|Bin without SB|0
-Top 25 Most Similar US Counties|MD Specialists Per 1,000|16|1.73 - 1.84|Bin without SB|0
-Top 25 Most Similar US Counties|MD Specialists Per 1,000|17|1.84 - 1.95|Bin without SB|0
-Top 25 Most Similar US Counties|MD Specialists Per 1,000|18|1.95 - 2.06|Bin without SB|0
-Top 25 Most Similar US Counties|MD Specialists Per 1,000|19|2.06 - 2.17|Bin without SB|0
-Top 25 Most Similar US Counties|MDs/DOs Per 1,000|0|0.04 - 0.28|Bin without SB|0
-Top 25 Most Similar US Counties|MDs/DOs Per 1,000|1|0.28 - 0.52|Bin without SB|0
-Top 25 Most Similar US Counties|MDs/DOs Per 1,000|2|0.52 - 0.76|Bin without SB|0
-Top 25 Most Similar US Counties|MDs/DOs Per 1,000|3|0.76 - 1.00|Bin without SB|0
-Top 25 Most Similar US Counties|MDs/DOs Per 1,000|4|1.00 - 1.24|Bin without SB|0
-Top 25 Most Similar US Counties|MDs/DOs Per 1,000|5|1.24 - 1.49|Bin without SB|2
-Top 25 Most Similar US Counties|MDs/DOs Per 1,000|6|1.49 - 1.73|Bin without SB|2
-Top 25 Most Similar US Counties|MDs/DOs Per 1,000|7|1.73 - 1.97|Bin without SB|1
-Top 25 Most Similar US Counties|MDs/DOs Per 1,000|8|1.97 - 2.21|Bin with SB|6
-Top 25 Most Similar US Counties|MDs/DOs Per 1,000|9|2.21 - 2.45|Bin without SB|3
-Top 25 Most Similar US Counties|MDs/DOs Per 1,000|10|2.45 - 2.69|Bin without SB|2
-Top 25 Most Similar US Counties|MDs/DOs Per 1,000|11|2.69 - 2.94|Bin without SB|2
-Top 25 Most Similar US Counties|MDs/DOs Per 1,000|12|2.94 - 3.18|Bin without SB|2
-Top 25 Most Similar US Counties|MDs/DOs Per 1,000|13|3.18 - 3.42|Bin without SB|1
-Top 25 Most Similar US Counties|MDs/DOs Per 1,000|14|3.42 - 3.66|Bin without SB|3
-Top 25 Most Similar US Counties|MDs/DOs Per 1,000|15|3.66 - 3.90|Bin without SB|0
-Top 25 Most Similar US Counties|MDs/DOs Per 1,000|16|3.90 - 4.15|Bin without SB|1
-Top 25 Most Similar US Counties|MDs/DOs Per 1,000|17|4.15 - 4.39|Bin without SB|0
-Top 25 Most Similar US Counties|MDs/DOs Per 1,000|18|4.39 - 4.63|Bin without SB|1
-Top 25 Most Similar US Counties|MDs/DOs Per 1,000|19|4.63 - 4.87|Bin without SB|0
-Top 50 Most Similar US Counties|MD GPs Per 1,000|0|0.00 - 0.15|Bin without SB|5
-Top 50 Most Similar US Counties|MD GPs Per 1,000|1|0.15 - 0.31|Bin with SB|16
-Top 50 Most Similar US Counties|MD GPs Per 1,000|2|0.31 - 0.46|Bin without SB|23
-Top 50 Most Similar US Counties|MD GPs Per 1,000|3|0.46 - 0.62|Bin without SB|7
-Top 50 Most Similar US Counties|MD GPs Per 1,000|4|0.62 - 0.77|Bin without SB|0
-Top 50 Most Similar US Counties|MD GPs Per 1,000|5|0.77 - 0.93|Bin without SB|0
-Top 50 Most Similar US Counties|MD GPs Per 1,000|6|0.93 - 1.08|Bin without SB|0
-Top 50 Most Similar US Counties|MD GPs Per 1,000|7|1.08 - 1.24|Bin without SB|0
-Top 50 Most Similar US Counties|MD GPs Per 1,000|8|1.24 - 1.39|Bin without SB|0
-Top 50 Most Similar US Counties|MD GPs Per 1,000|9|1.39 - 1.55|Bin without SB|0
-Top 50 Most Similar US Counties|MD GPs Per 1,000|10|1.55 - 1.70|Bin without SB|0
-Top 50 Most Similar US Counties|MD GPs Per 1,000|11|1.70 - 1.85|Bin without SB|0
-Top 50 Most Similar US Counties|MD GPs Per 1,000|12|1.85 - 2.01|Bin without SB|0
-Top 50 Most Similar US Counties|MD GPs Per 1,000|13|2.01 - 2.16|Bin without SB|0
-Top 50 Most Similar US Counties|MD GPs Per 1,000|14|2.16 - 2.32|Bin without SB|0
-Top 50 Most Similar US Counties|MD GPs Per 1,000|15|2.32 - 2.47|Bin without SB|0
-Top 50 Most Similar US Counties|MD GPs Per 1,000|16|2.47 - 2.63|Bin without SB|0
-Top 50 Most Similar US Counties|MD GPs Per 1,000|17|2.63 - 2.78|Bin without SB|0
-Top 50 Most Similar US Counties|MD GPs Per 1,000|18|2.78 - 2.94|Bin without SB|0
-Top 50 Most Similar US Counties|MD GPs Per 1,000|19|2.94 - 3.09|Bin without SB|0
-Top 50 Most Similar US Counties|MD Specialists Per 1,000|0|0.00 - 0.11|Bin without SB|0
-Top 50 Most Similar US Counties|MD Specialists Per 1,000|1|0.11 - 0.22|Bin without SB|1
-Top 50 Most Similar US Counties|MD Specialists Per 1,000|2|0.22 - 0.32|Bin without SB|0
-Top 50 Most Similar US Counties|MD Specialists Per 1,000|3|0.32 - 0.43|Bin without SB|3
-Top 50 Most Similar US Counties|MD Specialists Per 1,000|4|0.43 - 0.54|Bin without SB|6
-Top 50 Most Similar US Counties|MD Specialists Per 1,000|5|0.54 - 0.65|Bin without SB|5
-Top 50 Most Similar US Counties|MD Specialists Per 1,000|6|0.65 - 0.76|Bin with SB|7
-Top 50 Most Similar US Counties|MD Specialists Per 1,000|7|0.76 - 0.87|Bin without SB|6
-Top 50 Most Similar US Counties|MD Specialists Per 1,000|8|0.87 - 0.97|Bin without SB|7
-Top 50 Most Similar US Counties|MD Specialists Per 1,000|9|0.97 - 1.08|Bin without SB|3
-Top 50 Most Similar US Counties|MD Specialists Per 1,000|10|1.08 - 1.19|Bin without SB|3
-Top 50 Most Similar US Counties|MD Specialists Per 1,000|11|1.19 - 1.30|Bin without SB|4
-Top 50 Most Similar US Counties|MD Specialists Per 1,000|12|1.30 - 1.41|Bin without SB|2
-Top 50 Most Similar US Counties|MD Specialists Per 1,000|13|1.41 - 1.52|Bin without SB|2
-Top 50 Most Similar US Counties|MD Specialists Per 1,000|14|1.52 - 1.62|Bin without SB|0
-Top 50 Most Similar US Counties|MD Specialists Per 1,000|15|1.62 - 1.73|Bin without SB|1
-Top 50 Most Similar US Counties|MD Specialists Per 1,000|16|1.73 - 1.84|Bin without SB|0
-Top 50 Most Similar US Counties|MD Specialists Per 1,000|17|1.84 - 1.95|Bin without SB|1
-Top 50 Most Similar US Counties|MD Specialists Per 1,000|18|1.95 - 2.06|Bin without SB|0
-Top 50 Most Similar US Counties|MD Specialists Per 1,000|19|2.06 - 2.17|Bin without SB|0
-Top 50 Most Similar US Counties|MDs/DOs Per 1,000|0|0.04 - 0.28|Bin without SB|0
-Top 50 Most Similar US Counties|MDs/DOs Per 1,000|1|0.28 - 0.52|Bin without SB|0
-Top 50 Most Similar US Counties|MDs/DOs Per 1,000|2|0.52 - 0.76|Bin without SB|0
-Top 50 Most Similar US Counties|MDs/DOs Per 1,000|3|0.76 - 1.00|Bin without SB|0
-Top 50 Most Similar US Counties|MDs/DOs Per 1,000|4|1.00 - 1.24|Bin without SB|2
-Top 50 Most Similar US Counties|MDs/DOs Per 1,000|5|1.24 - 1.49|Bin without SB|3
-Top 50 Most Similar US Counties|MDs/DOs Per 1,000|6|1.49 - 1.73|Bin without SB|2
-Top 50 Most Similar US Counties|MDs/DOs Per 1,000|7|1.73 - 1.97|Bin without SB|4
-Top 50 Most Similar US Counties|MDs/DOs Per 1,000|8|1.97 - 2.21|Bin with SB|7
-Top 50 Most Similar US Counties|MDs/DOs Per 1,000|9|2.21 - 2.45|Bin without SB|7
-Top 50 Most Similar US Counties|MDs/DOs Per 1,000|10|2.45 - 2.69|Bin without SB|4
-Top 50 Most Similar US Counties|MDs/DOs Per 1,000|11|2.69 - 2.94|Bin without SB|4
-Top 50 Most Similar US Counties|MDs/DOs Per 1,000|12|2.94 - 3.18|Bin without SB|5
-Top 50 Most Similar US Counties|MDs/DOs Per 1,000|13|3.18 - 3.42|Bin without SB|5
-Top 50 Most Similar US Counties|MDs/DOs Per 1,000|14|3.42 - 3.66|Bin without SB|3
-Top 50 Most Similar US Counties|MDs/DOs Per 1,000|15|3.66 - 3.90|Bin without SB|0
-Top 50 Most Similar US Counties|MDs/DOs Per 1,000|16|3.90 - 4.15|Bin without SB|1
-Top 50 Most Similar US Counties|MDs/DOs Per 1,000|17|4.15 - 4.39|Bin without SB|0
-Top 50 Most Similar US Counties|MDs/DOs Per 1,000|18|4.39 - 4.63|Bin without SB|2
-Top 50 Most Similar US Counties|MDs/DOs Per 1,000|19|4.63 - 4.87|Bin without SB|2
+All CA Counties|MD GPs Per 100k|0|0 - 15|Bin without SB|9
+All CA Counties|MD GPs Per 100k|1|15 - 31|Bin with SB|26
+All CA Counties|MD GPs Per 100k|2|31 - 46|Bin without SB|19
+All CA Counties|MD GPs Per 100k|3|46 - 62|Bin without SB|4
+All CA Counties|MD GPs Per 100k|4|62 - 77|Bin without SB|0
+All CA Counties|MD GPs Per 100k|5|77 - 93|Bin without SB|0
+All CA Counties|MD GPs Per 100k|6|93 - 108|Bin without SB|0
+All CA Counties|MD GPs Per 100k|7|108 - 124|Bin without SB|0
+All CA Counties|MD GPs Per 100k|8|124 - 139|Bin without SB|0
+All CA Counties|MD GPs Per 100k|9|139 - 155|Bin without SB|0
+All CA Counties|MD GPs Per 100k|10|155 - 170|Bin without SB|0
+All CA Counties|MD GPs Per 100k|11|170 - 185|Bin without SB|0
+All CA Counties|MD GPs Per 100k|12|185 - 201|Bin without SB|0
+All CA Counties|MD GPs Per 100k|13|201 - 216|Bin without SB|0
+All CA Counties|MD GPs Per 100k|14|216 - 232|Bin without SB|0
+All CA Counties|MD GPs Per 100k|15|232 - 247|Bin without SB|0
+All CA Counties|MD GPs Per 100k|16|247 - 263|Bin without SB|0
+All CA Counties|MD GPs Per 100k|17|263 - 278|Bin without SB|0
+All CA Counties|MD GPs Per 100k|18|278 - 294|Bin without SB|0
+All CA Counties|MD GPs Per 100k|19|294 - 309|Bin without SB|0
+All CA Counties|MD Specialists Per 100k|0|0 - 11|Bin without SB|8
+All CA Counties|MD Specialists Per 100k|1|11 - 22|Bin without SB|9
+All CA Counties|MD Specialists Per 100k|2|22 - 32|Bin without SB|3
+All CA Counties|MD Specialists Per 100k|3|32 - 43|Bin without SB|10
+All CA Counties|MD Specialists Per 100k|4|43 - 54|Bin without SB|8
+All CA Counties|MD Specialists Per 100k|5|54 - 65|Bin without SB|4
+All CA Counties|MD Specialists Per 100k|6|65 - 76|Bin with SB|3
+All CA Counties|MD Specialists Per 100k|7|76 - 87|Bin without SB|4
+All CA Counties|MD Specialists Per 100k|8|87 - 97|Bin without SB|1
+All CA Counties|MD Specialists Per 100k|9|97 - 108|Bin without SB|3
+All CA Counties|MD Specialists Per 100k|10|108 - 119|Bin without SB|2
+All CA Counties|MD Specialists Per 100k|11|119 - 130|Bin without SB|0
+All CA Counties|MD Specialists Per 100k|12|130 - 141|Bin without SB|0
+All CA Counties|MD Specialists Per 100k|13|141 - 152|Bin without SB|1
+All CA Counties|MD Specialists Per 100k|14|152 - 162|Bin without SB|0
+All CA Counties|MD Specialists Per 100k|15|162 - 173|Bin without SB|1
+All CA Counties|MD Specialists Per 100k|16|173 - 184|Bin without SB|0
+All CA Counties|MD Specialists Per 100k|17|184 - 195|Bin without SB|1
+All CA Counties|MD Specialists Per 100k|18|195 - 206|Bin without SB|0
+All CA Counties|MD Specialists Per 100k|19|206 - 217|Bin without SB|0
+All CA Counties|MDs/DOs Per 100k|0|4 - 28|Bin without SB|1
+All CA Counties|MDs/DOs Per 100k|1|28 - 52|Bin without SB|5
+All CA Counties|MDs/DOs Per 100k|2|52 - 76|Bin without SB|4
+All CA Counties|MDs/DOs Per 100k|3|76 - 100|Bin without SB|10
+All CA Counties|MDs/DOs Per 100k|4|100 - 124|Bin without SB|4
+All CA Counties|MDs/DOs Per 100k|5|124 - 149|Bin without SB|6
+All CA Counties|MDs/DOs Per 100k|6|149 - 173|Bin without SB|6
+All CA Counties|MDs/DOs Per 100k|7|173 - 197|Bin without SB|3
+All CA Counties|MDs/DOs Per 100k|8|197 - 221|Bin with SB|3
+All CA Counties|MDs/DOs Per 100k|9|221 - 245|Bin without SB|5
+All CA Counties|MDs/DOs Per 100k|10|245 - 269|Bin without SB|4
+All CA Counties|MDs/DOs Per 100k|11|269 - 294|Bin without SB|3
+All CA Counties|MDs/DOs Per 100k|12|294 - 318|Bin without SB|1
+All CA Counties|MDs/DOs Per 100k|13|318 - 342|Bin without SB|1
+All CA Counties|MDs/DOs Per 100k|14|342 - 366|Bin without SB|0
+All CA Counties|MDs/DOs Per 100k|15|366 - 390|Bin without SB|0
+All CA Counties|MDs/DOs Per 100k|16|390 - 415|Bin without SB|0
+All CA Counties|MDs/DOs Per 100k|17|415 - 439|Bin without SB|0
+All CA Counties|MDs/DOs Per 100k|18|439 - 463|Bin without SB|1
+All CA Counties|MDs/DOs Per 100k|19|463 - 487|Bin without SB|1
+All US Counties|MD GPs Per 100k|0|0 - 15|Bin without SB|926
+All US Counties|MD GPs Per 100k|1|15 - 31|Bin with SB|1159
+All US Counties|MD GPs Per 100k|2|31 - 46|Bin without SB|522
+All US Counties|MD GPs Per 100k|3|46 - 62|Bin without SB|184
+All US Counties|MD GPs Per 100k|4|62 - 77|Bin without SB|77
+All US Counties|MD GPs Per 100k|5|77 - 93|Bin without SB|27
+All US Counties|MD GPs Per 100k|6|93 - 108|Bin without SB|11
+All US Counties|MD GPs Per 100k|7|108 - 124|Bin without SB|8
+All US Counties|MD GPs Per 100k|8|124 - 139|Bin without SB|3
+All US Counties|MD GPs Per 100k|9|139 - 155|Bin without SB|4
+All US Counties|MD GPs Per 100k|10|155 - 170|Bin without SB|1
+All US Counties|MD GPs Per 100k|11|170 - 185|Bin without SB|0
+All US Counties|MD GPs Per 100k|12|185 - 201|Bin without SB|1
+All US Counties|MD GPs Per 100k|13|201 - 216|Bin without SB|2
+All US Counties|MD GPs Per 100k|14|216 - 232|Bin without SB|1
+All US Counties|MD GPs Per 100k|15|232 - 247|Bin without SB|0
+All US Counties|MD GPs Per 100k|16|247 - 263|Bin without SB|0
+All US Counties|MD GPs Per 100k|17|263 - 278|Bin without SB|0
+All US Counties|MD GPs Per 100k|18|278 - 294|Bin without SB|0
+All US Counties|MD GPs Per 100k|19|294 - 309|Bin without SB|1
+All US Counties|MD Specialists Per 100k|0|0 - 11|Bin without SB|1153
+All US Counties|MD Specialists Per 100k|1|11 - 22|Bin without SB|572
+All US Counties|MD Specialists Per 100k|2|22 - 32|Bin without SB|334
+All US Counties|MD Specialists Per 100k|3|32 - 43|Bin without SB|257
+All US Counties|MD Specialists Per 100k|4|43 - 54|Bin without SB|144
+All US Counties|MD Specialists Per 100k|5|54 - 65|Bin without SB|131
+All US Counties|MD Specialists Per 100k|6|65 - 76|Bin with SB|94
+All US Counties|MD Specialists Per 100k|7|76 - 87|Bin without SB|60
+All US Counties|MD Specialists Per 100k|8|87 - 97|Bin without SB|43
+All US Counties|MD Specialists Per 100k|9|97 - 108|Bin without SB|33
+All US Counties|MD Specialists Per 100k|10|108 - 119|Bin without SB|24
+All US Counties|MD Specialists Per 100k|11|119 - 130|Bin without SB|22
+All US Counties|MD Specialists Per 100k|12|130 - 141|Bin without SB|11
+All US Counties|MD Specialists Per 100k|13|141 - 152|Bin without SB|15
+All US Counties|MD Specialists Per 100k|14|152 - 162|Bin without SB|11
+All US Counties|MD Specialists Per 100k|15|162 - 173|Bin without SB|13
+All US Counties|MD Specialists Per 100k|16|173 - 184|Bin without SB|2
+All US Counties|MD Specialists Per 100k|17|184 - 195|Bin without SB|5
+All US Counties|MD Specialists Per 100k|18|195 - 206|Bin without SB|2
+All US Counties|MD Specialists Per 100k|19|206 - 217|Bin without SB|1
+All US Counties|MDs/DOs Per 100k|0|4 - 28|Bin without SB|284
+All US Counties|MDs/DOs Per 100k|1|28 - 52|Bin without SB|627
+All US Counties|MDs/DOs Per 100k|2|52 - 76|Bin without SB|524
+All US Counties|MDs/DOs Per 100k|3|76 - 100|Bin without SB|384
+All US Counties|MDs/DOs Per 100k|4|100 - 124|Bin without SB|281
+All US Counties|MDs/DOs Per 100k|5|124 - 149|Bin without SB|197
+All US Counties|MDs/DOs Per 100k|6|149 - 173|Bin without SB|134
+All US Counties|MDs/DOs Per 100k|7|173 - 197|Bin without SB|109
+All US Counties|MDs/DOs Per 100k|8|197 - 221|Bin with SB|89
+All US Counties|MDs/DOs Per 100k|9|221 - 245|Bin without SB|68
+All US Counties|MDs/DOs Per 100k|10|245 - 269|Bin without SB|58
+All US Counties|MDs/DOs Per 100k|11|269 - 294|Bin without SB|50
+All US Counties|MDs/DOs Per 100k|12|294 - 318|Bin without SB|26
+All US Counties|MDs/DOs Per 100k|13|318 - 342|Bin without SB|19
+All US Counties|MDs/DOs Per 100k|14|342 - 366|Bin without SB|18
+All US Counties|MDs/DOs Per 100k|15|366 - 390|Bin without SB|16
+All US Counties|MDs/DOs Per 100k|16|390 - 415|Bin without SB|13
+All US Counties|MDs/DOs Per 100k|17|415 - 439|Bin without SB|11
+All US Counties|MDs/DOs Per 100k|18|439 - 463|Bin without SB|12
+All US Counties|MDs/DOs Per 100k|19|463 - 487|Bin without SB|7
+Central MSA US Counties of 250k-1M|MD GPs Per 100k|0|0 - 15|Bin without SB|44
+Central MSA US Counties of 250k-1M|MD GPs Per 100k|1|15 - 31|Bin with SB|103
+Central MSA US Counties of 250k-1M|MD GPs Per 100k|2|31 - 46|Bin without SB|64
+Central MSA US Counties of 250k-1M|MD GPs Per 100k|3|46 - 62|Bin without SB|15
+Central MSA US Counties of 250k-1M|MD GPs Per 100k|4|62 - 77|Bin without SB|4
+Central MSA US Counties of 250k-1M|MD GPs Per 100k|5|77 - 93|Bin without SB|1
+Central MSA US Counties of 250k-1M|MD GPs Per 100k|6|93 - 108|Bin without SB|0
+Central MSA US Counties of 250k-1M|MD GPs Per 100k|7|108 - 124|Bin without SB|0
+Central MSA US Counties of 250k-1M|MD GPs Per 100k|8|124 - 139|Bin without SB|0
+Central MSA US Counties of 250k-1M|MD GPs Per 100k|9|139 - 155|Bin without SB|0
+Central MSA US Counties of 250k-1M|MD GPs Per 100k|10|155 - 170|Bin without SB|0
+Central MSA US Counties of 250k-1M|MD GPs Per 100k|11|170 - 185|Bin without SB|0
+Central MSA US Counties of 250k-1M|MD GPs Per 100k|12|185 - 201|Bin without SB|0
+Central MSA US Counties of 250k-1M|MD GPs Per 100k|13|201 - 216|Bin without SB|0
+Central MSA US Counties of 250k-1M|MD GPs Per 100k|14|216 - 232|Bin without SB|0
+Central MSA US Counties of 250k-1M|MD GPs Per 100k|15|232 - 247|Bin without SB|0
+Central MSA US Counties of 250k-1M|MD GPs Per 100k|16|247 - 263|Bin without SB|0
+Central MSA US Counties of 250k-1M|MD GPs Per 100k|17|263 - 278|Bin without SB|0
+Central MSA US Counties of 250k-1M|MD GPs Per 100k|18|278 - 294|Bin without SB|0
+Central MSA US Counties of 250k-1M|MD GPs Per 100k|19|294 - 309|Bin without SB|0
+Central MSA US Counties of 250k-1M|MD Specialists Per 100k|0|0 - 11|Bin without SB|22
+Central MSA US Counties of 250k-1M|MD Specialists Per 100k|1|11 - 22|Bin without SB|15
+Central MSA US Counties of 250k-1M|MD Specialists Per 100k|2|22 - 32|Bin without SB|33
+Central MSA US Counties of 250k-1M|MD Specialists Per 100k|3|32 - 43|Bin without SB|23
+Central MSA US Counties of 250k-1M|MD Specialists Per 100k|4|43 - 54|Bin without SB|24
+Central MSA US Counties of 250k-1M|MD Specialists Per 100k|5|54 - 65|Bin without SB|26
+Central MSA US Counties of 250k-1M|MD Specialists Per 100k|6|65 - 76|Bin with SB|24
+Central MSA US Counties of 250k-1M|MD Specialists Per 100k|7|76 - 87|Bin without SB|13
+Central MSA US Counties of 250k-1M|MD Specialists Per 100k|8|87 - 97|Bin without SB|14
+Central MSA US Counties of 250k-1M|MD Specialists Per 100k|9|97 - 108|Bin without SB|10
+Central MSA US Counties of 250k-1M|MD Specialists Per 100k|10|108 - 119|Bin without SB|5
+Central MSA US Counties of 250k-1M|MD Specialists Per 100k|11|119 - 130|Bin without SB|9
+Central MSA US Counties of 250k-1M|MD Specialists Per 100k|12|130 - 141|Bin without SB|4
+Central MSA US Counties of 250k-1M|MD Specialists Per 100k|13|141 - 152|Bin without SB|5
+Central MSA US Counties of 250k-1M|MD Specialists Per 100k|14|152 - 162|Bin without SB|0
+Central MSA US Counties of 250k-1M|MD Specialists Per 100k|15|162 - 173|Bin without SB|3
+Central MSA US Counties of 250k-1M|MD Specialists Per 100k|16|173 - 184|Bin without SB|0
+Central MSA US Counties of 250k-1M|MD Specialists Per 100k|17|184 - 195|Bin without SB|1
+Central MSA US Counties of 250k-1M|MD Specialists Per 100k|18|195 - 206|Bin without SB|0
+Central MSA US Counties of 250k-1M|MD Specialists Per 100k|19|206 - 217|Bin without SB|0
+Central MSA US Counties of 250k-1M|MDs/DOs Per 100k|0|4 - 28|Bin without SB|2
+Central MSA US Counties of 250k-1M|MDs/DOs Per 100k|1|28 - 52|Bin without SB|20
+Central MSA US Counties of 250k-1M|MDs/DOs Per 100k|2|52 - 76|Bin without SB|8
+Central MSA US Counties of 250k-1M|MDs/DOs Per 100k|3|76 - 100|Bin without SB|23
+Central MSA US Counties of 250k-1M|MDs/DOs Per 100k|4|100 - 124|Bin without SB|24
+Central MSA US Counties of 250k-1M|MDs/DOs Per 100k|5|124 - 149|Bin without SB|17
+Central MSA US Counties of 250k-1M|MDs/DOs Per 100k|6|149 - 173|Bin without SB|18
+Central MSA US Counties of 250k-1M|MDs/DOs Per 100k|7|173 - 197|Bin without SB|19
+Central MSA US Counties of 250k-1M|MDs/DOs Per 100k|8|197 - 221|Bin with SB|18
+Central MSA US Counties of 250k-1M|MDs/DOs Per 100k|9|221 - 245|Bin without SB|23
+Central MSA US Counties of 250k-1M|MDs/DOs Per 100k|10|245 - 269|Bin without SB|10
+Central MSA US Counties of 250k-1M|MDs/DOs Per 100k|11|269 - 294|Bin without SB|14
+Central MSA US Counties of 250k-1M|MDs/DOs Per 100k|12|294 - 318|Bin without SB|9
+Central MSA US Counties of 250k-1M|MDs/DOs Per 100k|13|318 - 342|Bin without SB|6
+Central MSA US Counties of 250k-1M|MDs/DOs Per 100k|14|342 - 366|Bin without SB|5
+Central MSA US Counties of 250k-1M|MDs/DOs Per 100k|15|366 - 390|Bin without SB|4
+Central MSA US Counties of 250k-1M|MDs/DOs Per 100k|16|390 - 415|Bin without SB|4
+Central MSA US Counties of 250k-1M|MDs/DOs Per 100k|17|415 - 439|Bin without SB|2
+Central MSA US Counties of 250k-1M|MDs/DOs Per 100k|18|439 - 463|Bin without SB|3
+Central MSA US Counties of 250k-1M|MDs/DOs Per 100k|19|463 - 487|Bin without SB|2
+Top 100 Most Similar US Counties|MD GPs Per 100k|0|0 - 15|Bin without SB|7
+Top 100 Most Similar US Counties|MD GPs Per 100k|1|15 - 31|Bin with SB|43
+Top 100 Most Similar US Counties|MD GPs Per 100k|2|31 - 46|Bin without SB|40
+Top 100 Most Similar US Counties|MD GPs Per 100k|3|46 - 62|Bin without SB|11
+Top 100 Most Similar US Counties|MD GPs Per 100k|4|62 - 77|Bin without SB|0
+Top 100 Most Similar US Counties|MD GPs Per 100k|5|77 - 93|Bin without SB|0
+Top 100 Most Similar US Counties|MD GPs Per 100k|6|93 - 108|Bin without SB|0
+Top 100 Most Similar US Counties|MD GPs Per 100k|7|108 - 124|Bin without SB|0
+Top 100 Most Similar US Counties|MD GPs Per 100k|8|124 - 139|Bin without SB|0
+Top 100 Most Similar US Counties|MD GPs Per 100k|9|139 - 155|Bin without SB|0
+Top 100 Most Similar US Counties|MD GPs Per 100k|10|155 - 170|Bin without SB|0
+Top 100 Most Similar US Counties|MD GPs Per 100k|11|170 - 185|Bin without SB|0
+Top 100 Most Similar US Counties|MD GPs Per 100k|12|185 - 201|Bin without SB|0
+Top 100 Most Similar US Counties|MD GPs Per 100k|13|201 - 216|Bin without SB|0
+Top 100 Most Similar US Counties|MD GPs Per 100k|14|216 - 232|Bin without SB|0
+Top 100 Most Similar US Counties|MD GPs Per 100k|15|232 - 247|Bin without SB|0
+Top 100 Most Similar US Counties|MD GPs Per 100k|16|247 - 263|Bin without SB|0
+Top 100 Most Similar US Counties|MD GPs Per 100k|17|263 - 278|Bin without SB|0
+Top 100 Most Similar US Counties|MD GPs Per 100k|18|278 - 294|Bin without SB|0
+Top 100 Most Similar US Counties|MD GPs Per 100k|19|294 - 309|Bin without SB|0
+Top 100 Most Similar US Counties|MD Specialists Per 100k|0|0 - 11|Bin without SB|2
+Top 100 Most Similar US Counties|MD Specialists Per 100k|1|11 - 22|Bin without SB|1
+Top 100 Most Similar US Counties|MD Specialists Per 100k|2|22 - 32|Bin without SB|6
+Top 100 Most Similar US Counties|MD Specialists Per 100k|3|32 - 43|Bin without SB|10
+Top 100 Most Similar US Counties|MD Specialists Per 100k|4|43 - 54|Bin without SB|13
+Top 100 Most Similar US Counties|MD Specialists Per 100k|5|54 - 65|Bin without SB|14
+Top 100 Most Similar US Counties|MD Specialists Per 100k|6|65 - 76|Bin with SB|13
+Top 100 Most Similar US Counties|MD Specialists Per 100k|7|76 - 87|Bin without SB|10
+Top 100 Most Similar US Counties|MD Specialists Per 100k|8|87 - 97|Bin without SB|11
+Top 100 Most Similar US Counties|MD Specialists Per 100k|9|97 - 108|Bin without SB|5
+Top 100 Most Similar US Counties|MD Specialists Per 100k|10|108 - 119|Bin without SB|4
+Top 100 Most Similar US Counties|MD Specialists Per 100k|11|119 - 130|Bin without SB|4
+Top 100 Most Similar US Counties|MD Specialists Per 100k|12|130 - 141|Bin without SB|3
+Top 100 Most Similar US Counties|MD Specialists Per 100k|13|141 - 152|Bin without SB|3
+Top 100 Most Similar US Counties|MD Specialists Per 100k|14|152 - 162|Bin without SB|0
+Top 100 Most Similar US Counties|MD Specialists Per 100k|15|162 - 173|Bin without SB|1
+Top 100 Most Similar US Counties|MD Specialists Per 100k|16|173 - 184|Bin without SB|0
+Top 100 Most Similar US Counties|MD Specialists Per 100k|17|184 - 195|Bin without SB|1
+Top 100 Most Similar US Counties|MD Specialists Per 100k|18|195 - 206|Bin without SB|0
+Top 100 Most Similar US Counties|MD Specialists Per 100k|19|206 - 217|Bin without SB|0
+Top 100 Most Similar US Counties|MDs/DOs Per 100k|0|4 - 28|Bin without SB|1
+Top 100 Most Similar US Counties|MDs/DOs Per 100k|1|28 - 52|Bin without SB|1
+Top 100 Most Similar US Counties|MDs/DOs Per 100k|2|52 - 76|Bin without SB|0
+Top 100 Most Similar US Counties|MDs/DOs Per 100k|3|76 - 100|Bin without SB|1
+Top 100 Most Similar US Counties|MDs/DOs Per 100k|4|100 - 124|Bin without SB|10
+Top 100 Most Similar US Counties|MDs/DOs Per 100k|5|124 - 149|Bin without SB|7
+Top 100 Most Similar US Counties|MDs/DOs Per 100k|6|149 - 173|Bin without SB|9
+Top 100 Most Similar US Counties|MDs/DOs Per 100k|7|173 - 197|Bin without SB|9
+Top 100 Most Similar US Counties|MDs/DOs Per 100k|8|197 - 221|Bin with SB|10
+Top 100 Most Similar US Counties|MDs/DOs Per 100k|9|221 - 245|Bin without SB|17
+Top 100 Most Similar US Counties|MDs/DOs Per 100k|10|245 - 269|Bin without SB|6
+Top 100 Most Similar US Counties|MDs/DOs Per 100k|11|269 - 294|Bin without SB|9
+Top 100 Most Similar US Counties|MDs/DOs Per 100k|12|294 - 318|Bin without SB|6
+Top 100 Most Similar US Counties|MDs/DOs Per 100k|13|318 - 342|Bin without SB|5
+Top 100 Most Similar US Counties|MDs/DOs Per 100k|14|342 - 366|Bin without SB|3
+Top 100 Most Similar US Counties|MDs/DOs Per 100k|15|366 - 390|Bin without SB|1
+Top 100 Most Similar US Counties|MDs/DOs Per 100k|16|390 - 415|Bin without SB|2
+Top 100 Most Similar US Counties|MDs/DOs Per 100k|17|415 - 439|Bin without SB|0
+Top 100 Most Similar US Counties|MDs/DOs Per 100k|18|439 - 463|Bin without SB|2
+Top 100 Most Similar US Counties|MDs/DOs Per 100k|19|463 - 487|Bin without SB|2
+Top 25 Most Similar US Counties|MD GPs Per 100k|0|0 - 15|Bin without SB|2
+Top 25 Most Similar US Counties|MD GPs Per 100k|1|15 - 31|Bin with SB|10
+Top 25 Most Similar US Counties|MD GPs Per 100k|2|31 - 46|Bin without SB|9
+Top 25 Most Similar US Counties|MD GPs Per 100k|3|46 - 62|Bin without SB|5
+Top 25 Most Similar US Counties|MD GPs Per 100k|4|62 - 77|Bin without SB|0
+Top 25 Most Similar US Counties|MD GPs Per 100k|5|77 - 93|Bin without SB|0
+Top 25 Most Similar US Counties|MD GPs Per 100k|6|93 - 108|Bin without SB|0
+Top 25 Most Similar US Counties|MD GPs Per 100k|7|108 - 124|Bin without SB|0
+Top 25 Most Similar US Counties|MD GPs Per 100k|8|124 - 139|Bin without SB|0
+Top 25 Most Similar US Counties|MD GPs Per 100k|9|139 - 155|Bin without SB|0
+Top 25 Most Similar US Counties|MD GPs Per 100k|10|155 - 170|Bin without SB|0
+Top 25 Most Similar US Counties|MD GPs Per 100k|11|170 - 185|Bin without SB|0
+Top 25 Most Similar US Counties|MD GPs Per 100k|12|185 - 201|Bin without SB|0
+Top 25 Most Similar US Counties|MD GPs Per 100k|13|201 - 216|Bin without SB|0
+Top 25 Most Similar US Counties|MD GPs Per 100k|14|216 - 232|Bin without SB|0
+Top 25 Most Similar US Counties|MD GPs Per 100k|15|232 - 247|Bin without SB|0
+Top 25 Most Similar US Counties|MD GPs Per 100k|16|247 - 263|Bin without SB|0
+Top 25 Most Similar US Counties|MD GPs Per 100k|17|263 - 278|Bin without SB|0
+Top 25 Most Similar US Counties|MD GPs Per 100k|18|278 - 294|Bin without SB|0
+Top 25 Most Similar US Counties|MD GPs Per 100k|19|294 - 309|Bin without SB|0
+Top 25 Most Similar US Counties|MD Specialists Per 100k|0|0 - 11|Bin without SB|0
+Top 25 Most Similar US Counties|MD Specialists Per 100k|1|11 - 22|Bin without SB|0
+Top 25 Most Similar US Counties|MD Specialists Per 100k|2|22 - 32|Bin without SB|0
+Top 25 Most Similar US Counties|MD Specialists Per 100k|3|32 - 43|Bin without SB|0
+Top 25 Most Similar US Counties|MD Specialists Per 100k|4|43 - 54|Bin without SB|5
+Top 25 Most Similar US Counties|MD Specialists Per 100k|5|54 - 65|Bin without SB|3
+Top 25 Most Similar US Counties|MD Specialists Per 100k|6|65 - 76|Bin with SB|5
+Top 25 Most Similar US Counties|MD Specialists Per 100k|7|76 - 87|Bin without SB|2
+Top 25 Most Similar US Counties|MD Specialists Per 100k|8|87 - 97|Bin without SB|2
+Top 25 Most Similar US Counties|MD Specialists Per 100k|9|97 - 108|Bin without SB|2
+Top 25 Most Similar US Counties|MD Specialists Per 100k|10|108 - 119|Bin without SB|1
+Top 25 Most Similar US Counties|MD Specialists Per 100k|11|119 - 130|Bin without SB|3
+Top 25 Most Similar US Counties|MD Specialists Per 100k|12|130 - 141|Bin without SB|1
+Top 25 Most Similar US Counties|MD Specialists Per 100k|13|141 - 152|Bin without SB|2
+Top 25 Most Similar US Counties|MD Specialists Per 100k|14|152 - 162|Bin without SB|0
+Top 25 Most Similar US Counties|MD Specialists Per 100k|15|162 - 173|Bin without SB|0
+Top 25 Most Similar US Counties|MD Specialists Per 100k|16|173 - 184|Bin without SB|0
+Top 25 Most Similar US Counties|MD Specialists Per 100k|17|184 - 195|Bin without SB|0
+Top 25 Most Similar US Counties|MD Specialists Per 100k|18|195 - 206|Bin without SB|0
+Top 25 Most Similar US Counties|MD Specialists Per 100k|19|206 - 217|Bin without SB|0
+Top 25 Most Similar US Counties|MDs/DOs Per 100k|0|4 - 28|Bin without SB|0
+Top 25 Most Similar US Counties|MDs/DOs Per 100k|1|28 - 52|Bin without SB|0
+Top 25 Most Similar US Counties|MDs/DOs Per 100k|2|52 - 76|Bin without SB|0
+Top 25 Most Similar US Counties|MDs/DOs Per 100k|3|76 - 100|Bin without SB|0
+Top 25 Most Similar US Counties|MDs/DOs Per 100k|4|100 - 124|Bin without SB|0
+Top 25 Most Similar US Counties|MDs/DOs Per 100k|5|124 - 149|Bin without SB|2
+Top 25 Most Similar US Counties|MDs/DOs Per 100k|6|149 - 173|Bin without SB|2
+Top 25 Most Similar US Counties|MDs/DOs Per 100k|7|173 - 197|Bin without SB|1
+Top 25 Most Similar US Counties|MDs/DOs Per 100k|8|197 - 221|Bin with SB|6
+Top 25 Most Similar US Counties|MDs/DOs Per 100k|9|221 - 245|Bin without SB|3
+Top 25 Most Similar US Counties|MDs/DOs Per 100k|10|245 - 269|Bin without SB|2
+Top 25 Most Similar US Counties|MDs/DOs Per 100k|11|269 - 294|Bin without SB|2
+Top 25 Most Similar US Counties|MDs/DOs Per 100k|12|294 - 318|Bin without SB|2
+Top 25 Most Similar US Counties|MDs/DOs Per 100k|13|318 - 342|Bin without SB|1
+Top 25 Most Similar US Counties|MDs/DOs Per 100k|14|342 - 366|Bin without SB|3
+Top 25 Most Similar US Counties|MDs/DOs Per 100k|15|366 - 390|Bin without SB|0
+Top 25 Most Similar US Counties|MDs/DOs Per 100k|16|390 - 415|Bin without SB|1
+Top 25 Most Similar US Counties|MDs/DOs Per 100k|17|415 - 439|Bin without SB|0
+Top 25 Most Similar US Counties|MDs/DOs Per 100k|18|439 - 463|Bin without SB|1
+Top 25 Most Similar US Counties|MDs/DOs Per 100k|19|463 - 487|Bin without SB|0
+Top 50 Most Similar US Counties|MD GPs Per 100k|0|0 - 15|Bin without SB|5
+Top 50 Most Similar US Counties|MD GPs Per 100k|1|15 - 31|Bin with SB|16
+Top 50 Most Similar US Counties|MD GPs Per 100k|2|31 - 46|Bin without SB|23
+Top 50 Most Similar US Counties|MD GPs Per 100k|3|46 - 62|Bin without SB|7
+Top 50 Most Similar US Counties|MD GPs Per 100k|4|62 - 77|Bin without SB|0
+Top 50 Most Similar US Counties|MD GPs Per 100k|5|77 - 93|Bin without SB|0
+Top 50 Most Similar US Counties|MD GPs Per 100k|6|93 - 108|Bin without SB|0
+Top 50 Most Similar US Counties|MD GPs Per 100k|7|108 - 124|Bin without SB|0
+Top 50 Most Similar US Counties|MD GPs Per 100k|8|124 - 139|Bin without SB|0
+Top 50 Most Similar US Counties|MD GPs Per 100k|9|139 - 155|Bin without SB|0
+Top 50 Most Similar US Counties|MD GPs Per 100k|10|155 - 170|Bin without SB|0
+Top 50 Most Similar US Counties|MD GPs Per 100k|11|170 - 185|Bin without SB|0
+Top 50 Most Similar US Counties|MD GPs Per 100k|12|185 - 201|Bin without SB|0
+Top 50 Most Similar US Counties|MD GPs Per 100k|13|201 - 216|Bin without SB|0
+Top 50 Most Similar US Counties|MD GPs Per 100k|14|216 - 232|Bin without SB|0
+Top 50 Most Similar US Counties|MD GPs Per 100k|15|232 - 247|Bin without SB|0
+Top 50 Most Similar US Counties|MD GPs Per 100k|16|247 - 263|Bin without SB|0
+Top 50 Most Similar US Counties|MD GPs Per 100k|17|263 - 278|Bin without SB|0
+Top 50 Most Similar US Counties|MD GPs Per 100k|18|278 - 294|Bin without SB|0
+Top 50 Most Similar US Counties|MD GPs Per 100k|19|294 - 309|Bin without SB|0
+Top 50 Most Similar US Counties|MD Specialists Per 100k|0|0 - 11|Bin without SB|0
+Top 50 Most Similar US Counties|MD Specialists Per 100k|1|11 - 22|Bin without SB|1
+Top 50 Most Similar US Counties|MD Specialists Per 100k|2|22 - 32|Bin without SB|0
+Top 50 Most Similar US Counties|MD Specialists Per 100k|3|32 - 43|Bin without SB|3
+Top 50 Most Similar US Counties|MD Specialists Per 100k|4|43 - 54|Bin without SB|6
+Top 50 Most Similar US Counties|MD Specialists Per 100k|5|54 - 65|Bin without SB|5
+Top 50 Most Similar US Counties|MD Specialists Per 100k|6|65 - 76|Bin with SB|7
+Top 50 Most Similar US Counties|MD Specialists Per 100k|7|76 - 87|Bin without SB|6
+Top 50 Most Similar US Counties|MD Specialists Per 100k|8|87 - 97|Bin without SB|7
+Top 50 Most Similar US Counties|MD Specialists Per 100k|9|97 - 108|Bin without SB|3
+Top 50 Most Similar US Counties|MD Specialists Per 100k|10|108 - 119|Bin without SB|3
+Top 50 Most Similar US Counties|MD Specialists Per 100k|11|119 - 130|Bin without SB|4
+Top 50 Most Similar US Counties|MD Specialists Per 100k|12|130 - 141|Bin without SB|2
+Top 50 Most Similar US Counties|MD Specialists Per 100k|13|141 - 152|Bin without SB|2
+Top 50 Most Similar US Counties|MD Specialists Per 100k|14|152 - 162|Bin without SB|0
+Top 50 Most Similar US Counties|MD Specialists Per 100k|15|162 - 173|Bin without SB|1
+Top 50 Most Similar US Counties|MD Specialists Per 100k|16|173 - 184|Bin without SB|0
+Top 50 Most Similar US Counties|MD Specialists Per 100k|17|184 - 195|Bin without SB|1
+Top 50 Most Similar US Counties|MD Specialists Per 100k|18|195 - 206|Bin without SB|0
+Top 50 Most Similar US Counties|MD Specialists Per 100k|19|206 - 217|Bin without SB|0
+Top 50 Most Similar US Counties|MDs/DOs Per 100k|0|4 - 28|Bin without SB|0
+Top 50 Most Similar US Counties|MDs/DOs Per 100k|1|28 - 52|Bin without SB|0
+Top 50 Most Similar US Counties|MDs/DOs Per 100k|2|52 - 76|Bin without SB|0
+Top 50 Most Similar US Counties|MDs/DOs Per 100k|3|76 - 100|Bin without SB|0
+Top 50 Most Similar US Counties|MDs/DOs Per 100k|4|100 - 124|Bin without SB|2
+Top 50 Most Similar US Counties|MDs/DOs Per 100k|5|124 - 149|Bin without SB|3
+Top 50 Most Similar US Counties|MDs/DOs Per 100k|6|149 - 173|Bin without SB|2
+Top 50 Most Similar US Counties|MDs/DOs Per 100k|7|173 - 197|Bin without SB|4
+Top 50 Most Similar US Counties|MDs/DOs Per 100k|8|197 - 221|Bin with SB|7
+Top 50 Most Similar US Counties|MDs/DOs Per 100k|9|221 - 245|Bin without SB|7
+Top 50 Most Similar US Counties|MDs/DOs Per 100k|10|245 - 269|Bin without SB|4
+Top 50 Most Similar US Counties|MDs/DOs Per 100k|11|269 - 294|Bin without SB|4
+Top 50 Most Similar US Counties|MDs/DOs Per 100k|12|294 - 318|Bin without SB|5
+Top 50 Most Similar US Counties|MDs/DOs Per 100k|13|318 - 342|Bin without SB|5
+Top 50 Most Similar US Counties|MDs/DOs Per 100k|14|342 - 366|Bin without SB|3
+Top 50 Most Similar US Counties|MDs/DOs Per 100k|15|366 - 390|Bin without SB|0
+Top 50 Most Similar US Counties|MDs/DOs Per 100k|16|390 - 415|Bin without SB|1
+Top 50 Most Similar US Counties|MDs/DOs Per 100k|17|415 - 439|Bin without SB|0
+Top 50 Most Similar US Counties|MDs/DOs Per 100k|18|439 - 463|Bin without SB|2
+Top 50 Most Similar US Counties|MDs/DOs Per 100k|19|463 - 487|Bin without SB|2
