@@ -147,7 +147,7 @@ proc sql;
   b.pct_cvln_lbr_frc_ovr15 as '% >15 in Labor Force'n format=percent8.1,
   b.prsnl_income as 'Personal Income'n format=dollar32.0,
   b.pct_in_pvrty as '% in Poverty'n format=percent8.1,
-  b.hsptl_beds_per_1k as 'Hospital Beds per 1k'n format=32.1
+  b.hsptl_beds_per_100k as 'Hospital Beds per 100k'n format=32.1
  from sas.county_similarity a
  left join sas.selected_counties b
  on a.fips_st_cnty=b.fips_st_cnty 
@@ -173,7 +173,7 @@ proc sql;
   sum(b.pct_cvln_lbr_frc_ovr15)/100 as '% >15 in Labor Force'n format=percent8.1,
   sum(b.prsnl_income)/100 as 'Personal Income'n format=dollar32.0,
   sum(b.pct_in_pvrty)/100 as '% in Poverty'n format=percent8.1,
-  sum(b.hsptl_beds_per_1k)/100 as 'Hospital Beds per 1k'n format=32.1
+  sum(b.hsptl_beds_per_100k)/100 as 'Hospital Beds per 100k'n format=32.1
  from sas.county_similarity a
  left join sas.selected_counties b
  on a.fips_st_cnty=b.fips_st_cnty 
@@ -199,7 +199,7 @@ proc sql;
   sum(b.pct_cvln_lbr_frc_ovr15)/count(distinct b.fips_st_cnty)  as '% >15 in Labor Force'n format=percent8.1,
   sum(b.prsnl_income)/count(distinct b.fips_st_cnty)  as 'Personal Income'n format=dollar32.0,
   sum(b.pct_in_pvrty)/count(distinct b.fips_st_cnty)  as '% in Poverty'n format=percent8.1,
-  sum(b.hsptl_beds_per_1k)/count(distinct b.fips_st_cnty)  as 'Hospital Beds per 1k'n format=32.1
+  sum(b.hsptl_beds_per_100k)/count(distinct b.fips_st_cnty)  as 'Hospital Beds per 100k'n format=32.1
  from sas.selected_counties b
  where b.fips_st_cnty not in (select distinct fips_st_cnty from sas.county_similarity)
  or b.fips_st_cnty in (select distinct fips_st_cnty from sas.county_similarity where sb_similar_rank gt 101)
