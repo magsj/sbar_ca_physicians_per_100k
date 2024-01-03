@@ -2,12 +2,12 @@
 proc sql noprint;
  select distinct 
   /*need the mins for each variable*/
-  min(mds_dos_per_1k), min(mds_gp_per_1k), min(mds_spec_per_1k),   
+  min(mds_dos_per_100k), min(mds_gp_per_100k), min(mds_spec_per_100k),   
    
-  /*bin size is the difference between max and min*/
-  (max(mds_dos_per_1k)-min(mds_dos_per_1k))/20, 
-  (max(mds_gp_per_1k)-min(mds_gp_per_1k))/20, 
-  (max(mds_spec_per_1k)-min(mds_spec_per_1k))/20 
+  /*bin size is a fraction of the difference between max and min*/
+  (max(mds_dos_per_100k)-min(mds_dos_per_100k))/20, 
+  (max(mds_gp_per_100k)-min(mds_gp_per_100k))/20, 
+  (max(mds_spec_per_100k)-min(mds_spec_per_100k))/20 
    
  /*put the values in macro variables*/
  into 
@@ -29,14 +29,14 @@ data mddo_binct(keep=bin bin_desc binsize);
  do i=1 to 21;
   bin=i-1;
   bin_desc=
-   strip( put( %sysevalf(&mddo_bmn.) + ((i-1) * %sysevalf(&mddo_bsz.)),8.2 ) ) 
+   strip( put( %sysevalf(&mddo_bmn.) + ((i-1) * %sysevalf(&mddo_bsz.)),8.0 ) ) 
    || ' - ' ||
-   strip( put( %sysevalf(&mddo_bmn.) + (i     * %sysevalf(&mddo_bsz.)),8.2 ) ) ;
+   strip( put( %sysevalf(&mddo_bmn.) + (i     * %sysevalf(&mddo_bsz.)),8.0 ) ) ;
    if bin=20 then do;
     bin_desc=
-     strip( put( %sysevalf(&mddo_bmn.) + ((i-2) * %sysevalf(&mddo_bsz.)),8.2 ) ) 
+     strip( put( %sysevalf(&mddo_bmn.) + ((i-2) * %sysevalf(&mddo_bsz.)),8.0 ) ) 
      || ' - ' ||
-     strip( put( %sysevalf(&mddo_bmn.) + ((i-1) * %sysevalf(&mddo_bsz.)),8.2 ) ) ;
+     strip( put( %sysevalf(&mddo_bmn.) + ((i-1) * %sysevalf(&mddo_bsz.)),8.0 ) ) ;
    end;
   output;
  end;
@@ -52,14 +52,14 @@ data gp_binct(keep=bin bin_desc binsize);
  do i=1 to 21;
   bin=i-1;
   bin_desc=
-   strip( put( %sysevalf(&gp_bmn.) + ((i-1) * %sysevalf(&gp_bsz.)),8.2 ) ) 
+   strip( put( %sysevalf(&gp_bmn.) + ((i-1) * %sysevalf(&gp_bsz.)),8.0 ) ) 
    || ' - ' ||
-   strip( put( %sysevalf(&gp_bmn.) + (i     * %sysevalf(&gp_bsz.)),8.2 ) ) ;
+   strip( put( %sysevalf(&gp_bmn.) + (i     * %sysevalf(&gp_bsz.)),8.0 ) ) ;
    if bin=20 then do;
     bin_desc=
-     strip( put( %sysevalf(&gp_bmn.) + ((i-2) * %sysevalf(&gp_bsz.)),8.2 ) ) 
+     strip( put( %sysevalf(&gp_bmn.) + ((i-2) * %sysevalf(&gp_bsz.)),8.0 ) ) 
      || ' - ' ||
-     strip( put( %sysevalf(&gp_bmn.) + ((i-1) * %sysevalf(&gp_bsz.)),8.2 ) ) ;
+     strip( put( %sysevalf(&gp_bmn.) + ((i-1) * %sysevalf(&gp_bsz.)),8.0 ) ) ;
    end;
   output;
  end;
@@ -75,14 +75,14 @@ data spec_binct(keep=bin bin_desc binsize);
  do i=1 to 21;
   bin=i-1;
   bin_desc=
-   strip( put( %sysevalf(&spec_bmn.) + ((i-1) * %sysevalf(&spec_bsz.)),8.2 ) ) 
+   strip( put( %sysevalf(&spec_bmn.) + ((i-1) * %sysevalf(&spec_bsz.)),8.0 ) ) 
    || ' - ' ||
-   strip( put( %sysevalf(&spec_bmn.) + (i     * %sysevalf(&spec_bsz.)),8.2 ) ) ;
+   strip( put( %sysevalf(&spec_bmn.) + (i     * %sysevalf(&spec_bsz.)),8.0 ) ) ;
    if bin=20 then do;
     bin_desc=
-     strip( put( %sysevalf(&spec_bmn.) + ((i-2) * %sysevalf(&spec_bsz.)),8.2 ) ) 
+     strip( put( %sysevalf(&spec_bmn.) + ((i-2) * %sysevalf(&spec_bsz.)),8.0 ) ) 
      || ' - ' ||
-     strip( put( %sysevalf(&spec_bmn.) + ((i-1) * %sysevalf(&spec_bsz.)),8.2 ) ) ;
+     strip( put( %sysevalf(&spec_bmn.) + ((i-1) * %sysevalf(&spec_bsz.)),8.0 ) ) ;
    end;
   output;
  end;
@@ -119,24 +119,24 @@ proc delete data=phys_per1k_bins; run;
 
 *execute the bins macro over all needed permutations: bins(var,varabbr,ca_whr,geo,subset);
 
-%bins(mds_dos_per_1k,mddo,%str(1=1),US,all_);
-%bins(mds_dos_per_1k,mddo,%str(ca_cnty='Y'),CA,all_);
-%bins(mds_dos_per_1k,mddo,%str(1=1),US,type);
-%bins(mds_dos_per_1k,mddo,%str(1=1),US,t_25);
-%bins(mds_dos_per_1k,mddo,%str(1=1),US,t_50);
-%bins(mds_dos_per_1k,mddo,%str(1=1),US,t100);
+%bins(mds_dos_per_100k,mddo,%str(1=1),US,all_);
+%bins(mds_dos_per_100k,mddo,%str(ca_cnty='Y'),CA,all_);
+%bins(mds_dos_per_100k,mddo,%str(1=1),US,type);
+%bins(mds_dos_per_100k,mddo,%str(1=1),US,t_25);
+%bins(mds_dos_per_100k,mddo,%str(1=1),US,t_50);
+%bins(mds_dos_per_100k,mddo,%str(1=1),US,t100);
 
-%bins(mds_gp_per_1k,gp,%str(1=1),US,all_);
-%bins(mds_gp_per_1k,gp,%str(ca_cnty='Y'),CA,all_);
-%bins(mds_gp_per_1k,gp,%str(1=1),US,type);
-%bins(mds_gp_per_1k,gp,%str(1=1),US,t_25);
-%bins(mds_gp_per_1k,gp,%str(1=1),US,t_50);
-%bins(mds_gp_per_1k,gp,%str(1=1),US,t100);
+%bins(mds_gp_per_100k,gp,%str(1=1),US,all_);
+%bins(mds_gp_per_100k,gp,%str(ca_cnty='Y'),CA,all_);
+%bins(mds_gp_per_100k,gp,%str(1=1),US,type);
+%bins(mds_gp_per_100k,gp,%str(1=1),US,t_25);
+%bins(mds_gp_per_100k,gp,%str(1=1),US,t_50);
+%bins(mds_gp_per_100k,gp,%str(1=1),US,t100);
 
-%bins(mds_spec_per_1k,spec,%str(1=1),US,all_);
-%bins(mds_spec_per_1k,spec,%str(ca_cnty='Y'),CA,all_);
-%bins(mds_spec_per_1k,spec,%str(1=1),US,type);
-%bins(mds_spec_per_1k,spec,%str(1=1),US,t_25);
-%bins(mds_spec_per_1k,spec,%str(1=1),US,t_50);
-%bins(mds_spec_per_1k,spec,%str(1=1),US,t100);
+%bins(mds_spec_per_100k,spec,%str(1=1),US,all_);
+%bins(mds_spec_per_100k,spec,%str(ca_cnty='Y'),CA,all_);
+%bins(mds_spec_per_100k,spec,%str(1=1),US,type);
+%bins(mds_spec_per_100k,spec,%str(1=1),US,t_25);
+%bins(mds_spec_per_100k,spec,%str(1=1),US,t_50);
+%bins(mds_spec_per_100k,spec,%str(1=1),US,t100);
 
