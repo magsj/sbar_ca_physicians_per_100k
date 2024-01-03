@@ -51,11 +51,11 @@ proc sql;
   a.'F04603 MDs PtnCr Ofc Basd Non-Fd'n as mds_y20,
   a.'F14694 DOs PtnCr Ofc Basd Non-Fd'n as dos_y20,
   (a.'F04603 MDs PtnCr Ofc Basd Non-Fd'n+a.'F14694 DOs PtnCr Ofc Basd Non-Fd'n) as mds_dos_y20,
-  (a.'F04603 MDs PtnCr Ofc Basd Non-Fd'n+a.'F14694 DOs PtnCr Ofc Basd Non-Fd'n)/a.'F11984 Population Estimate'n*1000 as mds_dos_per_1k,
+  (a.'F04603 MDs PtnCr Ofc Basd Non-Fd'n+a.'F14694 DOs PtnCr Ofc Basd Non-Fd'n)/a.'F11984 Population Estimate'n*100000 as mds_dos_per_100k,
   a.'F08860 MDs PtnCrOfcBsd GP Non-Fd'n as mds_gp_y20,
-  a.'F08860 MDs PtnCrOfcBsd GP Non-Fd'n/a.'F11984 Population Estimate'n*1000 as mds_gp_per_1k,
+  a.'F08860 MDs PtnCrOfcBsd GP Non-Fd'n/a.'F11984 Population Estimate'n*100000 as mds_gp_per_100k,
   a.'F08861 MDs PtnCrOfcBsdMSpc Nn-Fd'n as mds_spec_y20,
-  a.'F08861 MDs PtnCrOfcBsdMSpc Nn-Fd'n/a.'F11984 Population Estimate'n*1000 as mds_spec_per_1k,
+  a.'F08861 MDs PtnCrOfcBsdMSpc Nn-Fd'n/a.'F11984 Population Estimate'n*100000 as mds_spec_per_100k,
   
   /*selected county characteristics*/
   a.'F11984 Population Estimate'n                                      as popn,
@@ -71,7 +71,7 @@ proc sql;
   a.'F13223 Persons in Poverty'n                                       as pop_in_pvrty,
   a.'F13223 Persons in Poverty'n/a.'F11984 Population Estimate'n       as pct_in_pvrty,
   a.'F08921 Hospital Beds'n                                            as hsptl_beds,
-  a.'F08921 Hospital Beds'n/a.'F11984 Population Estimate'n*1000       as hsptl_beds_per_1k
+  a.'F08921 Hospital Beds'n/a.'F11984 Population Estimate'n*100000     as hsptl_beds_per_100k
   
  from counties a 
  
@@ -89,24 +89,24 @@ proc sql;
 proc means data=counties median q1 q3 noprint;
  where mds_dos_y20>0
  and popn +pct_cvln_lbr_frc_ovr15 +pct_ovr64 +pct_female 
-     +pct_wht_non_hisp +prsnl_income +pct_in_pvrty +hsptl_beds_per_1k ne .;
- var mds_dos_per_1k mds_gp_per_1k mds_spec_per_1k;
+     +pct_wht_non_hisp +prsnl_income +pct_in_pvrty +hsptl_beds_per_100k ne .;
+ var mds_dos_per_100k mds_gp_per_100k mds_spec_per_100k;
  output out=counties_iqr
-  median(mds_dos_per_1k)= median(mds_gp_per_1k)= median(mds_spec_per_1k)= 
-  q1(mds_dos_per_1k)= q1(mds_gp_per_1k)= q1(mds_spec_per_1k)= 
-  q3(mds_dos_per_1k)= q3(mds_gp_per_1k)= q3(mds_spec_per_1k)= 
+  median(mds_dos_per_100k)= median(mds_gp_per_100k)= median(mds_spec_per_100k)= 
+  q1(mds_dos_per_100k)= q1(mds_gp_per_100k)= q1(mds_spec_per_100k)= 
+  q3(mds_dos_per_100k)= q3(mds_gp_per_100k)= q3(mds_spec_per_100k)= 
  / autoname;
 run;
 
 *put thresholds into macro variables;
 proc sql noprint;
  select 
-  mds_dos_per_1k_q1 - (3*2*(mds_dos_per_1k_median-mds_dos_per_1k_q1)),
-  mds_dos_per_1k_q3 + (3*2*(mds_dos_per_1k_q3-mds_dos_per_1k_median)), 
-  mds_gp_per_1k_q1 - (3*2*(mds_gp_per_1k_median-mds_gp_per_1k_q1)),
-  mds_gp_per_1k_q3 + (3*2*(mds_gp_per_1k_q3-mds_gp_per_1k_median)), 
-  mds_spec_per_1k_q1 - (3*2*(mds_spec_per_1k_median-mds_spec_per_1k_q1)),
-  mds_spec_per_1k_q3 + (3*2*(mds_spec_per_1k_q3-mds_spec_per_1k_median))
+  mds_dos_per_100k_q1 - (3*2*(mds_dos_per_100k_median-mds_dos_per_100k_q1)),
+  mds_dos_per_100k_q3 + (3*2*(mds_dos_per_100k_q3-mds_dos_per_100k_median)), 
+  mds_gp_per_100k_q1 - (3*2*(mds_gp_per_100k_median-mds_gp_per_100k_q1)),
+  mds_gp_per_100k_q3 + (3*2*(mds_gp_per_100k_q3-mds_gp_per_100k_median)), 
+  mds_spec_per_100k_q1 - (3*2*(mds_spec_per_100k_median-mds_spec_per_100k_q1)),
+  mds_spec_per_100k_q3 + (3*2*(mds_spec_per_100k_q3-mds_spec_per_100k_median))
  into 
   :md_lowerb, :md_upperb, 
   :gp_lowerb, :gp_upperb, 
@@ -143,7 +143,7 @@ proc sql;
  from counties
  where mds_dos_y20>0 
  and popn +pct_cvln_lbr_frc_ovr15 +pct_ovr64 +pct_female 
-     +pct_wht_non_hisp +prsnl_income +pct_in_pvrty +hsptl_beds_per_1k = .
+     +pct_wht_non_hisp +prsnl_income +pct_in_pvrty +hsptl_beds_per_100k = .
  
  union
  select distinct '4. Less: Extreme outliers (<Q1-3*2*SIQR{L} or >Q3+3*2*SIQR{U})' as Step format=$65., 
@@ -151,13 +151,13 @@ proc sql;
  from counties
  where mds_dos_y20>0
  and popn +pct_cvln_lbr_frc_ovr15 +pct_ovr64 +pct_female 
-     +pct_wht_non_hisp +prsnl_income +pct_in_pvrty +hsptl_beds_per_1k ne .
- and (   mds_dos_per_1k le &md_lowerb 
-      or mds_gp_per_1k le &gp_lowerb
-      or mds_spec_per_1k le &sp_lowerb
-      or mds_dos_per_1k ge &md_upperb 
-      or mds_gp_per_1k ge &md_upperb
-      or mds_spec_per_1k ge &md_upperb )
+     +pct_wht_non_hisp +prsnl_income +pct_in_pvrty +hsptl_beds_per_100k ne .
+ and (   mds_dos_per_100k le &md_lowerb 
+      or mds_gp_per_100k le &gp_lowerb
+      or mds_spec_per_100k le &sp_lowerb
+      or mds_dos_per_100k ge &md_upperb 
+      or mds_gp_per_100k ge &md_upperb
+      or mds_spec_per_100k ge &md_upperb )
  
  union
  select distinct '5. Remaining Counties After Exclusions' as Step format=$65., 
@@ -165,13 +165,13 @@ proc sql;
  from counties
  where mds_dos_y20>0
  and popn +pct_cvln_lbr_frc_ovr15 +pct_ovr64 +pct_female 
-     +pct_wht_non_hisp +prsnl_income +pct_in_pvrty +hsptl_beds_per_1k ne .
- and mds_dos_per_1k gt &md_lowerb 
- and mds_gp_per_1k gt &gp_lowerb
- and mds_spec_per_1k gt &sp_lowerb
- and mds_dos_per_1k lt &md_upperb 
- and mds_gp_per_1k lt &md_upperb
- and mds_spec_per_1k lt &md_upperb ;
+     +pct_wht_non_hisp +prsnl_income +pct_in_pvrty +hsptl_beds_per_100k ne .
+ and mds_dos_per_100k gt &md_lowerb 
+ and mds_gp_per_100k gt &gp_lowerb
+ and mds_spec_per_100k gt &sp_lowerb
+ and mds_dos_per_100k lt &md_upperb 
+ and mds_gp_per_100k lt &md_upperb
+ and mds_spec_per_100k lt &md_upperb ;
      
  select * from sas.excluded_counties_smry;
 
@@ -192,20 +192,20 @@ proc sql;
  from counties b
  where mds_dos_y20>0 
  and popn +pct_cvln_lbr_frc_ovr15 +pct_ovr64 +pct_female 
-     +pct_wht_non_hisp +prsnl_income +pct_in_pvrty +hsptl_beds_per_1k = .
+     +pct_wht_non_hisp +prsnl_income +pct_in_pvrty +hsptl_beds_per_100k = .
      
  union
  select 'Extreme outlier' as exclude_reason format=$30., b.*
  from counties b
  where mds_dos_y20>0
  and popn +pct_cvln_lbr_frc_ovr15 +pct_ovr64 +pct_female 
-     +pct_wht_non_hisp +prsnl_income +pct_in_pvrty +hsptl_beds_per_1k ne .
- and (   mds_dos_per_1k le &md_lowerb 
-      or mds_gp_per_1k le &gp_lowerb
-      or mds_spec_per_1k le &sp_lowerb
-      or mds_dos_per_1k ge &md_upperb 
-      or mds_gp_per_1k ge &md_upperb
-      or mds_spec_per_1k ge &md_upperb );
+     +pct_wht_non_hisp +prsnl_income +pct_in_pvrty +hsptl_beds_per_100k ne .
+ and (   mds_dos_per_100k le &md_lowerb 
+      or mds_gp_per_100k le &gp_lowerb
+      or mds_spec_per_100k le &sp_lowerb
+      or mds_dos_per_100k ge &md_upperb 
+      or mds_gp_per_100k ge &md_upperb
+      or mds_spec_per_100k ge &md_upperb );
 ;quit;run;
 
 proc export 
@@ -223,13 +223,13 @@ proc sql;
  select * from counties 
  where mds_dos_y20>0
  and popn +pct_cvln_lbr_frc_ovr15 +pct_ovr64 +pct_female 
-     +pct_wht_non_hisp +prsnl_income +pct_in_pvrty +hsptl_beds_per_1k ne .
- and mds_dos_per_1k gt &md_lowerb 
- and mds_gp_per_1k gt &gp_lowerb
- and mds_spec_per_1k gt &sp_lowerb
- and mds_dos_per_1k lt &md_upperb 
- and mds_gp_per_1k lt &md_upperb
- and mds_spec_per_1k lt &md_upperb 
+     +pct_wht_non_hisp +prsnl_income +pct_in_pvrty +hsptl_beds_per_100k ne .
+ and mds_dos_per_100k gt &md_lowerb 
+ and mds_gp_per_100k gt &gp_lowerb
+ and mds_spec_per_100k gt &sp_lowerb
+ and mds_dos_per_100k lt &md_upperb 
+ and mds_gp_per_100k lt &md_upperb
+ and mds_spec_per_100k lt &md_upperb 
 ;quit;run;
 
 proc export 
@@ -245,6 +245,6 @@ proc means data=sas.selected_counties n nmiss mean stddev min p1 p5 p10 p25 medi
  var popn
   cbsa_ind_cd_msa cbsa_status_central rur_urb_cntm_cd_02 urb_infl_cd_2
   pct_cvln_lbr_frc_ovr15 pct_ovr64 pct_female 
-  pct_wht_non_hisp prsnl_income pct_in_pvrty hsptl_beds_per_1k;
+  pct_wht_non_hisp prsnl_income pct_in_pvrty hsptl_beds_per_100k;
 run;
 ods html close;
