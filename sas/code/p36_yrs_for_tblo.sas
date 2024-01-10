@@ -22,31 +22,31 @@ proc sql;
  select 
   case when sb_similar_ind='ALUS' 
        then 'All US Counties (n='||strip(put(st_county_ct,comma32.0))
-                        ||') (slope='||strip(put(Slope,percentn32.2))||')'
+                        ||') (slope='||strip(put(Slope,32.2))||')'
                           
        when sb_similar_ind='ALCA' 
        then 'All CA Counties (n='||strip(put(st_county_ct,comma32.0))
-                        ||') (slope='||strip(put(Slope,percentn32.2))||')'
+                        ||') (slope='||strip(put(Slope,32.2))||')'
                           
        when sb_similar_ind='TYPE' 
        then 'Central MSA US Counties of 250k-1M (n='||strip(put(st_county_ct,comma32.0))
-                                           ||') (slope='||strip(put(Slope,percentn32.2))||')'
+                                           ||') (slope='||strip(put(Slope,32.2))||')'
                           
        when sb_similar_ind='T_25' 
        then 'Top 25 Most Similar US Counties (n='||strip(put(st_county_ct,comma32.0))
-                                        ||') (slope='||strip(put(Slope,percentn32.2))||')'
+                                        ||') (slope='||strip(put(Slope,32.2))||')'
                           
        when sb_similar_ind='T_50' 
        then 'Top 50 Most Similar US Counties (n='||strip(put(st_county_ct,comma32.0))
-                                        ||') (slope='||strip(put(Slope,percentn32.2))||')'
+                                        ||') (slope='||strip(put(Slope,32.2))||')'
                           
        when sb_similar_ind='T100' 
        then 'Top 100 Most Similar US Counties (n='||strip(put(st_county_ct,comma32.0))
-                                         ||') (slope='||strip(put(Slope,percentn32.2))||')'
+                                         ||') (slope='||strip(put(Slope,32.2))||')'
                                          
        when sb_similar_ind='SBCA' 
        then 'Santa Barbara County (n='||strip(put(st_county_ct,comma32.0))
-                             ||') (slope='||strip(put(Slope,percentn32.2))||')'
+                             ||') (slope='||strip(put(Slope,32.2))||')'
                           
        else 'REMOVE' end as Subset length=75,
 
