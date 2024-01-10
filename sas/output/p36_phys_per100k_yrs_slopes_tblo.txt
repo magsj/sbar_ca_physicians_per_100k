@@ -1,22 +1,22 @@
 Subset|Measure|Intercept|Slope|N
-All CA Counties (n=58) (slope=-16.75%)|MD GPs Per 100k|365.13627153|-0.167476404|58
-All CA Counties (n=58) (slope=20.91%)|MD Specialists Per 100k|-370.6569119|0.2091478617|58
-All CA Counties (n=58) (slope=5.81%)|MDs/DOs Per 100k|41.015226461|0.058111212|58
-All US Counties (n=2,927) (slope=-16.23%)|MD GPs Per 100k|353.36712814|-0.162333437|2927
-All US Counties (n=2,927) (slope=-37.21%)|MDs/DOs Per 100k|851.97917143|-0.372120059|2927
-All US Counties (n=2,927) (slope=-7.25%)|MD Specialists Per 100k|173.44562779|-0.072486178|2927
-Central MSA US Counties of 250k-1M (n=231) (slope=19.19%)|MD Specialists Per 100k|-328.3174087|0.1918667287|231
-Central MSA US Counties of 250k-1M (n=231) (slope=32.09%)|MDs/DOs Per 100k|-464.7791539|0.3208960836|231
-Central MSA US Counties of 250k-1M (n=231) (slope=8.07%)|MD GPs Per 100k|-135.3151948|0.080746322|231
-Santa Barbara County (n=1) (slope=-40.61%)|MD GPs Per 100k|843.54213746|-0.406096944|1
-Santa Barbara County (n=1) (slope=-6.96%)|MD Specialists Per 100k|217.50028746|-0.069639279|1
-Santa Barbara County (n=1) (slope=-74.43%)|MDs/DOs Per 100k|1711.9006876|-0.744277814|1
-Top 100 Most Similar US Counties (n=101) (slope=13.01%)|MD GPs Per 100k|-231.634836|0.1301218016|101
-Top 100 Most Similar US Counties (n=101) (slope=25.01%)|MD Specialists Per 100k|-431.1802204|0.2501116886|101
-Top 100 Most Similar US Counties (n=101) (slope=40.24%)|MDs/DOs Per 100k|-588.3774732|0.4024468498|101
-Top 25 Most Similar US Counties (n=26) (slope=23.58%)|MD GPs Per 100k|-443.050739|0.2357570829|26
-Top 25 Most Similar US Counties (n=26) (slope=31.16%)|MD Specialists Per 100k|-542.6922789|0.3115549667|26
-Top 25 Most Similar US Counties (n=26) (slope=81.85%)|MDs/DOs Per 100k|-1402.358894|0.8184553768|26
-Top 50 Most Similar US Counties (n=51) (slope=15.02%)|MD GPs Per 100k|-271.2179538|0.1502190768|51
-Top 50 Most Similar US Counties (n=51) (slope=39.45%)|MD Specialists Per 100k|-709.528063|0.3944522631|51
-Top 50 Most Similar US Counties (n=51) (slope=92.49%)|MDs/DOs Per 100k|-1609.04947|0.9249194447|51
+All CA Counties (n=58) (slope=-0.17)|MD GPs Per 100k|365.13627153|-0.167476404|58
+All CA Counties (n=58) (slope=0.06)|MDs/DOs Per 100k|41.015226461|0.058111212|58
+All CA Counties (n=58) (slope=0.21)|MD Specialists Per 100k|-370.6569119|0.2091478617|58
+All US Counties (n=2,927) (slope=-0.07)|MD Specialists Per 100k|173.44562779|-0.072486178|2927
+All US Counties (n=2,927) (slope=-0.16)|MD GPs Per 100k|353.36712814|-0.162333437|2927
+All US Counties (n=2,927) (slope=-0.37)|MDs/DOs Per 100k|851.97917143|-0.372120059|2927
+Central MSA US Counties of 250k-1M (n=231) (slope=0.08)|MD GPs Per 100k|-135.3151948|0.080746322|231
+Central MSA US Counties of 250k-1M (n=231) (slope=0.19)|MD Specialists Per 100k|-328.3174087|0.1918667287|231
+Central MSA US Counties of 250k-1M (n=231) (slope=0.32)|MDs/DOs Per 100k|-464.7791539|0.3208960836|231
+Santa Barbara County (n=1) (slope=-0.07)|MD Specialists Per 100k|217.50028746|-0.069639279|1
+Santa Barbara County (n=1) (slope=-0.41)|MD GPs Per 100k|843.54213746|-0.406096944|1
+Santa Barbara County (n=1) (slope=-0.74)|MDs/DOs Per 100k|1711.9006876|-0.744277814|1
+Top 100 Most Similar US Counties (n=101) (slope=0.13)|MD GPs Per 100k|-231.634836|0.1301218016|101
+Top 100 Most Similar US Counties (n=101) (slope=0.25)|MD Specialists Per 100k|-431.1802204|0.2501116886|101
+Top 100 Most Similar US Counties (n=101) (slope=0.40)|MDs/DOs Per 100k|-588.3774732|0.4024468498|101
+Top 25 Most Similar US Counties (n=26) (slope=0.24)|MD GPs Per 100k|-443.050739|0.2357570829|26
+Top 25 Most Similar US Counties (n=26) (slope=0.31)|MD Specialists Per 100k|-542.6922789|0.3115549667|26
+Top 25 Most Similar US Counties (n=26) (slope=0.82)|MDs/DOs Per 100k|-1402.358894|0.8184553768|26
+Top 50 Most Similar US Counties (n=51) (slope=0.15)|MD GPs Per 100k|-271.2179538|0.1502190768|51
+Top 50 Most Similar US Counties (n=51) (slope=0.39)|MD Specialists Per 100k|-709.528063|0.3944522631|51
+Top 50 Most Similar US Counties (n=51) (slope=0.92)|MDs/DOs Per 100k|-1609.04947|0.9249194447|51
