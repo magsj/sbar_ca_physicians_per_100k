@@ -184,6 +184,7 @@ function includeHTML() {
             <li>AHRF ASCII formatted data and documentation were downloaded from the AHRF section of <a href="https://data.hrsa.gov/data/download" rel="nofollow" target="_blank">data.hrsa.gov/data/download</a> and loaded into SAS format using code provided by AHRF in the Technical Documentation.</li>
             <li>Since the file contains thousands of fields a small subset was identified as potentially useful to begin working with.</li>
           </ol>
+          <br>&nbsp;</br>
         <li>Refine feild list further and apply county inclusion/exclusion logic.</li>
           <ul>
             <li>Fields selected to classify counties by type and status.</li>
@@ -227,6 +228,7 @@ function includeHTML() {
             <li>After reviewing the corellation heat map with the initially proposed variables it was found that cbsa_ind_cd_msa, cbsa_status_central, rur_urb_cntm_cd_02, and urb_infl_cd_2 are highly correlated with each other. Rur_urb_cntm_cd_02 indicates counties in metro areas of 250k-1M and urb_infl_cd_2 indicates counties in a small metro area of less than 1M. These are very similar and rur_urb_cntm_cd_02 is more specific so urb_infl_cd_2 was removed to reduce correlation among those variables. Pct_cvln_lbr_frc_ovr15, prsnl_income, and pct_in_pvrty are also highly correlated. Income and labor force participation might account for more variability in demand for healthcare so pct_in_pvrty was removed to reduce correlation among those variables. In the resulting correlation matrix no two variables had a correlation coefficient of .6 or more. <a href="sas/output/p22_fnl_corr.html" rel="nofollow" target="_blank">Click to view final correlation heat map.</a></li>
             <li>Finally, PROC FASTCLUS was used to iteratively divide all counties into groups of similar counties, and the counties grouped together with Santa Barbara most frequently were recorded and designated as similar to Santa Barbara. <a href="sas/output/p23_sb_similar_counties.html" rel="nofollow" target="_blank">Click to view the list of 100 counties most similar to Santa Barbara.</a></li>
 	  </ol>
+          <br>&nbsp;</br>
         <li>Calculate summary statistics for the latest year (currently 2020) and trend data since 2010, and format data for loading into Tableau.</li>
 	  <ol>
             <li>Calculate measures of central tendency and percentiles. <a href="sas/output/p31_y20_stats.html" rel="nofollow" target="_blank">View output.</a></li>
