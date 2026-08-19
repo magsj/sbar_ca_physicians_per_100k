@@ -1,0 +1,7 @@
+{
+  "bundle": "t003_top_percentile_macro",
+  "source_file": "sas/code/p31_create_y20_stats.sas",
+  "source_blob_sha": "d6f7af05e89606cde9453b34444f78c3a8213af8",
+  "source_commit": "9e0e1bad507454b21a8b12eac5745c7f07a62d80",
+  "notes": "The %top macro (unedited body) subsets counties by criteria, ranks them nationally and within-CA with two PROC RANK passes (groups=100), then summarizes with PROC MEANS CLASS ca_cnty. Mock table is 14 US counties (8 CA/6 non-CA) shaped like the post-p11 analysis table. Called twice (all counties; counties matching Santa Barbara's CBSA/metro classification) instead of the original's five subset calls. Note: the runner's committed expected/log.txt has the 'Unlicensed mode' banner NOTE lines stripped per campaign policy (PROC SORT emits it under the token used for this capture); output/listing is unaffected and identical either way."
+}

@@ -1,0 +1,14 @@
+{
+  "_captured_at": "2026-08-19T15:30:00Z",
+  "_captured_run_id": "r_6371f573f15e469a946b9a4849f357e9",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "NOTE: Wrote work.ahrf_mock (5 rows, 12 columns).",
+    "NOTE: Table cnty_hlth_tmp created.",
+    "NOTE: PROC DELETE datasets=work.cnty_hlth_tmp",
+    "NOTE: PROC PRINT completed: 5 observations printed, 22 variables"
+  ],
+  "log_does_not_contain": ["ERROR:", "[JENNER-ERROR"],
+  "diagnostics": {"parse_warnings": [], "runtime_warnings": []}
+}

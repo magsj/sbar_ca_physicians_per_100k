@@ -1,0 +1,14 @@
+                               Non-empty physicians-per-100k bins, US vs CA-only subsets
+
+geo  bin       bin_desc  n  sb_ind
+US    12  182.2 - 189.8  1       1
+US    13  189.8 - 197.4  1       0
+US    16  212.5 - 220.1  2       0
+US    18  227.7 - 235.2  1       0
+US    19  235.2 - 242.8  2       0
+US     .                 3       0
+CA    12  182.2 - 189.8  1       1
+CA    13  189.8 - 197.4  1       0
+CA    16  212.5 - 220.1  1       0
+CA    19  235.2 - 242.8  2       0
+CA     .                 1       0

@@ -1,0 +1,15 @@
+{
+  "_captured_at": "2026-08-19T16:05:00Z",
+  "_captured_run_id": "r_1e0bfa858e1b4eb49968d1fcd4351b42",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "NOTE: Wrote cnty_smlr_all_ (10 rows, 4 columns).",
+    "NOTE: Wrote mddo_binct (21 rows, 3 columns).",
+    "NOTE: Table mddo_US_all__bins created.",
+    "NOTE: Table mddo_CA_all__bins created.",
+    "NOTE: PROC PRINT completed: 11 observations printed, 5 variables"
+  ],
+  "log_does_not_contain": ["ERROR:", "[JENNER-ERROR"],
+  "diagnostics": {"parse_warnings": [], "runtime_warnings": []}
+}
