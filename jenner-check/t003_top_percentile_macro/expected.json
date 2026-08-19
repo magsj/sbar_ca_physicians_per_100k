@@ -1,0 +1,14 @@
+{
+  "_captured_at": "2026-08-19T15:55:00Z",
+  "_captured_run_id": "r_ec4240c3bd264f03b24647feef21157e",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "NOTE: Wrote physicians_per_100k_cnty (14 rows, 11 columns).",
+    "NOTE: Table cnty_smlr_all_ created.",
+    "NOTE: Table cnty_smlr_type created.",
+    "NOTE: PROC PRINT completed: 5 observations printed, 5 variables"
+  ],
+  "log_does_not_contain": ["ERROR:", "[JENNER-ERROR"],
+  "diagnostics": {"parse_warnings": [], "runtime_warnings": []}
+}

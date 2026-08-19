@@ -1,0 +1,7 @@
+{
+  "bundle": "t001_ctabler_macro",
+  "source_file": "sas/code/p03_ahrf_cnty_tbl.sas",
+  "source_blob_sha": "22beabdf9ea18dc37a1e7b6d59a53c051643778c",
+  "source_commit": "9e0e1bad507454b21a8b12eac5745c7f07a62d80",
+  "notes": "The %ctabler macro (unmodified body) transposes a single AHRF county-year variable into one row per county+metric with y22..y00 columns. Original reads from a 14,753-column AHRF fixed-width extract; here &ahrf_out points at a 5-county mock table (CA/NV) shaped like the real AHRF field-naming convention (F1121520 = 2020 value of field F11215, 'MDs Total Ptn Care Non-Fed'). Macro called once, matching one of the repo's own %ctabler invocations for that field."
+}

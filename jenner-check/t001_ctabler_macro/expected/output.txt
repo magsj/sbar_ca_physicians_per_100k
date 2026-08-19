@@ -1,0 +1,8 @@
+                             Physicians per county, transposed by year (mock AHRF extract)
+
+fips_st_cnty  fips_st  fips_cnty                st_cnty_nm  st_abbr               cnty_nm                            metric  y22  y21    y20    y19    y18    y17    y16  y15  y14  y13  y12  y11  y10  y05  y00
+06083         06       083        Santa_Barbara_County, CA  CA       Santa_Barbara_County  F11215 MDs Total Ptn Care Non-Fd    .    .    410    402    395    388    379    .    .    .    .    .    .    .    .
+06073         06       073        San_Diego_County, CA      CA       San_Diego_County      F11215 MDs Total Ptn Care Non-Fd    .    .   5120   5001   4890   4780   4655    .    .    .    .    .    .    .    .
+06037         06       037        Los_Angeles_County, CA    CA       Los_Angeles_County    F11215 MDs Total Ptn Care Non-Fd    .    .  12840  12650  12410  12190  11980    .    .    .    .    .    .    .    .
+32003         32       003        Clark_County, NV          NV       Clark_County          F11215 MDs Total Ptn Care Non-Fd    .    .   3210   3105   3010   2920   2830    .    .    .    .    .    .    .    .
+06001         06       001        Alameda_County, CA        CA       Alameda_County        F11215 MDs Total Ptn Care Non-Fd    .    .   2670   2601   2545   2490   2430    .    .    .    .    .    .    .    .

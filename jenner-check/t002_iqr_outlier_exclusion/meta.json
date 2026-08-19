@@ -1,0 +1,7 @@
+{
+  "bundle": "t002_iqr_outlier_exclusion",
+  "source_file": "sas/code/p11_selected_counties.sas",
+  "source_blob_sha": "72d1c88cd3041e2ba00d68a5bb4fdac35b43643a",
+  "source_commit": "9e0e1bad507454b21a8b12eac5745c7f07a62d80",
+  "notes": "IQR-based extreme-outlier fence (SIQR per Kimber 1990 / Aucremanne et al. 2004, cited by the author) plus the exclusion-summary PROC SQL UNION and descriptive PROC MEANS, unedited from the original except redirecting inputs to a 12-county mock dataset (built post-transpose, matching the shape the original consumes) and dropping the ODS HTML file-path output in favor of the listing. One county was given a deliberately extreme mds_dos_per_100k to exercise the exclusion branch (12 counties in, 1 excluded, 11 remaining)."
+}

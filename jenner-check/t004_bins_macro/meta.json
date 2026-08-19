@@ -1,0 +1,7 @@
+{
+  "bundle": "t004_bins_macro",
+  "source_file": "sas/code/p33_create_y20_bins.sas",
+  "source_blob_sha": "f0f3ee22e41a2f1bce671125a2bfe12b9df0e744",
+  "source_commit": "9e0e1bad507454b21a8b12eac5745c7f07a62d80",
+  "notes": "20-equal-width-bin histogram builder: PROC SQL INTO for min/binsize, a DATA step generating 21 bin-label rows (21st collapsed into the 20th to catch the max observation), and the %bins macro (unedited body) that full-joins counties to bins and counts them, looped over subsets. Mock table is 10 counties (7 CA, 3 non-CA). Run for one measure (mds_dos_per_100k) over two subsets (all US, CA-only) instead of the original's three measures x six subsets."
+}

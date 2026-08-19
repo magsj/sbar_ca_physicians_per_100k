@@ -1,0 +1,25 @@
+NOTE: Option OBS changed to 100.
+NOTE: DATA work.ahrf_mock
+
+NOTE: Processing inline DATALINES (5 lines)
+
+NOTE: Read 5 rows from DATALINES.
+NOTE: Wrote work.ahrf_mock (5 rows, 12 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC SQL
+
+NOTE: Table cnty_hlth_tmp created.
+NOTE: PROC SQL statement used.
+NOTE: PROC APPEND base=work.ahrf_cnty_tbl data=work.cnty_hlth_tmp
+
+NOTE: BASE data set does not exist. Creating ahrf_cnty_tbl.avro with 5 observations from DATA= dataset.
+NOTE: 5 observations added to ahrf_cnty_tbl.avro.
+NOTE: PROC DELETE datasets=work.cnty_hlth_tmp
+
+NOTE: Deleting WORK.CNTY_HLTH_TMP (memtype=DATA).
+NOTE: 1 dataset(s) deleted.
+NOTE: PROC PRINT data=work.ahrf_cnty_tbl
+
+NOTE: PROC PRINT completed: 5 observations printed, 22 variables
